@@ -1,0 +1,128 @@
+/* src/assets/styles/Header.css */
+
+/* src/assets/styles/Header.css */
+
+/* Main Header Styles */
+.header {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 10px 0; /* Add some padding for better spacing */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    height: 50px; /* Adjust the height as needed to make it bigger */
+    margin-left: 10px; /* Reduce the left margin */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 400px; /* Adjust the max width for the search form */
+    flex-grow: 1; /* Allow the search form to take up available space */
+}
+
+.search-form .form-control {
+    border-radius: 0;
+    height: 40px; /* Match the logo height */
+    width: calc(100% - 40px); /* Ensure the input takes up available space */
+}
+
+.search-form .btn {
+    border-radius: 0;
+    height: 40px; /* Match the logo height */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #333; /* Default text color */
+    font-weight: 500; /* Medium weight for text */
+    margin-left: 15px; /* Add spacing between nav links */
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Color on hover */
+    opacity: 0.8; /* Add opacity on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff; /* Active link color */
+}
+
+.navbar-nav .nav-icon {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+    font-size: 1.2em; /* Adjust icon size */
+}
+
+.navbar-nav .sign-up-btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 40px; /* Match the logo height */
+    border-radius: 5px;
+    background-color: #A3D02C; /* Set background color */
+    border: none; /* Remove default border */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.navbar-nav .sign-up-btn:hover {
+    opacity: 0.8; /* Add opacity on hover */
+}
+
+.navbar-nav .login-btn {
+    margin-left: 15px;
+    color: #A3D02C; /* Set text color */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 0;
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.navbar-nav .login-btn:hover {
+    text-decoration: underline; /* Underline on hover */
+    opacity: 0.8; /* Add opacity on hover */
+}
+
+/* Additional Header Styles */
+.additional-header {
+    background-color: #A3D02C; /* Background color */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    padding: 10px 0; /* Add padding */
+}
+
+.additional-header .navbar-nav {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Wrap items to next line on smaller screens */
+}
+
+.additional-header .navbar-nav .nav-link {
+    padding: 8px 15px; /* Adjust padding around each nav link */
+    margin: 5px; /* Add margin between nav links */
+    color: white !important; /* Ensure text color is white */
+    text-decoration: none; /* Remove underline */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.additional-header .navbar-nav .nav-link:hover {
+    color: #fff; /* Text color on hover */
+    opacity: 0.8; /* Add opacity on hover */
+}
