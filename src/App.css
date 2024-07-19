@@ -1,2 +1,9 @@
 
-  
+  /* In src/app.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+
+/* add custom styles for the carousel  */
