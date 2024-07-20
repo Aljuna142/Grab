@@ -33,8 +33,8 @@ export default App;*/
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'; // Import your Home component
-import Header from './components/common/Header'; // Import your Header component
-import './App.css'; // Assuming you have an App.css for global styles
+import Header from './components/common/Header'; // Import your Header component // Assuming you have an App.css for global styles
+import Footer from './components/common/Footer';
 
 const App = () => {
     return (
@@ -45,6 +45,7 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     {/* Add more routes for other pages */}
                 </Routes>
+                <Footer/>
             </div>
         </Router>
     );

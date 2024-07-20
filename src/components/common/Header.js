@@ -181,7 +181,7 @@ import '../../assets/styles/Header.css';
 const Header = () => {
     return (
         <React.Fragment>
-            {/* Main Header */}
+            {/* Main Header*/ }
             <Navbar bg="light" expand="lg" className="header">
                 <Container fluid className="header-container">
                     <LinkContainer to="/">
@@ -210,7 +210,7 @@ const Header = () => {
                 </Container>
             </Navbar>
 
-            {/* Additional Header */}
+            {/* Additional Header*/ }
             <Navbar bg="dark" variant="dark" expand="lg" className="additional-header">
                 <Container fluid>
                     <Nav className="ml-auto">

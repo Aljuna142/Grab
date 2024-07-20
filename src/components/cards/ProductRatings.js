@@ -1,4 +1,6 @@
 // src/components/cards/ProductRatings.js
+
+// src/components/cards/ProductRatings.js
 import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa'; // React Icons for star ratings
 import '../../assets/styles/Product.css'; // Correct path to Product.css
@@ -23,11 +25,11 @@ const ProductRatings = ({ rating, reviews }) => {
     };
 
     return (
-        <div className="product-rating">
-            <div className="star-rating">
+        <div className="product-rating d-flex align-items-center">
+            <div className="star-rating d-flex">
                 {getStarElements(rating)}
             </div>
-            <span className="reviews">({reviews} Review{reviews > 1 ? 's' : ''})</span>
+            <span className="reviews ms-2">({reviews})</span>
         </div>
     );
 };

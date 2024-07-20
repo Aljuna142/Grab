@@ -102,9 +102,10 @@
 
 /* Additional Header Styles */
 .additional-header {
-    background-color: #A3D02C; /* Background color */
-    color: white; /* Text color */
+    background-color: #A3D02C !important; /* Background color */
+    color: white !important; /* Text color */
     font-weight: bold; /* Bold text */
+    
     padding: 10px 0; /* Add padding */
 }
 
