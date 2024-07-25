@@ -1,0 +1,79 @@
+/*.core-aspects {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .core-aspects h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .aspects-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .aspect {
+    flex: 1;
+    max-width: 300px;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .aspect img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .aspect h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  .aspect p {
+    color: #666;
+  }*/
+
+  .core-aspects {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.core-aspects h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+}
+
+.aspects-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aspect {
+  flex: 1;
+  max-width: 300px;
+  margin: 15px;
+  text-align: center;
+}
+
+.aspect img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.aspect h3 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  color: #555;
+}
+
+.aspect p {
+  color: #666;
+}

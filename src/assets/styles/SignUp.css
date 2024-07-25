@@ -1,0 +1,13 @@
+/* src/assets/styles/SignUp.css */
+
+.sign-up-container, .login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+/* src/assets/styles/Networking.css */
+.networking-section {
+    padding: 20px;
+}
+
+.networking-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem; /* Adjust button size */
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    /* Add a bit of space around the button */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
+
+.networking-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0; /* Add padding to ensure content isn't cut off */
+    flex-wrap: nowrap; /* Ensure cards stay in a single row */
+}
+
+/* Hide scrollbar */
+.networking-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .networking-cards-container {
+        /* Show 3 cards per row on tablets */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .networking-cards-container {
+        /* Show 2 cards per row on mobile screens */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

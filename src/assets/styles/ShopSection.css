@@ -1,0 +1,22 @@
+/* src/assets/styles/ShopSection.css */
+.shop-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.shop-section {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.shop-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}

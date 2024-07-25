@@ -1,0 +1,30 @@
+.logo-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .logo-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .brands-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .brand-logo {
+    margin: 0 20px;
+    width: 100px; /* Adjust this width as needed */
+    height: auto;
+  }
+  
+  .brand-logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+

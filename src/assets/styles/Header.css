@@ -2,10 +2,10 @@
 
 /* src/assets/styles/Header.css */
 
-/* Main Header Styles */
+/* Main Header Styles 
 .header {
-    background-color: #f8f9fa; /* Light background color */
-    padding: 10px 0; /* Add some padding for better spacing */
+    background-color: #f8f9fa; 
+    padding: 10px 0;
 }
 
 .header-container {
@@ -15,26 +15,26 @@
 }
 
 .header .logo {
-    height: 50px; /* Adjust the height as needed to make it bigger */
-    margin-left: 10px; /* Reduce the left margin */
+    height: 50px; 
+    margin-left: 10px;
 }
 
 .search-form {
     display: flex;
     align-items: center;
-    max-width: 400px; /* Adjust the max width for the search form */
-    flex-grow: 1; /* Allow the search form to take up available space */
+    max-width: 400px; 
+    flex-grow: 1; 
 }
 
 .search-form .form-control {
     border-radius: 0;
-    height: 40px; /* Match the logo height */
-    width: calc(100% - 40px); /* Ensure the input takes up available space */
+    height: 40px; 
+    width: calc(100% - 40px); 
 }
 
 .search-form .btn {
     border-radius: 0;
-    height: 40px; /* Match the logo height */
+    height: 40px; 
 }
 
 .navbar-nav {
@@ -43,27 +43,27 @@
 }
 
 .navbar-nav .nav-link {
-    color: #333; /* Default text color */
-    font-weight: 500; /* Medium weight for text */
-    margin-left: 15px; /* Add spacing between nav links */
+    color: #333; 
+    font-weight: 500; 
+    margin-left: 15px; 
     display: flex;
     align-items: center;
-    text-decoration: none; /* Remove underline */
-    transition: opacity 0.3s ease; /* Add transition for opacity */
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff; /* Color on hover */
-    opacity: 0.8; /* Add opacity on hover */
+    color: #007bff; 
+    opacity: 0.8; 
 }
 
 .navbar-nav .nav-link.active {
-    color: #007bff; /* Active link color */
+    color: #007bff; 
 }
 
 .navbar-nav .nav-icon {
-    margin-right: 5px; /* Adjust spacing between icon and text */
-    font-size: 1.2em; /* Adjust icon size */
+    margin-right: 5px; 
+    font-size: 1.2em; 
 }
 
 .navbar-nav .sign-up-btn {
@@ -72,58 +72,755 @@
     font-weight: 500;
     display: flex;
     align-items: center;
-    height: 40px; /* Match the logo height */
+    height: 40px; 
     border-radius: 5px;
-    background-color: #A3D02C; /* Set background color */
-    border: none; /* Remove default border */
-    transition: opacity 0.3s ease; /* Add transition for opacity */
+    background-color: #A3D02C; 
+    border: none; 
+    transition: opacity 0.3s ease; 
 }
 
 .navbar-nav .sign-up-btn:hover {
-    opacity: 0.8; /* Add opacity on hover */
+    opacity: 0.8; 
 }
 
 .navbar-nav .login-btn {
     margin-left: 15px;
-    color: #A3D02C; /* Set text color */
+    color: #A3D02C; 
     font-weight: 500;
     display: flex;
     align-items: center;
     border: none;
     background: none;
     padding: 0;
-    transition: opacity 0.3s ease; /* Add transition for opacity */
+    transition: opacity 0.3s ease; 
 }
 
 .navbar-nav .login-btn:hover {
-    text-decoration: underline; /* Underline on hover */
-    opacity: 0.8; /* Add opacity on hover */
+    text-decoration: underline; 
+    opacity: 0.8; 
 }
 
-/* Additional Header Styles */
+ 
 .additional-header {
-    background-color: #A3D02C !important; /* Background color */
-    color: white !important; /* Text color */
-    font-weight: bold; /* Bold text */
+    background-color: #A3D02C !important; 
+    color: white !important; 
+    font-weight: bold; 
     
-    padding: 10px 0; /* Add padding */
+    padding: 10px 0; 
 }
 
 .additional-header .navbar-nav {
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    flex-wrap: wrap; /* Wrap items to next line on smaller screens */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; 
 }
 
 .additional-header .navbar-nav .nav-link {
-    padding: 8px 15px; /* Adjust padding around each nav link */
-    margin: 5px; /* Add margin between nav links */
-    color: white !important; /* Ensure text color is white */
-    text-decoration: none; /* Remove underline */
-    transition: opacity 0.3s ease; /* Add transition for opacity */
+    padding: 8px 15px; 
+    margin: 5px; 
+    color: white !important; 
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
 }
 
 .additional-header .navbar-nav .nav-link:hover {
-    color: #fff; /* Text color on hover */
-    opacity: 0.8; /* Add opacity on hover */
+    color: #fff; 
+    opacity: 0.8; 
 }
+    11*/
+
+
+/*hamburger Main Header Styles 
+.header {
+    background-color: #f8f9fa; 
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    height: 50px; 
+    margin-left: 10px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 400px; 
+    flex-grow: 1; 
+}
+
+.search-form .form-control {
+    border-radius: 0;
+    height: 40px; 
+    width: calc(100% - 40px); 
+}
+
+.search-form .btn {
+    border-radius: 0;
+    height: 40px; 
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    color: #333; 
+    font-weight: 500; 
+    margin-left: 15px; 
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; 
+    opacity: 0.8; 
+}
+
+.navbar-nav .nav-link.active {
+    color: #007bff; 
+}
+
+.navbar-nav .nav-icon {
+    margin-right: 5px; 
+    font-size: 1.2em; 
+}
+
+.navbar-nav .sign-up-btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 40px; 
+    border-radius: 5px;
+    background-color: #A3D02C; 
+    border: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .sign-up-btn:hover {
+    opacity: 0.8; 
+}
+
+.navbar-nav .login-btn {
+    margin-left: 15px;
+    color: #A3D02C; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .login-btn:hover {
+    text-decoration: underline; 
+    opacity: 0.8; 
+}
+
+.additional-header {
+    background-color: #A3D02C !important; 
+    color: white !important; 
+    font-weight: bold; 
+    padding: 10px 0; 
+}
+
+.additional-header .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; 
+}
+
+.additional-header .navbar-nav .nav-link {
+    padding: 8px 15px; 
+    margin: 5px; 
+    color: white !important; 
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.additional-header .navbar-nav .nav-link:hover {
+    color: #fff; 
+    opacity: 0.8; 
+}
+
+/* Media Queries 
+@media (max-width: 768px) {
+    .additional-header .navbar-nav {
+        display: none; /* Hide additional header items on smaller screens 
+    }
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens 
+        cursor: pointer;
+        font-size: 1.5em;
+        color: white;
+        margin-left: auto;
+    }
+}
+
+/* Hide the hamburger menu by default 
+.hamburger-menu {
+    display:flex;
+}
+
+/* Show the additional header items when the hamburger menu is clicked 
+.additional-header.show .navbar-nav {
+    display: flex;
+    flex-direction: column;
+}hamburger
+*/
+
+
+/* Main Header Styles boot
+.header {
+    background-color: #f8f9fa; 
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    height: 50px; 
+    margin-left: 10px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 400px; 
+    flex-grow: 1;
+    flex-shrink: 1; 
+}
+
+.search-form .form-control {
+    border-radius: 0;
+    height: 40px; 
+    width: calc(100% - 40px); 
+}
+
+.search-form .btn {
+    border-radius: 0;
+    height: 40px; 
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500; 
+    margin-left: 15px; 
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #bc8e19; 
+    opacity: 0.8; 
+}
+
+.navbar-nav .nav-link.active {
+    color: #ff4d00; 
+}
+
+.navbar-nav .nav-icon {
+    margin-right: 5px; 
+    font-size: 1.2em; 
+}
+
+.navbar-nav .sign-up-btn {
+    margin-left: 15px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 40px; 
+    border-radius: 5px;
+    background-color: #A3D02C; 
+    border: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .sign-up-btn:hover {
+    opacity: 0.8; 
+}
+
+.navbar-nav .login-btn {
+    margin-left: 15px;
+    color: #A3D02C; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.navbar-nav .login-btn:hover {
+    text-decoration: underline; 
+    opacity: 0.8; 
+}
+
+/* Additional Header Styles 
+.additional-header {
+    background-color: #A3D02C !important; 
+    color: white !important; 
+    font-weight: bold; 
+    padding: 10px 0; 
+    overflow-x: auto; /* Add this line */
+    white-space: nowrap; /* Add this line 
+}
+
+.additional-header .navbar-nav {
+    display: flex;
+    padding: 10px; 
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start 
+    flex-wrap: nowrap; 
+}
+
+.additional-header .navbar-nav .nav-link {
+    padding: 8px 15px; 
+    /*margin: 5px; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    color: white !important; 
+    text-decoration: none; 
+    transition: opacity 0.3s ease; 
+}
+
+.additional-header .navbar-nav .nav-link:hover {
+    color: #fff; 
+    opacity: 0.8; 
+}
+
+/* Hide the scrollbar 
+.additional-header::-webkit-scrollbar {
+    display: none;  for Chrome, Safari, and Opera 
+}
+
+.additional-header {
+    -ms-overflow-style: none; /* for Internet Explorer and Edge 
+    scrollbar-width: none; /* for Firefox 
+}
+
+/* Media Queries 
+@media (max-width: 768px) {
+    .header-container {
+        justify-content: center; /* Ensure items align to the center 
+    }
+
+    .additional-header .navbar-nav {
+        justify-content: flex-start; /* Ensure items align to the start 
+    }
+}*/
+/* css General styles 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main header 
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    height: 80px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+.sign-up-btn {
+    background-color: #A3D02C;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background: none;
+    color: #A3D02C;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Additional header 
+.additional-header {
+    background-color:#A3D02C;
+    color: white;
+    padding: 10px 0;
+}
+
+.additional-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.additional-nav-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}*/
+
+
+/* General styles ok
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main header 
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the start 
+    flex: 1; /* Ensure it doesn't take up extra space 
+}
+
+.logo {
+    height: 80px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #A3D02C;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+.sign-up-btn {
+    background-color: #A3D02C;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background: none;
+    color: #A3D02C;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Additional header 
+.additional-header {
+    background-color: #A3D02C;
+    color: white;
+    padding: 10px 0;
+}
+
+.additional-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.additional-nav-link {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: bold;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity 
+}
+
+.additional-nav-link:hover {
+    opacity: 0.5; /* Opacity change on hover 
+}*/
+
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main header */
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+    overflow: hidden; /* Hide scrollbar*/ 
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the start */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+
+    white-space: nowrap; /* Prevent items from wrapping */
+}
+
+/* Ensure no scrollbar is visible */
+.header-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers*/ 
+}
+
+.header-container {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the start */
+    flex: 1; /* Ensure it doesn't take up extra space */
+}
+
+.logo {
+    height: 80px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #A3D02C;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+.sign-up-btn {
+    background-color: #A3D02C;
+    color: white;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background: none;
+    color: #A3D02C;
+    padding: 5px 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Additional header */
+.additional-header {
+    background-color: #A3D02C;
+    color: white;
+    padding: 10px 0;
+    overflow: hidden; /* Hide scrollbar */
+}
+
+.additional-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping */
+}
+
+/* Ensure no scrollbar is visible*/ 
+.additional-header-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+}
+
+.additional-header-container {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.additional-nav-link {
+    color: white;
+    margin: 0 10px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    display: inline-block; /* Prevent items from wrapping */
+}
+
+.additional-nav-link:hover {
+    opacity: 0.7; /* Opacity change on hover */
+}
+

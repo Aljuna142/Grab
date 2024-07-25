@@ -1,0 +1,46 @@
+/*.shop-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;  Adjust as needed 
+}
+
+.shop-section {
+    flex: 1;
+    margin: 0 10px; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth 
+}
+
+
+/* src/assets/styles/Home.css */
+
+.shop-sections {
+    display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.shop-section {
+    flex: 1; /* Ensures sections take up equal space */
+    margin: 10px; /* Adds space between the sections */
+    padding: 20px; /* Adds padding inside each section */
+    background-color: #f4f4f4; /* Light background color for visibility */
+    border: 1px solid #ddd; /* Border for better visual separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .shop-section {
+        flex: 1 1 48%; /* Two sections per row on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-section {
+        flex: 1 1 100%; /* Full width on very small screens */
+    }
+}

@@ -1,0 +1,91 @@
+/* src/assets/styles/accessories.css */
+
+/* src/assets/styles/Accessories.css */
+
+/* src/assets/styles/Accessories.css */
+.accessories-section {
+    padding: 20px;
+}
+
+.accessories-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem; /* Adjust button size */
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    /* Add a bit of space around the button */
+}
+
+.accessories-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0; /* Add padding to ensure content isn't cut off */
+}
+
+.accessories-cards-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for better appearance */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .scroll-button {
+        font-size: 1.2rem; /* Smaller buttons on tablets and smaller screens */
+    }
+    
+    .accessories-cards-container {
+        padding: 5px 0; /* Less padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-button {
+        font-size: 1rem; /* Even smaller buttons on very small screens */
+        padding: 5px; /* Less padding around the button */
+    }
+
+    .accessories-cards-container {
+        padding: 2px 0; /* Minimal padding on very small screens */
+    }
+}
+
+
+
+/*.accessories-section {
+    padding: 20px;
+}
+
+.accessories-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.scroll-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.accessories-cards-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.accessories-cards-container::-webkit-scrollbar {
+    display:none;
+}
+*/
