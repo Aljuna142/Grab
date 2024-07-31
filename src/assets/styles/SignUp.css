@@ -1,13 +1,73 @@
-/* src/assets/styles/SignUp.css */
+/* SignUp.css */
 
-.sign-up-container, .login-container {
-    max-width: 500px;
-    margin: 0 auto;
+.form-container {
+    background-color: rgb(197, 225, 216);
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px; /* Add space at the bottom */
 }
 
-.login-link {
-    display: block;
-    margin-top: 10px;
+.form-container h2 {
     text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color for form */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-container form label {
+    font-weight: bold;
+}
+
+.form-container form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Flex container for buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    margin-top: 20px; /* Space from the form fields */
+}
+
+.custom-button, .login-link {
+    background-color: #C5E1D8;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size if needed */
+    text-align: center;
+    display: inline-block;
+    flex: 1; /* Allow buttons to grow equally */
+    margin-right: 10px; /* Space between buttons */
+}
+
+.custom-button:hover, .login-link:hover {
+    background-color: #a8d4ca; /* Slightly darker color on hover */
+    color: #000; /* Change text color on hover if needed */
+}
+
+/* Style for Login Link Button */
+.login-link {
+    background-color: transparent;
+    color: #C5E1D8;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size if needed */
+    text-decoration: none; /* Remove underline */
+    flex: 1; /* Allow buttons to grow equally */
+    margin-right: 0; /* No space on the right side */
+}
+
+.login-link:hover {
+    color: #a8d4ca; /* Slightly darker color on hover */
 }

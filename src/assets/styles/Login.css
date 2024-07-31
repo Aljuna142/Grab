@@ -1,0 +1,73 @@
+.login-container {
+    background-color: rgb(197, 225, 216);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px; /* Add space at the bottom */
+}
+.login-container>img{
+    max-width: 100%;
+    height: auto;
+    
+    margin-bottom: 10px;
+   
+}
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-family:;}
+
+.login-container form {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background color for form */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.login-container form label {
+    font-weight: bold;
+}
+
+.login-container form .form-group {
+    margin-bottom: 15px;
+    position: relative; /* Position relative to enable absolute positioning of the link */
+}
+
+.forgot-password-link {
+    text-align: right; /* Align text to the right */
+    margin-top: 10px; /* Add margin to create space between the password field and the link */
+    font-size: 14px;
+}
+
+.forgot-password-link a {
+    color: #333; /* Match the color with your buttons */
+    text-decoration: none; /* Remove underline */
+}
+
+.forgot-password-link a:hover {
+    color: #a8d4ca; /* Slightly darker color on hover */
+}
+
+/* Custom Button Styles */
+.login-button {
+    background-color: #C5E1D8;
+    border: none;
+    padding: 10px 20px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size if needed */
+    text-align: center;
+    display: inline-block;
+    width: 100%; /* Make button full width */
+    margin-top: 20px; /* Space from form fields */
+}
+
+.login-button:hover {
+    background-color: #a8d4ca; /* Slightly darker color on hover */
+    color: #000; /* Change text color on hover if needed */
+}

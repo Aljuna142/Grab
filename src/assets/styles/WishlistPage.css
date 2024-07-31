@@ -1,0 +1,51 @@
+.wishlist-container {
+    padding: 20px;
+  }
+  
+  .wishlist-title {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F8F9FA;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between cards as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .product-cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .product-card {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row on mobile */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .product-cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .product-card {
+      flex: 1 1 calc(33.33% - 20px); /* 3 cards per row on tablets */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .product-cards-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .product-card {
+      flex: 1 1 calc(20% - 20px); /* 5 cards per row on larger screens */
+    }
+  }
+  

@@ -110,15 +110,17 @@ const App = () => {
 }
 
 export default App;*/
-
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
 import Home from './pages/Home';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import SignUp from './components/register/SignUp';
 import Login from './components/register/Login';
-import ProductDetails from './pages/ProductDetails'; // Import ProductDetails component
+import ProductDetails from './pages/ProductDetails';
+import WishlistPage from './pages/WishlistPage';
 
 const App = () => {
     return (
@@ -129,7 +131,8 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/product/:id" element={<ProductDetails />} /> {/* Route for ProductDetails */}
+                    <Route path="/product/:id" element={<ProductDetails />} />
+                    <Route path="/wishlist" element={<WishlistPage />} />
                 </Routes>
                 <Footer />
             </div>
@@ -138,4 +141,3 @@ const App = () => {
 }
 
 export default App;
-

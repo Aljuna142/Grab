@@ -386,7 +386,7 @@ const Header = () => {
 
 export default Header;*/
 
-
+/* src/components/common/Header.js
 
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -433,8 +433,60 @@ const Header = () => {
     );
 }
 
+export default Header;*/
+
+
+
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaSearch, FaHeart, FaShoppingCart } from 'react-icons/fa';
+import Logo from '../../assets/images/logo.jpg';
+import '../../assets/styles/Header.css';
+import { useSelector } from 'react-redux';
+
+const Header = () => {
+    const wishlistItems = useSelector(state => state.wishlist.items);
+
+    return (
+        <React.Fragment>
+            <header className="header">
+                <div className="header-container">
+                    <Link to="/" className="navbar-brand">
+                        <img src={Logo} alt="Logo" className="logo" />
+                    </Link>
+                    <form className="search-form">
+                        <input type="text" placeholder="Search" className="search-input" />
+                        <button type="submit" className="search-button"><FaSearch /></button>
+                    </form>
+                    <nav className="nav-icons">
+                        <Link to="/wishlist" className="nav-link">
+                            <FaHeart className="nav-icon" />
+                            {wishlistItems.length > 0 && <span className="wishlist-count">{wishlistItems.length}</span>}
+                        </Link>
+                        <Link to="/cart" className="nav-link"><FaShoppingCart className="nav-icon" /></Link>
+                        <Link to="/signup" className="sign-up-btn">Sign Up</Link>
+                        <Link to="/login" className="login-btn">Login</Link>
+                    </nav>
+                </div>
+            </header>
+
+            <nav className="additional-header">
+                <div className="additional-header-container">
+                    <Link to="/" className="additional-nav-link">Home</Link>
+                    <Link to="/all-in-one" className="additional-nav-link">All in One</Link>
+                    <Link to="/desktops" className="additional-nav-link">Desktops</Link>
+                    <Link to="/laptops" className="additional-nav-link">Laptops</Link>
+                    <Link to="/monitors" className="additional-nav-link">Monitors</Link>
+                    <Link to="/printers" className="additional-nav-link">Printers</Link>
+                    <Link to="/copiers" className="additional-nav-link">Copiers</Link>
+                    <Link to="/routers" className="additional-nav-link">Routers</Link>
+                    <Link to="/networking" className="additional-nav-link">Networking</Link>
+                    <Link to="/accessories" className="additional-nav-link">Accessories</Link>
+                </div>
+            </nav>
+        </React.Fragment>
+    );
+}
+
 export default Header;
-
-
-
-

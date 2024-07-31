@@ -37,7 +37,7 @@ const app = (
 ReactDOM.createRoot(rootElement).render(app);*/
 
 
-import React from 'react';
+/*import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
@@ -51,4 +51,18 @@ ReactDOM.render(
    
   </React.StrictMode>,
   rootElement
+);*/
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import store from './store/store';// Adjust the path as needed
+import App from './App';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 );
+
