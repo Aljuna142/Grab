@@ -314,7 +314,7 @@ const SignUp = () => {
 
 export default SignUp;*/
 
-import React, { useState } from 'react';
+/* without connection import React, { useState } from 'react';
 import { Form, Alert, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../../assets/styles/SignUp.css'; // Import the common CSS
@@ -377,6 +377,153 @@ const SignUp = () => {
                 <Form.Group controlId="formEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" placeholder="Enter your email" />
+                </Form.Group>
+                <div className="button-group">
+                    <button
+                        type="button"
+                        className="custom-button"
+                        onClick={handleCreateAccount}
+                    >
+                        Create Account
+                    </button>
+                    <button
+                        type="button"
+                        className="login-link"
+                        onClick={() => navigate('/login')}
+                    >
+                        Login
+                    </button>
+                </div>
+            </Form>
+        </Container>
+    );
+};
+
+export default SignUp;without connection*/
+
+
+import React, { useState } from 'react';
+import { Form, Alert, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import '../../assets/styles/SignUp.css'; // Import the common CSS
+
+const SignUp = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        password: '',
+        gender: '',
+        dob: '',
+        mobile: '',
+        email: ''
+    });
+    const [showAlert, setShowAlert] = useState('');
+    const navigate = useNavigate(); // Initialize useNavigate
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+    const handleCreateAccount = async () => {
+        console.log('Form Data Before Sending:', formData); // Log the form data
+        try {
+            const response = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+    
+            if (response.ok) {
+                setShowAlert('success');
+                setTimeout(() => {
+                    navigate('/login');
+                }, 3000);
+            } else {
+                const errorData = await response.json();
+                setShowAlert(`error: ${errorData.message}`);
+            }
+        } catch (error) {
+            console.error('Error creating account:', error);
+            setShowAlert('error: Something went wrong!');
+        }
+    };
+    
+    
+
+    return (
+        <Container className="form-container">
+            <h2>Create Account</h2>
+            {showAlert && (
+                <Alert variant={showAlert.startsWith('error') ? 'danger' : 'success'} dismissible>
+                    {showAlert.replace('error: ', '')}
+                </Alert>
+            )}
+            <Form>
+                <Form.Group controlId="formUsername">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your username" 
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control 
+                        type="password" 
+                        placeholder="Enter your password" 
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formGender">
+                    <Form.Label>Gender</Form.Label>
+                    <Form.Control 
+                        as="select" 
+                        name="gender"
+                        value={formData.gender}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group controlId="formDob">
+                    <Form.Label>Date of Birth</Form.Label>
+                    <Form.Control 
+                        type="date" 
+                        name="dob"
+                        value={formData.dob}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formMobile">
+                    <Form.Label>Mobile</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your mobile number" 
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
                 </Form.Group>
                 <div className="button-group">
                     <button
