@@ -1,0 +1,32 @@
+.qty-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .qty-button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+  .qty-button.minus {
+    background-color: #dc3545; /* Red color for minus */
+    color: #fff;
+  }
+  
+  .qty-button.plus {
+    background-color: #28a745; /* Green color for plus */
+    color: #fff;
+  }
+  
+  .qty-value {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  

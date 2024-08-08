@@ -1,0 +1,23 @@
+/* src/assets/styles/OrderConfirmation.css */
+
+.order-confirmation-container {
+    margin-top: 50px;
+  }
+  
+  .confirmation-card {
+    background-color: #A3D02C;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .confirmation-card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .confirmation-card .card-text {
+    font-size: 16px;
+  }
+  

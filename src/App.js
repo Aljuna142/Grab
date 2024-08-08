@@ -121,6 +121,13 @@ import SignUp from './components/register/SignUp';
 import Login from './components/register/Login';
 import ProductDetails from './pages/ProductDetails';
 import WishlistPage from './pages/WishlistPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage'; // Your CheckoutPage component
+import OrderConfirmation from './pages/OrderConfirmation';
+import Accessories from './components/accessories/Accessories';
+import Networking from './components/networking/Networking';
+import LaptopPage from './components/laptops/LaptopPage';
+
 
 const App = () => {
     return (
@@ -133,6 +140,13 @@ const App = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/product/:id" element={<ProductDetails />} />
                     <Route path="/wishlist" element={<WishlistPage />} />
+                    <Route path="/cart" element={<CartPage />} /> {/* Change component to element */}
+                    <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/order-confirmation" component={OrderConfirmation} />
+                    <Route path="/products/category/Accessories" element={<Accessories />} />
+                    <Route path="/products/category/networking" element={<Networking />} />
+                    <Route path="/products/category/laptop" element={<LaptopPage />} />
+                    {/* Other Routes */}
                 </Routes>
                 <Footer />
             </div>

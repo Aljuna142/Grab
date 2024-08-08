@@ -1,0 +1,144 @@
+/*.payment-option {
+  background-color: #A3D02C;
+  border: 1px solid #A3D02C;
+  padding: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 300px;
+  height: 60px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.payment-option:hover {
+  background-color: #8baf2b;
+  opacity: 0.8;
+}
+
+.payment-option input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.payment-option input[type="checkbox"]:checked {
+  background-color: #A3D02C;
+  border-color: #A3D02C;
+}
+.payment-options-row{
+  margin-left: 100px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.icon-text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+*/
+
+/* src/assets/styles/ProceedToPayment.css */
+
+.payment-accordion-header {
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-weight: bold;
+}
+
+.payment-accordion-body {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.payment-options-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.payment-option {
+  background-color: #f0f9ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.payment-option p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.proceed-button {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.modal-header {
+  background-color: #f0f9ff;
+}
+
+.modal-body {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.modal-footer {
+  background-color: #f0f9ff;
+}
+
+.toggle-button {
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.toggle-button:hover {
+  background-color: #9ac1ec;
+}
+
+.bank-details-list {
+  margin-top: 20px;
+}
+
+.bank-details-list .card {
+  border-radius: 8px;
+  border: 1px solid #b3d9ff;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 14px;
+}

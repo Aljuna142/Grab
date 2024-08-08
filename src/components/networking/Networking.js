@@ -79,6 +79,50 @@ const Networking = () => {
 export default Networking;*/
 
 
+/*import React, { useRef } from 'react';
+import ProductCard from '../cards/ProductCard';
+import networkingProducts from '../../data/networking'; // Import the networking products
+import '../../assets/styles/Networking.css'; // Import the CSS for Networking
+
+const Networking = () => {
+    const scrollContainerRef = useRef(null);
+
+    const scroll = (direction) => {
+        if (direction === 'left') {
+            scrollContainerRef.current.scrollLeft -= 300;
+        } else {
+            scrollContainerRef.current.scrollLeft += 300;
+        }
+    };
+
+    return (
+        <div className="networking-section">
+            <h2>Networking</h2>
+            <div className="networking-container">
+                <button className="scroll-button left" onClick={() => scroll('left')}>{'<'}</button>
+                <div className="networking-cards-container" ref={scrollContainerRef}>
+                    {networkingProducts.map((product) => (
+                        <ProductCard
+                            key={product.id}
+                            id={product.id}
+                            image={product.image}
+                            name={product.name}
+                            rating={product.rating}
+                            reviews={product.reviews}
+                            price={product.price}
+                            originalPrice={product.originalPrice}
+                        />
+                    ))}
+                </div>
+                <button className="scroll-button right" onClick={() => scroll('right')}>{'>'}</button>
+            </div>
+        </div>
+    );
+};
+
+export default Networking;*/
+
+// src/components/networking/Networking.js
 import React, { useRef } from 'react';
 import ProductCard from '../cards/ProductCard';
 import networkingProducts from '../../data/networking'; // Import the networking products

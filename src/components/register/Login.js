@@ -290,7 +290,7 @@ const Login = () => {
 
 export default Login; without connection*/
 
-import React, { useState } from 'react';
+/*without token import React, { useState } from 'react';
 import { Form, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../../assets/styles/Login.css';
@@ -334,6 +334,197 @@ const Login = () => {
         } catch (error) {
             console.error('Error logging in:', error);
             setError('Something went wrong!'); // Show error message
+        }
+    };
+
+    return (
+        <Container className="login-container">
+            <img src={logo} alt="Logo" className="logo" />
+            <h2>Welcome Grabians🤩</h2>
+            <Form onSubmit={handleLogin}>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control 
+                        type="email" 
+                        placeholder="Enter your email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control 
+                        type="password" 
+                        placeholder="Enter your password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                    <Form.Text className="forgot-password-link">
+                        <a href="/forgot-password">Forgot Password?</a>
+                    </Form.Text>
+                </Form.Group>
+                {error && (
+                    <div className="error-message">
+                        {error}
+                    </div>
+                )}
+                <button
+                    type="submit"
+                    className="login-button"
+                >
+                    Login
+                </button>
+            </Form>
+        </Container>
+    );
+};
+
+export default Login; token e*/
+
+// src/components/Login.js
+/*import React, { useState } from 'react';
+import { Form, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import '../../assets/styles/Login.css';
+import logo from '../../assets/images/grab.png';
+
+const Login = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: ''
+    });
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+               
+
+                const data = await response.json();
+
+                localStorage.setItem('token', data.token); 
+                console.log('JWT Token:', data.token);
+// Store JWT token in localStorage
+                navigate('/');
+            } else {
+                const errorData = await response.json();
+                setError(errorData.message);
+            }
+        } catch (error) {
+            console.error('Error logging in:', error);
+            setError('Something went wrong!');
+        }
+    };
+
+    return (
+        <Container className="login-container">
+            <img src={logo} alt="Logo" className="logo" />
+            <h2>Welcome Grabians🤩</h2>
+            <Form onSubmit={handleLogin}>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control 
+                        type="email" 
+                        placeholder="Enter your email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control 
+                        type="password" 
+                        placeholder="Enter your password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                    <Form.Text className="forgot-password-link">
+                        <a href="/forgot-password">Forgot Password?</a>
+                    </Form.Text>
+                </Form.Group>
+                {error && (
+                    <div className="error-message">
+                        {error}
+                    </div>
+                )}
+                <button
+                    type="submit"
+                    className="login-button"
+                >
+                    Login
+                </button>
+            </Form>
+        </Container>
+    );
+};
+
+export default Login;*/
+// src/components/Login.js
+import React, { useState } from 'react';
+import { Form, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import '../../assets/styles/Login.css';
+import logo from '../../assets/images/grab.png';
+
+const Login = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: ''
+    });
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleLogin = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch('/api/auth/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                localStorage.setItem('token', data.token); 
+                console.log('JWT Token:', data.token);
+                navigate('/');
+            } else {
+                const errorData = await response.json();
+                setError(errorData.message);
+            }
+        } catch (error) {
+            console.error('Error logging in:', error);
+            setError('Something went wrong!');
         }
     };
 

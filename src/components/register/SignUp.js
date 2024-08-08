@@ -401,11 +401,11 @@ const SignUp = () => {
 
 export default SignUp;without connection*/
 
-
+// src/components/SignUp.js
 import React, { useState } from 'react';
 import { Form, Alert, Container } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import '../../assets/styles/SignUp.css'; // Import the common CSS
+import { useNavigate } from 'react-router-dom';
+import '../../assets/styles/SignUp.css';
 
 const SignUp = () => {
     const [formData, setFormData] = useState({
@@ -417,7 +417,7 @@ const SignUp = () => {
         email: ''
     });
     const [showAlert, setShowAlert] = useState('');
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         setFormData({
@@ -425,8 +425,8 @@ const SignUp = () => {
             [e.target.name]: e.target.value
         });
     };
+    
     const handleCreateAccount = async () => {
-        console.log('Form Data Before Sending:', formData); // Log the form data
         try {
             const response = await fetch('/api/auth/register', {
                 method: 'POST',
@@ -450,8 +450,6 @@ const SignUp = () => {
             setShowAlert('error: Something went wrong!');
         }
     };
-    
-    
 
     return (
         <Container className="form-container">

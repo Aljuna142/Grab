@@ -4103,7 +4103,8 @@ const ProductDetails = () => {
 
 export default ProductDetails;*/
 
-/*without connection import React, { useState } from 'react';
+
+/*okimport React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Image, ListGroup, Button, Form, Carousel } from 'react-bootstrap';
 import products from '../data/products';
@@ -4184,6 +4185,8 @@ const ProductDetails = () => {
         '8GB RAM',
         '256GB SSD',
         '15.6” FHD',
+
+
         'Arabic keyboard'
     ];
 
@@ -4347,13 +4350,12 @@ const ProductDetails = () => {
     );
 };
 
-export default ProductDetails;without connection*/
+export default ProductDetails;*/
 
 
-
-import React, { useState, useEffect } from 'react';
+  /*import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Container, Row, Col, Image, ListGroup, Button, Form, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Image,  Button, Form, Carousel } from 'react-bootstrap';
 import axios from 'axios';
 import ProductRatings from '../components/cards/ProductRatings';
 import ColorSwatches from '../components/ColorSwatches';
@@ -4373,12 +4375,16 @@ const ProductDetails = () => {
     const [selectedColorIndex, setSelectedColorIndex] = useState(0);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [relatedProducts, setRelatedProducts] = useState([]);
 
     useEffect(() => {
         const fetchProduct = async () => {
             try {
                 const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
                 setProduct(data.product);
+
+                
+
                 setLoading(false);
             } catch (error) {
                 setError('Product not found');
@@ -4396,6 +4402,9 @@ const ProductDetails = () => {
     if (error) {
         return <h2>{error}</h2>;
     }
+
+    
+
 
     const reviews = Array.isArray(product.reviews) ? product.reviews : [];
     const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
@@ -4436,8 +4445,7 @@ const ProductDetails = () => {
         Color: product.color || 'N/A'
     };
 
-    const relatedProducts = []; // Replace with actual related products logic
-
+   
     const keyPoints = [
         'HP 255 G8',
         'AMD Ryzen 5-5500U',
@@ -4579,6 +4587,12 @@ const ProductDetails = () => {
                         <h5>TRUSTED SHIPPING</h5>
                         <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to Grab your AtoZ technology products.                        </p>
                     </div>
+                    <div className="sixth-div">
+                        <h5>Express delivery Within All Mobile Cities In UAE</h5>
+                        <p>Grabatoz offers express delivery for all our customers to grab your orders in quick time without any further delay.</p>
+                        <h5>Delivery in remote areas</h5>
+                        <p>Delivery in remote areas will be considered as normal delivery which takes place within 3 working days. Click for more details.</p>
+                    </div>
                 </Col>
             </Row>
             <Row>
@@ -4609,16 +4623,847 @@ const ProductDetails = () => {
 };
 
 export default ProductDetails;
+*/
+
+/*perfectimport React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import { Container, Row, Col, Image, Button, Form, Carousel } from 'react-bootstrap';
+import axios from 'axios';
+import ProductRatings from '../components/cards/ProductRatings';
+import ColorSwatches from '../components/ColorSwatches';
+import '../assets/styles/ProductDetails.css';
+import iconstabby from '../assets/images/icons/iconstabby.svg';
+import ReviewSection from '../components/reviews/ReviewSection';
+
+import ProductTable from '../components/product/ProductTable';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+const ProductDetails = () => {
+    const { id } = useParams();
+    const [product, setProduct] = useState(null);
+    const [quantity, setQuantity] = useState(1);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+                setProduct(data.product);
+                setLoading(false);
+            } catch (error) {
+                setError('Product not found');
+                setLoading(false);
+            }
+        };
+
+        fetchProduct();
+    }, [id]);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <h2>{error}</h2>;
+    }
+
+    const reviews = Array.isArray(product.reviews) ? product.reviews : [];
+    const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
+    const images = color.images || product.images || [];
+
+    const handleQuantityChange = (change) => {
+        setQuantity(prevQuantity => {
+            const newQuantity = prevQuantity + change;
+            return newQuantity > 0 ? newQuantity : 1;
+        });
+    };
+
+    const handleThumbnailClick = (index) => {
+        setCurrentImageIndex(index);
+    };
+
+    const handleColorClick = (index) => {
+        setSelectedColorIndex(index);
+        setCurrentImageIndex(0); // Reset to the first image of the selected color
+    };
+
+    const specifications = {
+        Brand: product.brand || 'N/A',
+        'Model Number': product.modelNumber || 'N/A',
+        Processor: product.processor || 'N/A',
+        'Memory RAM': product.memoryRam || 'N/A',
+        Storage: product.storage || 'N/A',
+        Graphics: product.graphics || 'N/A',
+        Keyboard: product.keyboard || 'N/A',
+        Wifi: product.wifi || 'N/A',
+        Battery: product.battery || 'N/A',
+        Resolution: product.resolution || 'N/A',
+        'Power Supply': product.powerSupply || 'N/A',
+        Bluetooth: product.bluetooth || 'N/A',
+        Webcam: product.webcam || 'N/A',
+        Speaker: product.speaker || 'N/A',
+        Ports: product.ports || 'N/A',
+        Color: product.color || 'N/A'
+    };
+
+    const keyPoints = [
+        'HP 255 G8',
+        'AMD Ryzen 5-5500U',
+        '8GB RAM',
+        '256GB SSD',
+        '15.6” FHD',
+        'Arabic keyboard'
+    ];
+   
+    return (
+        <Container>
+            <Row>
+                <Col md={4} className="product-image-col">
+                    <div className="product-image-carousel">
+                        <Row>
+                            <Col xs={3} className="product-thumbnails-container">
+                                <div className="product-thumbnails">
+                                    {images.length > 0 && images.map((image, index) => (
+                                        <Image
+                                            key={index}
+                                            src={image}
+                                            alt={product.name}
+                                            fluid
+                                            className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                                            onClick={() => handleThumbnailClick(index)}
+                                        />
+                                    ))}
+                                </div>
+                            </Col>
+                            <Col xs={9}>
+                                <div className="product-image-zoom">
+                                    <Carousel activeIndex={currentImageIndex} onSelect={(selectedIndex) => setCurrentImageIndex(selectedIndex)}>
+                                        {images.length > 0 && images.map((image, index) => (
+                                            <Carousel.Item key={index}>
+                                                <Image src={image} alt={product.name} fluid />
+                                            </Carousel.Item>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                            </Col>
+                        </Row>
+                        <ColorSwatches
+                            colors={product.colors}
+                            selectedColorIndex={selectedColorIndex}
+                            onColorClick={handleColorClick}
+                        />
+                    </div>
+                </Col>
+
+                <Col md={5} className="product-details-col">
+                    <h3 className="product-title">{product.name}</h3>
+                    <div className="product-rating">
+                        <ProductRatings rating={product.rating} reviews={product.reviews} />
+                    </div>
+                    <div className="price-container">
+                        <span className="current-price">{product.price}</span>
+                        <span className="original-price">{product.originalPrice.split(' ')[0]}</span>
+                        <span className="inclusive-vat">{product.originalPrice.split(' ').slice(1).join(' ')}</span>
+                    </div>
+                    <div className="details-info">
+                        <div><strong>Status:</strong> <span style={{ color: product.countInStock > 0 ? 'green' : 'red' }}>
+                            {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+                        </span></div>
+                        <div><strong>SKU:</strong> {product._id}</div>
+                        <div><strong>Categories:</strong> {product.categories ? product.categories.join(', ') : 'N/A'}</div>
+                        <div><strong>Brand:</strong> {product.brand}</div>
+                    </div>
+                    <div className="qty-selector">
+                        <Row>
+                            <Col xs={12}>
+                                <Form.Group controlId="quantity">
+                                    <div className="d-flex align-items-center">
+                                        <Button variant="outline-secondary" onClick={() => handleQuantityChange(-1)}>-</Button>
+                                        <Form.Control
+                                            type="text"
+                                            value={quantity}
+                                            readOnly
+                                            style={{ width: '60px', textAlign: 'center', margin: '0 10px' }}
+                                        />
+                                        <Button variant="outline-secondary" onClick={() => handleQuantityChange(1)}>+</Button>
+                                    </div>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                    </div>
+                    <div className='button-container'>
+                        <Button
+                            className="AddToCart"
+                            variant='warning'
+                            type="button"
+                            disabled={product.countInStock === 0}
+                        >
+                            Add to Cart
+                        </Button>
+                        <Button
+                            className="BuyNow"
+                            variant='success'
+                            type="button"
+                            disabled={product.countInStock === 0}
+                        >
+                            Buy Now
+                        </Button>
+                    </div>
+                    <div className="actions-row">
+                        <Button variant="light">
+                            <i className="fas fa-comments"></i> Chat with Specialist
+                        </Button>
+                        <Button variant="light">
+                            <i className="fas fa-phone"></i> Request a Callback
+                        </Button>
+                        <Button variant="light">
+                            <i className="fas fa-boxes"></i> Request Bulk Purchase
+                        </Button>
+                    </div>
+                    <ul className="key-points">
+                        {keyPoints.map((point, index) => (
+                            <li key={index}>{point}</li>
+                        ))}
+                    </ul>
+                </Col>
+                <Col md={3} className="empty-col">
+                    <div className="first-div">
+                        This item can be changed, replaced, or refunded within 15 days of the purchase day for Free.
+                    </div>
+                    <div className="second-div">
+                        For other countries, our agent will contact you for delivery estimation.
+                    </div>
+                    <div className="third-div">
+                        <div className="icon-container">
+                            <img src={iconstabby} alt="Icon" />
+                        </div>
+                    </div>
+                    <div className="fourth-div">
+                        <Button style={{ backgroundColor: '#FCDC00', borderRadius: '5px' }}>
+                            Get My Coupon
+                        </Button>
+                    </div>
+                    <div className="fifth-div">
+                        <h5>TRUSTED SHIPPING</h5>
+                        <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to Grab your AtoZ technology products.</p>
+                    </div>
+                    <div className="sixth-div">
+                        <h5>Express delivery Within All Mobile Cities In UAE</h5>
+                        <p>Grabatoz offers express delivery for all our customers to grab your orders in quick time without any further delay.</p>
+                        <h5>Delivery in remote areas</h5>
+                        <p>Delivery in remote areas will be considered as normal delivery which takes place within 3 working days. Click for more details.</p>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <div className="product-description">
+                        <h4>Product Description</h4>
+                        <p>{product.description}</p>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <ProductTable specifications={specifications} />
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <ReviewSection reviews={reviews} />
+                </Col>
+            </Row>
+            
+        </Container>
+    );
+};
+
+export default ProductDetails;perfect with connection*/
+
+
+
+
+/*---import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux'; // Import useDispatch
+import { addToCart } from '../store/actions/cartActions'; 
+import { Container, Row, Col, Image, Button, Form, Carousel } from 'react-bootstrap';
+import axios from 'axios';
+import ProductRatings from '../components/cards/ProductRatings';
+import ColorSwatches from '../components/ColorSwatches';
+
+import '../assets/styles/ProductDetails.css';
+import iconstabby from '../assets/images/icons/iconstabby.svg';
+import ReviewSection from '../components/reviews/ReviewSection';
+import ProductTable from '../components/product/ProductTable';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+const ProductDetails = () => {
+    const { id } = useParams();
+    const navigate = useNavigate(); // Hook for navigation
+    const [product, setProduct] = useState(null);
+    const [quantity, setQuantity] = useState(1);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+                setProduct(data.product);
+                setLoading(false);
+            } catch (error) {
+                setError('Product not found');
+                setLoading(false);
+            }
+        };
+
+        fetchProduct();
+    }, [id]);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    if (error) {
+        return <h2>{error}</h2>;
+    }
+
+    const reviews = Array.isArray(product.reviews) ? product.reviews : [];
+    const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
+    const images = color.images || product.images || [];
+
+    const handleQuantityChange = (change) => {
+        setQuantity(prevQuantity => {
+            const newQuantity = prevQuantity + change;
+            return newQuantity > 0 ? newQuantity : 1;
+        });
+    };
+
+    const handleThumbnailClick = (index) => {
+        setCurrentImageIndex(index);
+    };
+
+    const handleColorClick = (index) => {
+        setSelectedColorIndex(index);
+        setCurrentImageIndex(0); // Reset to the first image of the selected color
+    };
+
+    const specifications = {
+        Brand: product.brand || 'N/A',
+        'Model Number': product.modelNumber || 'N/A',
+        Processor: product.processor || 'N/A',
+        'Memory RAM': product.memoryRam || 'N/A',
+        Storage: product.storage || 'N/A',
+        Graphics: product.graphics || 'N/A',
+        Keyboard: product.keyboard || 'N/A',
+        Wifi: product.wifi || 'N/A',
+        Battery: product.battery || 'N/A',
+        Resolution: product.resolution || 'N/A',
+        'Power Supply': product.powerSupply || 'N/A',
+        Bluetooth: product.bluetooth || 'N/A',
+        Webcam: product.webcam || 'N/A',
+        Speaker: product.speaker || 'N/A',
+        Ports: product.ports || 'N/A',
+        Color: product.color || 'N/A'
+    };
+
+    const keyPoints = [
+        'HP 255 G8',
+        'AMD Ryzen 5-5500U',
+        '8GB RAM',
+        '256GB SSD',
+        '15.6” FHD',
+        'Arabic keyboard'
+    ];
+
+    
+    // Handler for Add to Cart button
+   
+    const handleAddToCart = () => {
+     dispatch(addToCart({...product,quantity}));
+     alert('Your item is added to the cart');
+     // Redirect to cart page
+     navigate('/cart');
+ };
+
+    
+
+    return (
+        <Container>
+            <Row>
+                <Col md={4} className="product-image-col">
+                    <div className="product-image-carousel">
+                        <Row>
+                            <Col xs={3} className="product-thumbnails-container">
+                                <div className="product-thumbnails">
+                                    {images.length > 0 && images.map((image, index) => (
+                                        <Image
+                                            key={index}
+                                            src={image}
+                                            alt={product.name}
+                                            fluid
+                                            className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                                            onClick={() => handleThumbnailClick(index)}
+                                        />
+                                    ))}
+                                </div>
+                            </Col>
+                            <Col xs={9}>
+                                <div className="product-image-zoom">
+                                    <Carousel activeIndex={currentImageIndex} onSelect={(selectedIndex) => setCurrentImageIndex(selectedIndex)}>
+                                        {images.length > 0 && images.map((image, index) => (
+                                            <Carousel.Item key={index}>
+                                                <Image src={image} alt={product.name} fluid />
+                                            </Carousel.Item>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                            </Col>
+                        </Row>
+                        <ColorSwatches
+                            colors={product.colors}
+                            selectedColorIndex={selectedColorIndex}
+                            onColorClick={handleColorClick}
+                        />
+                    </div>
+                </Col>
+
+                <Col md={5} className="product-details-col">
+                    <h3 className="product-title">{product.name}</h3>
+                    <div className="product-rating">
+                        <ProductRatings rating={product.rating} reviews={product.reviews} />
+                    </div>
+                    <div className="price-container">
+                        <span className="current-price">{product.price}</span>
+                        <span className="original-price">{product.originalPrice.split(' ')[0]}</span>
+                        <span className="inclusive-vat">{product.originalPrice.split(' ').slice(1).join(' ')}</span>
+                    </div>
+                    <div className="details-info">
+                        <div><strong>Status:</strong> <span style={{ color: product.countInStock > 0 ? 'green' : 'red' }}>
+                            {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+                        </span></div>
+                        <div><strong>SKU:</strong> {product._id}</div>
+                        <div><strong>Categories:</strong> {product.categories ? product.categories.join(', ') : 'N/A'}</div>
+                        <div><strong>Brand:</strong> {product.brand}</div>
+                    </div>
+
+                       
+                    
+
+
+                    <div className="qty-selector">
+                        <Row>
+                            <Col xs={12}>
+                                <Form.Group controlId="quantity">
+                                    <div className="d-flex align-items-center">
+                                        <Button variant="outline-secondary" onClick={() => handleQuantityChange(-1)}>-</Button>
+                                        <Form.Control
+                                            type="text"
+                                            value={quantity}
+                                            readOnly
+                                            style={{ width: '60px', textAlign: 'center', margin: '0 10px' }}
+                                        />
+                                        <Button variant="outline-secondary" onClick={() => handleQuantityChange(1)}>+</Button>
+                                    </div>
+                                </Form.Group>
+                            </Col>
+                        </Row>
+                    </div>
 
 
 
 
 
 
+                    <div className='button-container'>
+                        <Button
+                            className="AddToCart"
+                            variant='warning'
+                            type="button"
+                            disabled={product.countInStock === 0}
+                            onClick={handleAddToCart} // Added handler
+                        >
+                            Add to Cart
+                        </Button>
+                        <Button
+                            className="BuyNow"
+                            variant='success'
+                            type="button"
+                            disabled={product.countInStock === 0}
+                        >
+                            Buy Now
+                        </Button>
+                    </div>
+                    <div className="actions-row">
+                        <Button variant="light">
+                            <i className="fas fa-comments"></i> Chat with Specialist
+                        </Button>
+                        <Button variant="light">
+                            <i className="fas fa-phone"></i> Request a Callback
+                        </Button>
+                        <Button variant="light">
+                            <i className="fas fa-boxes"></i> Request Bulk Purchase
+                        </Button>
+                    </div>
+                    <ul className="key-points">
+                        {keyPoints.map((point, index) => (
+                            <li key={index}>{point}</li>
+                        ))}
+                    </ul>
+                </Col>
+                <Col md={3} className="empty-col">
+                    <div className="first-div">
+                        This item can be changed, replaced, or refunded within 15 days of the purchase day for Free.
+                    </div>
+                    <div className="second-div">
+                        For other countries, our agent will contact you for delivery estimation.
+                    </div>
+                    <div className="third-div">
+                        <div className="icon-container">
+                            <img src={iconstabby} alt="Icon" />
+                        </div>
+                    </div>
+                    <div className="fourth-div">
+                        <Button style={{ backgroundColor: '#FCDC00', borderRadius: '5px' }}>
+                            Get My Coupon
+                        </Button>
+                    </div>
+                    <div className="fifth-div">
+                        <h5>TRUSTED SHIPPING</h5>
+                        <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to Grab your AtoZ technology products.</p>
+                    </div>
+                    <div className="sixth-div">
+                        <h5>Express delivery Within All Mobile Cities In UAE</h5>
+                        <p>Grabatoz offers express delivery for all our customers to grab your orders in quick time without any further delay.</p>
+                        <h5>Delivery in remote areas</h5>
+                        <p>Delivery in remote areas will be considered as normal delivery which takes place within 3 working days. Click for more details.</p>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <div className="product-description">
+                        <h4>Product Description</h4>
+                        <p>{product.description}</p>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <ProductTable specifications={specifications} />
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <ReviewSection reviews={reviews} />
+                </Col>
+            </Row>
+            
+        </Container>
+    );
+};
 
+export default ProductDetails;----*/
 
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../store/actions/cartActions';
+import { Container, Row, Col, Image, Button, Form, Carousel } from 'react-bootstrap';
+import axios from 'axios';
+import ProductRatings from '../components/cards/ProductRatings';
+import ColorSwatches from '../components/ColorSwatches';
+import '../assets/styles/ProductDetails.css';
+import iconstabby from '../assets/images/icons/iconstabby.svg';
+import ReviewSection from '../components/reviews/ReviewSection';
+import ProductTable from '../components/product/ProductTable';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
+const ProductDetails = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+        setProduct(data.product);
+        setLoading(false);
+      } catch (error) {
+        setError('Product not found');
+        setLoading(false);
+      }
+    };
 
+    fetchProduct();
+  }, [id]);
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
+  if (error) {
+    return <h2>{error}</h2>;
+  }
+
+  const reviews = Array.isArray(product.reviews) ? product.reviews : [];
+  const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
+  const images = color.images || product.images || [];
+
+  const handleQuantityChange = (change) => {
+    setQuantity((prevQuantity) => {
+      const newQuantity = prevQuantity + change;
+      return newQuantity > 0 ? newQuantity : 1;
+    });
+  };
+
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  const handleColorClick = (index) => {
+    setSelectedColorIndex(index);
+    setCurrentImageIndex(0);
+  };
+
+  const specifications = {
+    Brand: product.brand || 'N/A',
+    'Model Number': product.modelNumber || 'N/A',
+    Processor: product.processor || 'N/A',
+    'Memory RAM': product.memoryRam || 'N/A',
+    Storage: product.storage || 'N/A',
+    Graphics: product.graphics || 'N/A',
+    Keyboard: product.keyboard || 'N/A',
+    Wifi: product.wifi || 'N/A',
+    Battery: product.battery || 'N/A',
+    Resolution: product.resolution || 'N/A',
+    'Power Supply': product.powerSupply || 'N/A',
+    Bluetooth: product.bluetooth || 'N/A',
+    Webcam: product.webcam || 'N/A',
+    Speaker: product.speaker || 'N/A',
+    Ports: product.ports || 'N/A',
+    Color: product.color || 'N/A'
+  };
+
+  const keyPoints = [
+    'HP 255 G8',
+    'AMD Ryzen 5-5500U',
+    '8GB RAM',
+    '256GB SSD',
+    '15.6” FHD',
+    'Arabic keyboard'
+  ];
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ ...product, quantity }));
+    alert('Your item is added to the cart');
+    navigate('/cart');
+  };
+
+  const handleBuyNow = () => {
+    dispatch(addToCart({ ...product, quantity }));
+    navigate('/checkout');
+  };
+
+  return (
+    <Container>
+      <Row>
+        <Col md={4} className="product-image-col">
+          <div className="product-image-carousel">
+            <Row>
+              <Col xs={3} className="product-thumbnails-container">
+                <div className="product-thumbnails">
+                  {images.length > 0 &&
+                    images.map((image, index) => (
+                      <Image
+                        key={index}
+                        src={image}
+                        alt={product.name}
+                        fluid
+                        className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                        onClick={() => handleThumbnailClick(index)}
+                      />
+                    ))}
+                </div>
+              </Col>
+              <Col xs={9}>
+                <div className="product-image-zoom">
+                  <Carousel
+                    activeIndex={currentImageIndex}
+                    onSelect={(selectedIndex) => setCurrentImageIndex(selectedIndex)}
+                  >
+                    {images.length > 0 &&
+                      images.map((image, index) => (
+                        <Carousel.Item key={index}>
+                          <Image src={image} alt={product.name} fluid />
+                        </Carousel.Item>
+                      ))}
+                  </Carousel>
+                </div>
+              </Col>
+            </Row>
+            <ColorSwatches
+              colors={product.colors}
+              selectedColorIndex={selectedColorIndex}
+              onColorClick={handleColorClick}
+            />
+          </div>
+        </Col>
+
+        <Col md={5} className="product-details-col">
+          <h3 className="product-title">{product.name}</h3>
+          <div className="product-rating">
+            <ProductRatings rating={product.rating} reviews={product.reviews} />
+          </div>
+          <div className="price-container">
+            <span className="current-price">{product.price}</span>
+            <span className="original-price">{product.originalPrice.split(' ')[0]}</span>
+            <span className="inclusive-vat">{product.originalPrice.split(' ').slice(1).join(' ')}</span>
+          </div>
+          <div className="details-info">
+            <div>
+              <strong>Status:</strong>{' '}
+              <span style={{ color: product.countInStock > 0 ? 'green' : 'red' }}>
+                {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+              </span>
+            </div>
+            <div>
+              <strong>SKU:</strong> {product._id}
+            </div>
+            <div>
+              <strong>Categories:</strong> {product.categories ? product.categories.join(', ') : 'N/A'}
+            </div>
+            <div>
+              <strong>Brand:</strong> {product.brand}
+            </div>
+          </div>
+
+          <div className="qty-selector">
+            <Row>
+              <Col xs={12}>
+                <Form.Group controlId="quantity">
+                  <div className="d-flex align-items-center">
+                    <Button variant="outline-secondary" onClick={() => handleQuantityChange(-1)}>
+                      -
+                    </Button>
+                    <Form.Control
+                      type="text"
+                      value={quantity}
+                      readOnly
+                      style={{ width: '60px', textAlign: 'center', margin: '0 10px' }}
+                    />
+                    <Button variant="outline-secondary" onClick={() => handleQuantityChange(1)}>
+                      +
+                    </Button>
+                  </div>
+                </Form.Group>
+              </Col>
+            </Row>
+          </div>
+
+          <div className="button-container">
+            <Button
+              className="AddToCart"
+              variant="warning"
+              type="button"
+              disabled={product.countInStock === 0}
+              onClick={handleAddToCart}
+            >
+              Add to Cart
+            </Button>
+            <Button
+              className="BuyNow"
+              variant="success"
+              type="button"
+              disabled={product.countInStock === 0}
+              onClick={handleBuyNow}
+            >
+              Buy Now
+            </Button>
+          </div>
+          <div className="actions-row">
+            <Button variant="light">
+              <i className="fas fa-comments"></i> Chat with Specialist
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-phone"></i> Request a Callback
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-boxes"></i> Request Bulk Purchase
+            </Button>
+          </div>
+          <ul className="key-points">
+            {keyPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </Col>
+        <Col md={3} className="empty-col">
+          <div className="first-div">
+            This item can be changed, replaced, or refunded within 15 days of the purchase day for
+            Free.
+          </div>
+          <div className="second-div">
+            For other countries, our agent will contact you for delivery estimation.
+          </div>
+          <div className="third-div">
+            <div className="icon-container">
+              <img src={iconstabby} alt="Icon" />
+            </div>
+          </div>
+          <div className="fourth-div">
+                        <Button style={{ backgroundColor: '#FCDC00', borderRadius: '5px' }}>
+                            Get My Coupon
+                        </Button>
+                    </div>
+                    <div className="fifth-div">
+                        <h5>TRUSTED SHIPPING</h5>
+                        <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to Grab your AtoZ technology products.</p>
+                    </div>
+                    <div className="sixth-div">
+                        <h5>Express delivery Within All Mobile Cities In UAE</h5>
+                        <p>Grabatoz offers express delivery for all our customers to grab your orders in quick time without any further delay.</p>
+                        <h5>Delivery in remote areas</h5>
+                        <p>Delivery in remote areas will be considered as normal delivery which takes place within 3 working days. Click for more details.</p>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <div className="product-description">
+                        <h4>Product Description</h4>
+                        <p>{product.description}</p>
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <ProductTable specifications={specifications} />
+                </Col>
+            </Row>
+            <Row>
+                <Col md={12}>
+                    <ReviewSection reviews={reviews} />
+                </Col>
+            </Row>
+            
+        </Container>
+    );
+};
+
+export default ProductDetails;

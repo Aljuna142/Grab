@@ -387,7 +387,7 @@
     color: white !important; 
     font-weight: bold; 
     padding: 10px 0; 
-    overflow-x: auto; /* Add this line */
+    overflow-x: auto; /* Add this line 
     white-space: nowrap; /* Add this line 
 }
 
@@ -779,6 +779,42 @@ body {
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
+
+
+.search-results {
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    max-height: 400px; /* Adjust based on how much space you want for results */
+    overflow-y: auto;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.search-result-item:hover {
+    background: #f1f1f1;
+}
+
+.search-result-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.search-result-name {
+    font-size: 14px;
 }
 
 /* Additional header */
