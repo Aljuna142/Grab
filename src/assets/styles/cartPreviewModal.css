@@ -1,0 +1,14 @@
+.cart-item-row {
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .cart-item-row img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .cart-item-row p {
+    margin: 0;
+  }
+  

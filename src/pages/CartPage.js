@@ -577,7 +577,7 @@ export default CartPage;good*/
 
 
 
-import React from 'react';
+/*import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCart } from '../store/actions/cartActions';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
@@ -661,4 +661,187 @@ const CartPage = () => {
   );
 };
 
+export default CartPage;*/
+
+
+/*import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeFromCart, updateCart } from '../store/actions/cartActions';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import '../assets/styles/Cart.css';
+import QuantitySelector from '../components/Qty';
+
+const CartPage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate(); // Initialize useNavigate
+  const cartItems = useSelector(state => state.cart.cartItems);
+
+  const handleQuantityChange = (productId, newQuantity) => {
+    dispatch(updateCart(productId, newQuantity));
+  };
+
+  const handleRemoveFromCart = (productId) => {
+    dispatch(removeFromCart(productId));
+  };
+
+  const handleBuyNow = () => {
+    navigate('/checkout'); // Redirect to checkout page
+  };
+
+  return (
+    <Container>
+      <h1>Review Your Cart</h1>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        cartItems.map((item) => {
+          // Ensure `price` and `originalPrice` are numbers
+          const price = typeof item.product.price === 'number' ? item.product.price : 0;
+          const originalPrice = typeof item.product.originalPrice === 'number' ? item.product.originalPrice : 0;
+          const quantity = parseFloat(item.quantity) || 1;
+
+          return (
+            <Row key={item.product._id.toString()} className="cart-item mb-3 align-items-center">
+              <Col md={3} className="text-center">
+                <Image
+                  src={item.product.image || 'default-image-url'}
+                  className="cart-item-image"
+                  alt={item.product.name}
+                />
+              </Col>
+              <Col md={3}>
+                <h5>{item.product.name}</h5>
+              </Col>
+              <Col md={2} className="d-flex align-items-center">
+                <QuantitySelector
+                  quantity={quantity}
+                  onQuantityChange={(newQuantity) => handleQuantityChange(item.product._id.toString(), newQuantity)}
+                />
+              </Col>
+              <Col md={2}>
+                <div className="price-section">
+                  <p className="price"><strong>${(price * quantity).toFixed(2)}</strong></p>
+                  {originalPrice > 0 && (
+                    <p className="original-price"><del>${(originalPrice * quantity).toFixed(2)}</del></p>
+                  )}
+                </div>
+              </Col>
+              <Col md={2} className="d-flex flex-column justify-content-center">
+                <Button
+                  variant="danger"
+                  onClick={() => handleRemoveFromCart(item.product._id.toString())}
+                  className="mb-2"
+                  style={{ borderRadius: '25px', padding: '10px' }}
+                >
+                  Remove
+                </Button>
+                <Button
+                  style={{ borderRadius: '25px', padding: '10px' }}
+                  variant="success"
+                  onClick={handleBuyNow} // Adjusted to call handleBuyNow without productId
+                >
+                  Buy Now
+                </Button>
+              </Col>
+            </Row>
+          );
+        })
+      )}
+    </Container>
+  );
+};
+
+export default CartPage;good*/
+
+
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeFromCart, updateCart } from '../store/slices/cartSlice'; // Import from your slice
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import '../assets/styles/Cart.css';
+import QuantitySelector from '../components/Qty';
+
+const CartPage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate(); // Initialize useNavigate
+  const cartItems = useSelector(state => state.cart.items); // Adjust the path to items
+
+  const handleQuantityChange = (productId, newQuantity) => {
+    dispatch(updateCart({ id: productId, quantity: newQuantity }));
+  };
+
+  const handleRemoveFromCart = (productId) => {
+    dispatch(removeFromCart({ id: productId }));
+  };
+
+  const handleBuyNow = () => {
+    navigate('/checkout'); // Redirect to checkout page
+  };
+
+  return (
+    <Container>
+      <h1>Review Your Cart</h1>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        cartItems.map((item) => {
+          // Ensure `price` and `originalPrice` are numbers
+          const price = typeof item.price === 'number' ? item.price : 0;
+          const originalPrice = typeof item.originalPrice === 'number' ? item.originalPrice : 0;
+          const quantity = parseFloat(item.quantity) || 1;
+
+          return (
+            <Row key={item.id.toString()} className="cart-item mb-3 align-items-center">
+              <Col md={3} className="text-center">
+                <Image
+                  src={item.image || 'default-image-url'}
+                  className="cart-item-image"
+                  alt={item.name}
+                />
+              </Col>
+              <Col md={3}>
+                <h5>{item.name}</h5>
+              </Col>
+              <Col md={2} className="d-flex align-items-center">
+                <QuantitySelector
+                  quantity={quantity}
+                  onQuantityChange={(newQuantity) => handleQuantityChange(item.id.toString(), newQuantity)}
+                />
+              </Col>
+              <Col md={2}>
+                <div className="price-section">
+                  <p className="price"><strong>${(price * quantity).toFixed(2)}</strong></p>
+                  {originalPrice > 0 && (
+                    <p className="original-price"><del>${(originalPrice * quantity).toFixed(2)}</del></p>
+                  )}
+                </div>
+              </Col>
+              <Col md={2} className="d-flex flex-column justify-content-center">
+                <Button
+                  variant="danger"
+                  onClick={() => handleRemoveFromCart(item.id.toString())}
+                  className="mb-2"
+                  style={{ borderRadius: '25px', padding: '10px' }}
+                >
+                  Remove
+                </Button>
+                <Button
+                  style={{ borderRadius: '25px', padding: '10px' }}
+                  variant="success"
+                  onClick={handleBuyNow} // Adjusted to call handleBuyNow without productId
+                >
+                  Buy Now
+                </Button>
+              </Col>
+            </Row>
+          );
+        })
+      )}
+    </Container>
+  );
+};
+
 export default CartPage;
+

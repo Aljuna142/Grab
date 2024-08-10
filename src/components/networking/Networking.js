@@ -123,7 +123,7 @@ const Networking = () => {
 export default Networking;*/
 
 // src/components/networking/Networking.js
-import React, { useRef } from 'react';
+/*id start with string import React, { useRef } from 'react';
 import ProductCard from '../cards/ProductCard';
 import networkingProducts from '../../data/networking'; // Import the networking products
 import '../../assets/styles/Networking.css'; // Import the CSS for Networking
@@ -164,4 +164,52 @@ const Networking = () => {
     );
 };
 
+export default Networking;id start with string*/
+
+import React, { useRef } from 'react';
+import ProductCard from '../cards/ProductCard';
+import '../../assets/styles/Networking.css'; // Import the CSS for Networking
+
+// Assuming networkingProducts comes from a static data file or API, you need to ensure the data is structured like the backend API response
+import networkingProducts from '../../data/networking'; // Import the networking products
+
+const Networking = () => {
+    const scrollContainerRef = useRef(null);
+
+    const scroll = (direction) => {
+        if (direction === 'left') {
+            scrollContainerRef.current.scrollLeft -= 300;
+        } else {
+            scrollContainerRef.current.scrollLeft += 300;
+        }
+    };
+
+    return (
+        <div className="networking-section">
+            <h2>Networking</h2>
+            <div className="networking-container">
+                <button className="scroll-button left" onClick={() => scroll('left')}>{'<'}</button>
+                <div className="networking-cards-container" ref={scrollContainerRef}>
+                    {networkingProducts.map((product) => (
+                        <ProductCard
+                            key={product._id}  // Use _id if the data is from the same backend
+                            id={product._id}  // Pass _id as id to ProductCard
+                            image={product.image}
+                            name={product.name}
+                            rating={product.rating}
+                            reviews={product.numOfReviews}  // Adjust the field name as per the backend response
+                            price={product.price}
+                            originalPrice={product.originalPrice}
+                        />
+                    ))}
+                </div>
+                <button className="scroll-button right" onClick={() => scroll('right')}>{'>'}</button>
+            </div>
+        </div>
+    );
+};
+
 export default Networking;
+
+
+

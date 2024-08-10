@@ -142,7 +142,7 @@ const Accessories = () => {
 
 export default Accessories;*/
 
-import React, { useEffect, useRef, useState } from 'react';
+/*id start with string import React, { useEffect, useRef, useState } from 'react';
 import ProductCard from '../cards/ProductCard';
 import axios from 'axios';
 import '../../assets/styles/Accessories.css'; // Import the CSS for Accessories
@@ -207,5 +207,74 @@ const Accessories = () => {
     );
 };
 
+export default Accessories; string id*/
+
+import React, { useEffect, useRef, useState } from 'react';
+import ProductCard from '../cards/ProductCard';
+import axios from 'axios';
+import '../../assets/styles/Accessories.css'; // Import the CSS for Accessories
+
+const Accessories = () => {
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const scrollContainerRef = useRef(null);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const { data } = await axios.get('http://localhost:5000/api/v1/products/category/Accessories');
+                setProducts(data.products);
+                setLoading(false);
+            } catch (error) {
+                setError('Failed to fetch products');
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    const scroll = (direction) => {
+        if (direction === 'left') {
+            scrollContainerRef.current.scrollLeft -= 300;
+        } else {
+            scrollContainerRef.current.scrollLeft += 300;
+        }
+    };
+
+    return (
+        <div className="accessories-section">
+            <h2>Accessories</h2>
+            {loading ? (
+                <p>Loading...</p>
+            ) : error ? (
+                <p>{error}</p>
+            ) : (
+                <div className="accessories-container">
+                    <button className="scroll-button" onClick={() => scroll('left')}>{'<'}</button>
+                    <div className="accessories-cards-container" ref={scrollContainerRef}>
+                        {products.map((product) => (
+                            <ProductCard
+                                key={product._id} // Use _id from the backend as key
+                                id={product._id}  // Pass the _id to ProductCard
+                                image={product.image}
+                                name={product.name}
+                                rating={product.rating}
+                                reviews={product.numOfReviews} // Match this with the backend response field
+                                price={product.price}
+                                originalPrice={product.originalPrice}
+                            />
+                        ))}
+                    </div>
+                    <button className="scroll-button" onClick={() => scroll('right')}>{'>'}</button>
+                </div>
+            )}
+        </div>
+    );
+};
+
 export default Accessories;
+
+
 
