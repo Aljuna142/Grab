@@ -6070,8 +6070,8 @@ export default ProductDetails;new2*/
 
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { addToCart } from '../store/slices/cartSlice';
+import { useDispatch,useSelector } from 'react-redux';
+import { addToCart,updateCart } from '../store/slices/cartSlice';
 
 //import { addToCart } from '../store/actions/cartActions';
 import { Container, Row, Col, Image, Button, Form, Carousel } from 'react-bootstrap';
@@ -6084,6 +6084,9 @@ import ReviewSection from '../components/reviews/ReviewSection';
 import ProductTable from '../components/product/ProductTable';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import CartPreviewModal from '../components/modals/cartPreviewModal';
+//import CartSidebar from '../components/sidebar/cartSidebar';
+import { toast } from 'react-toastify'; // Import toast
+import 'react-toastify/dist/ReactToastify.css'; // Import style
 import QuantitySelector from '../components/Qty'; // Import QuantitySelector
 
 const ProductDetails = () => {
@@ -6096,7 +6099,13 @@ const ProductDetails = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const dispatch = useDispatch();
-  const [showCartModal, setShowCartModal] = useState(false);
+ const [showCartModal, setShowCartModal] = useState(false);
+ 
+
+
+
+  // Retrieve cart items from Redux state
+  const cartItems = useSelector((state) => state.cart.items);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -6112,6 +6121,21 @@ const ProductDetails = () => {
 
     fetchProduct();
   }, [id]);
+
+
+  useEffect(() => {
+    if (product) {
+      // Find cart item for the current product
+      const cartItem = cartItems.find((item) => item.id === product._id.toString());
+      if (cartItem) {
+        setQuantity(cartItem.quantity);
+      } else {
+        setQuantity(1); // Default to 1 if not found in cart
+      }
+    }
+  }, [product, cartItems]);
+
+
 
   if (loading) {
     return <div>Loading...</div>;
@@ -6130,11 +6154,22 @@ const ProductDetails = () => {
   const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
   const images = color.images || product.images || [];
 
-  const handleQuantityChange = (change) => {
+  /*const handleQuantityChange = (change) => {
     setQuantity((prevQuantity) => {
       const newQuantity = prevQuantity + change;
       return newQuantity > 0 ? newQuantity : 1;
     });
+  };*/
+
+  /* ok const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+    dispatch(updateCart({ id: product._id.toString(), quantity: newQuantity }));
+  };
+  */
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+    dispatch(updateCart({ id: product._id.toString(), quantity: newQuantity }));
   };
 
   const handleThumbnailClick = (index) => {
@@ -6180,7 +6215,7 @@ const ProductDetails = () => {
     dispatch(addToCart({ ...product, quantity }));
     setShowCartModal(true); // Show the cart preview modal
   };*/
-  const handleAddToCart = () => {
+ /* const handleAddToCart = () => {
     dispatch(addToCart({ 
       id: product._id.toString(), 
       image: product.image, 
@@ -6189,7 +6224,60 @@ const ProductDetails = () => {
       quantity 
     }));
     setShowCartModal(true); // Show the cart preview modal
+  };*/
+
+  /*const handleAddToCart = () => {
+    dispatch(addToCart({ 
+      id: product._id.toString(), 
+      image: product.image, 
+      name: product.name, 
+      price: product.price, 
+      quantity 
+    }));
+    setShowCartModal(true); // Show the cart preview modal
+  };*/
+
+
+
+/*const handleAddToCart = () => {
+  dispatch(addToCart({ 
+    id: product._id.toString(), 
+    image: product.image, 
+    name: product.name, 
+    price: product.price, 
+    quantity: 1 // Always add 1 item initially
+  }));
+  setQuantity(1); // Ensure the quantity selector reflects this change
+  setShowCartModal(true); // Show the cart preview modal
+};*/
+
+const handleAddToCart = () => {
+    dispatch(addToCart({ 
+      id: product._id.toString(), 
+      image: product.image, 
+      name: product.name, 
+      price: product.price, 
+      originalPrice: product.originalPrice,
+      quantity: 1 // Always add 1 item initially
+    }));
+    
+    // Show the success notification
+    toast.success('Your item has been successfully added to the cart!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  
+    setQuantity(1); // Ensure the quantity selector reflects this change
+    setShowCartModal(true); // Show the cart preview modal
   };
+  
+
+  
   
 
   const handleCloseCartModal = () => setShowCartModal(false);
@@ -6264,11 +6352,26 @@ const ProductDetails = () => {
           <div className="product-rating">
             <ProductRatings rating={product.rating} reviews={reviews} />
           </div>
+          
           <div className="price-container">
+  <span className="current-price">{product.price}AED</span>
+  {product.originalPrice && (
+    <span  style={{  fontSize: '1em' }}className="original-price">{product.originalPrice}AED</span>
+  )}
+  <span  style={{ fontSize: '0.8em', color: 'gray', textDecoration: 'none' }}className="inclusive-vat">Inclusive VAT</span>
+</div>
+
+         
+
+          {/*<div className="price-container">
             <span className="current-price">{product.price}</span>
-            <span className="original-price">{priceAmount}</span>
+            <span className="original-price">{price.originalPrice}</span>
             <span className="inclusive-vat">{priceRest.join(' ')}</span>
-          </div>
+          </div>*/}
+
+
+
+
           <div className="details-info">
             <div>
               <strong>Status:</strong>{' '}
@@ -6287,12 +6390,19 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <div className="qty-selector">
+          {/*<div className="qty-selector">
             <QuantitySelector
               quantity={quantity}
               onQuantityChange={handleQuantityChange}
             />
-          </div>
+          </div>*/}
+
+     <QuantitySelector
+  productId={product._id.toString()}
+  quantity={quantity}
+  onQuantityChange={handleQuantityChange}
+    />
+
 
 
         {/*<div className="qty-selector">
@@ -6328,6 +6438,8 @@ const ProductDetails = () => {
             >
               Add to Cart
             </Button>
+          
+
             <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
             <Button
               className="BuyNow"
@@ -6407,6 +6519,7 @@ const ProductDetails = () => {
     </Container>
   );
 };
+
 
 export default ProductDetails;
 

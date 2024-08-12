@@ -110,7 +110,7 @@ const App = () => {
 }
 
 export default App;*/
-// src/App.js
+/*// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -140,13 +140,13 @@ const App = () => {
                     <Route path="/login" element={<Login />} />
                     <Route path="/product/:id" element={<ProductDetails />} />
                     <Route path="/wishlist" element={<WishlistPage />} />
-                    <Route path="/cart" element={<CartPage />} /> {/* Change component to element */}
+                    <Route path="/cart" element={<CartPage />} /> {/* Change component to element }
                     <Route path="/checkout" element={<CheckoutPage />} />
                     <Route path="/order-confirmation" component={OrderConfirmation} />
                     <Route path="/products/category/Accessories" element={<Accessories />} />
                     <Route path="/products/category/networking" element={<Networking />} />
                     <Route path="/products/category/laptop" element={<LaptopPage />} />
-                    {/* Other Routes */}
+                    {/* Other Routes }
                 </Routes>
                 <Footer />
             </div>
@@ -154,4 +154,53 @@ const App = () => {
     );
 }
 
+export default App;*/
+
+
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './pages/Home';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import SignUp from './components/register/SignUp';
+import Login from './components/register/Login';
+import ProductDetails from './pages/ProductDetails';
+import WishlistPage from './pages/WishlistPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage'; // Your CheckoutPage component
+import OrderConfirmation from './pages/OrderConfirmation';
+import Accessories from './components/accessories/Accessories';
+import Networking from './components/networking/Networking';
+import LaptopPage from './components/laptops/LaptopPage';
+import { ToastContainer } from 'react-toastify'; // Import ToastContainer
+
+const App = () => {
+    return (
+        <Router>
+            <div className="App">
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/product/:id" element={<ProductDetails />} />
+                    <Route path="/wishlist" element={<WishlistPage />} />
+                    <Route path="/cart" element={<CartPage />} />
+                    <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/order-confirmation" element={<OrderConfirmation />} /> {/* Update to element */}
+                    <Route path="/products/category/Accessories" element={<Accessories />} />
+                    <Route path="/products/category/networking" element={<Networking />} />
+                    <Route path="/products/category/laptop" element={<LaptopPage />} />
+                    {/* Other Routes */}
+                </Routes>
+                <Footer />
+                <ToastContainer /> {/* Add ToastContainer */}
+            </div>
+        </Router>
+    );
+}
+
 export default App;
+
