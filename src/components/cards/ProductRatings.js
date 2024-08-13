@@ -1,6 +1,4 @@
 // src/components/cards/ProductRatings.js
-
-// src/components/cards/ProductRatings.js
 import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa'; // React Icons for star ratings
 import '../../assets/styles/Product.css'; // Correct path to Product.css
@@ -35,3 +33,5 @@ const ProductRatings = ({ rating, reviews }) => {
 };
 
 export default ProductRatings;
+// src/components/cards/ProductRatings.js
+

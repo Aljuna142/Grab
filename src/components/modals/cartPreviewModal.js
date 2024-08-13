@@ -1630,7 +1630,7 @@ export default CartPreviewModal;pakka*/
 
 
 
-import React from 'react';
+/*import React from 'react';
 import { Modal, Row, Col, Image } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -1647,7 +1647,7 @@ const CartPreviewModal = ({ show, handleClose }) => {
 
   const handleCheckout = () => {
     handleClose();
-    navigate('/checkout');
+    navigate('/information');
   };
 
   const handleQuantityChange = (productId, newQuantity) => {
@@ -1705,6 +1705,127 @@ const CartPreviewModal = ({ show, handleClose }) => {
                     <strong>
                       {item.price && (
                         <span className="current-price" style={{ color: '#A3D0C2', display: 'block', }}>
+                          {item.price * item.quantity.toFixed(2)} AED
+                        </span>
+                      )}
+                      {item.originalPrice > 0 && (
+                        <>
+                          <span className="original-price" style={{ color: 'red' }}>
+                            <del>{(item.originalPrice * item.quantity).toFixed(2)} AED</del>
+                          </span>
+                          <SavingsDisplay
+                            originalPrice={item.originalPrice}
+                            currentPrice={item.price}
+                            quantity={item.quantity}
+                          />
+                        </>
+                      )}
+                    </strong>
+                  </p>
+                </Col>
+              </Row>
+            ))}
+            <CouponCode />
+            <div className="subtotal-section">
+              <Row className="subtotal-row">
+                <Col xs={6}>
+                  <p>Subtotal</p>
+                </Col>
+                <Col xs={6} className="text-right">
+                  <h6>{calculateSubtotal()} AED</h6>
+                </Col>
+              </Row>
+              <p className="note">Shipping & taxes may be re-calculated at checkout</p>
+            </div>
+          </>
+        )}
+      </Modal.Body>
+      <Modal.Footer>
+        <button className="checkout-btn" onClick={handleCheckout}>
+          Checkout
+        </button>
+      </Modal.Footer>
+    </Modal>
+  );
+};
+
+export default CartPreviewModal;*/
+
+import React from 'react';
+import { Modal, Row, Col, Image } from 'react-bootstrap';
+import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import QuantitySelector from '../../components/Qty'; // Verify this path
+import CouponCode from '../../components/CouponCode'; // Ensure this path is correct
+import SavingsDisplay from '../../components/SavingsDisplay'; // Import the SavingsDisplay component
+import { updateCart, removeFromCart } from '../../store/slices/cartSlice'; // Import from your slice
+import '../../assets/styles/cartPreviewModal.css'; // Verify this path and extension
+
+const CartPreviewModal = ({ show, handleClose }) => {
+  const cartItems = useSelector((state) => state.cart.items); // Adjust the path to items
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    handleClose();
+    navigate('/order-summary'); // Redirect to the Order Summary page
+  };
+
+  const handleQuantityChange = (productId, newQuantity) => {
+    dispatch(updateCart({ id: productId, quantity: newQuantity }));
+  };
+
+  const handleRemoveItem = (productId) => {
+    dispatch(removeFromCart({ id: productId })); // Dispatch an action to remove the item
+  };
+
+  const calculateSubtotal = () => {
+    return cartItems.reduce(
+      (acc, item) => acc + item.price * item.quantity,
+      0
+    ).toFixed(2);
+  };
+
+  return (
+    <Modal show={show} onHide={handleClose} className="cart-preview-modal" centered>
+      <Modal.Header closeButton className="modal-header">
+        <Modal.Title>Review Your Cart</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        {cartItems.length === 0 ? (
+          <p>Your cart is empty.</p>
+        ) : (
+          <>
+            {cartItems.map((item, index) => (
+              <Row key={index} className="cart-item-row align-items-center mb-2">
+                <Col xs={3} className="position-relative text-center">
+                  <Image
+                    src={item.image || 'default-image-url'} // Adjust if needed
+                    alt={item.name}
+                    fluid
+                  />
+                  <button
+                    className="close-btn"
+                    onClick={() => handleRemoveItem(item.id.toString())}
+                  >
+                    &times;
+                  </button>
+                </Col>
+                <Col xs={6} className="product-details">
+                  <div className="product-name-qty">
+                    <p className="product-name">{item.name}</p>
+                    <QuantitySelector
+                      productId={item.id.toString()} // Pass the product ID as a string
+                      quantity={item.quantity}
+                      onQuantityChange={(newQuantity) => handleQuantityChange(item.id.toString(), newQuantity)}
+                    />
+                  </div>
+                </Col>
+                <Col xs={3} className="text-right price-section">
+                  <p className="price">
+                    <strong>
+                      {item.price && (
+                        <span className="current-price" style={{ color: '#A3D0C2', display: 'block' }}>
                           {item.price * item.quantity.toFixed(2)} AED
                         </span>
                       )}

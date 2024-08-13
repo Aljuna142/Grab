@@ -1,0 +1,50 @@
+/*.breadcrumb-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb-item {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-item-link {
+    color: black;
+    text-decoration: none;
+    margin-left: 8px; /* Space between the "Information" and the "Shipping" 
+  }
+  
+  .breadcrumb-item-link:hover {
+    color: #007bff; /* Optional: Change color on hover 
+  }
+  
+  .breadcrumb-item-link:focus,
+  .breadcrumb-item-link:active {
+    text-decoration: none; /* Ensure no underline on focus/active 
+  }*/
+  
+  .breadcrumb-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .breadcrumb-item-link {
+    color: black; /* Default color for inactive links */
+    text-decoration: none; /* Remove underline */
+    font-weight: normal; /* Set font weight to normal */
+    font-size: 15px; /* Set font size */
+    margin-right: 5px; /* Space between items */
+  }
+  
+  .breadcrumb-item-link:hover {
+    text-decoration: none; /* Remove underline on hover */
+  }
+  
+  /* Style for the active page link */
+  .breadcrumb-item-link.active {
+    color: #A3D02C !important; /* Active link color */
+    font-weight: normal; /* Set font weight to normal */
+  }
+  

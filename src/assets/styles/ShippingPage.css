@@ -1,0 +1,108 @@
+.shipping-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .columns {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element’s width */
+  }
+  
+  .first-column {
+    margin-right: 10px; /* Space between columns */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .input-box:hover {
+    border-color: #A3D02C;
+  }
+  
+  .edit-button {
+    background-color: transparent;
+    color: #A3D02C;
+    border: 1px solid #A3D02C;
+    border-radius: 4px;
+    padding: 5px 280px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .edit-button:hover {
+    background-color: #A3D02C;
+    color: white;
+  }
+  
+  .title {
+    color: #A3D02C;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .address-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between the fields */
+  }
+  
+  .second-column {
+    /* Styling for the second column */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .first-column {
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input-box {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .edit-button {
+      font-size: 12px; /* Adjust button font size */
+      padding: 4px 8px; /* Adjust button padding */
+    }
+  
+    .title {
+      font-size: 18px; /* Adjust title font size */
+    }
+  }
+  

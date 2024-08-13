@@ -1,0 +1,111 @@
+
+  /* PaymentPage.css */
+/* PaymentPage.css */
+
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .columns {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element’s width */
+  }
+  
+  .first-column {
+    margin-right: 10px; /* Space between columns */
+  }
+  
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    color: #A3D02C;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .radio-label {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .price {
+    margin-left: auto;
+    color: #A3D02C;
+    font-size: 16px;
+  }
+  
+  .place-order-button {
+    display: inline-block;
+    background-color: #A3D02C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .place-order-button:hover {
+    background-color: #bfe25e;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .first-column {
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 18px; /* Adjust title font size */
+    }
+  
+    .place-order-button {
+      font-size: 14px; /* Adjust button font size */
+      padding: 8px 16px; /* Adjust button padding */
+    }
+  }
+  

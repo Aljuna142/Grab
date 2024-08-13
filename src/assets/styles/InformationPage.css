@@ -1,0 +1,157 @@
+/*.formation-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px; 
+  }
+  
+  .first-column,
+  .second-column {
+    margin-bottom: 20px; 
+  }
+  
+  
+  
+  .title {
+    color: #A3D02C;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .input-box:hover {
+    border-color: #A3D02C;
+  }
+  
+  .mobile-number {
+    position: relative;
+  }*/
+  
+  .information-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .columns {
+    display: flex;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element’s width */
+  }
+  
+  .first-column {
+    margin-right: 10px; /* Space between columns */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+  }
+  
+  .title {
+    color: #A3D02C;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .input-box:hover {
+    border-color: #A3D02C;
+  }
+  
+  .mobile-number {
+    position: relative;
+  }
+  
+  .reminder {
+    font-size: 14px;
+    color: #888; /* Adjust color if needed */
+    margin-bottom: 20px; /* Space before the button */
+  }
+  
+  .proceed-button {
+    background-color: #A3D02C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center horizontally */
+  }
+  
+  .proceed-button:hover {
+    background-color: #8BBD2F; /* Slightly darker shade for hover effect */
+  }
+  
+  .login-warning {
+    background-color: #fdd; /* Light red background */
+    border: 1px solid #f88; /* Slightly darker border */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .login-warning p {
+    color: #f88; /* Light red text */
+    font-size: 16px;
+    animation: blink 1s step-start infinite; /* Blinking effect */
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .columns {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .first-column {
+      margin-right: 0; /* Remove right margin on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .input-box {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  
+    .proceed-button {
+      font-size: 14px; /* Adjust button font size */
+      padding: 8px 16px; /* Adjust button padding */
+    }
+  
+    .reminder {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  }
+  

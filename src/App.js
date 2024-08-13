@@ -169,12 +169,17 @@ import Login from './components/register/Login';
 import ProductDetails from './pages/ProductDetails';
 import WishlistPage from './pages/WishlistPage';
 import CartPage from './pages/CartPage';
-import CheckoutPage from './pages/CheckoutPage'; // Your CheckoutPage component
+import CheckoutPage from './pages/CheckoutPage'; 
+import OrderSummaryPage from './pages/OrderSummaryPage';// Your CheckoutPage component
 import OrderConfirmation from './pages/OrderConfirmation';
 import Accessories from './components/accessories/Accessories';
 import Networking from './components/networking/Networking';
 import LaptopPage from './components/laptops/LaptopPage';
 import { ToastContainer } from 'react-toastify'; // Import ToastContainer
+import InformationPage from './pages/InformationPage';
+import ShippingPage from './pages/ShippingPage';
+import PaymentPage from './pages/PaymentPage';
+
 
 const App = () => {
     return (
@@ -189,10 +194,14 @@ const App = () => {
                     <Route path="/wishlist" element={<WishlistPage />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/checkout" element={<CheckoutPage />} />
+                    <Route path="/order-summary" element={<OrderSummaryPage />} /> 
                     <Route path="/order-confirmation" element={<OrderConfirmation />} /> {/* Update to element */}
                     <Route path="/products/category/Accessories" element={<Accessories />} />
                     <Route path="/products/category/networking" element={<Networking />} />
                     <Route path="/products/category/laptop" element={<LaptopPage />} />
+                    <Route path="/information" element={<InformationPage />} />
+                    <Route path="/shipping" element={<ShippingPage />} />
+                    <Route path="/payment" element={<PaymentPage />} />
                     {/* Other Routes */}
                 </Routes>
                 <Footer />
