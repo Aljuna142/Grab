@@ -1,21 +1,56 @@
-/*.shop-sections {
+
+
+/* src/assets/styles/Home.css 
+
+.shop-sections {
     display: flex;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens 
     justify-content: space-between;
-    margin-top: 20px;  Adjust as needed 
+    margin-top: 20px; /* Adjust as needed 
 }
 
 .shop-section {
-    flex: 1;
-    margin: 0 10px; 
-    padding: 20px; 
-    background-color: #f4f4f4; 
-    border: 1px solid #ddd; 
+    flex: 1; /* Ensures sections take up equal space 
+    margin: 10px; /* Adds space between the sections 
+    padding: 20px; /* Adds padding inside each section 
+    background-color: #f4f4f4; /* Light background color for visibility 
+    border: 1px solid #ddd; /* Border for better visual separation 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth 
 }
+
+/* Media Queries for Responsiveness 
+@media (max-width: 768px) {
+    .shop-section {
+        flex: 1 1 48%; /* Two sections per row on tablets 
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-section {
+        flex: 1 1 100%; /* Full width on very small screens 
+    }
+}*/
 
 
 /* src/assets/styles/Home.css */
 
+.main-content {
+    padding: 20px; /* Padding for the main content area */
+}
+
+/* Banners */
+.banner-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Shop Sections */
 .shop-sections {
     display: flex;
     flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
@@ -24,23 +59,45 @@
 }
 
 .shop-section {
-    flex: 1; /* Ensures sections take up equal space */
-    margin: 10px; /* Adds space between the sections */
-    padding: 20px; /* Adds padding inside each section */
-    background-color: #f4f4f4; /* Light background color for visibility */
-    border: 1px solid #ddd; /* Border for better visual separation */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    flex: 1 1 30%; /* Default to 3 sections per row */
+    margin: 10px; /* Space between sections */
+    padding: 20px; /* Padding inside each section */
+    background-color: #f4f4f4; /* Background color for visibility */
+    border: 1px solid #ddd; /* Border for visual separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1200px) { /* Adjust for laptops and desktops */
+    .shop-section {
+        flex: 1 1 45%; /* Two sections per row on larger tablets and desktops */
+    }
+}
+
+@media (max-width: 992px) { /* Adjust for tablets */
     .shop-section {
         flex: 1 1 48%; /* Two sections per row on tablets */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) { /* Adjust for smaller tablets and large phones */
     .shop-section {
-        flex: 1 1 100%; /* Full width on very small screens */
+        flex: 1 1 100%; /* Full width on smaller devices */
+    }
+
+    .banner-image {
+        height: 200px; /* Adjust height for smaller screens */
     }
 }
+
+@media (max-width: 576px) { /* Adjust for mobile phones */
+    .banner-image {
+        height: 150px; /* Further adjust height for very small screens */
+    }
+}
+
+
+
+
+
+

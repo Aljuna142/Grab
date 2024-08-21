@@ -7,7 +7,7 @@
 
 // src/components/banners/Banner.js
 
-import React from 'react';
+/*good perfect import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -37,7 +37,45 @@ const Banners = ({ imageUrls }) => {
     );
 };
 
+export default Banners;good perfect*/
+
+// src/components/banners/Banner.js
+
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../../assets/styles/Banners.css';
+
+const Banners = ({ imageUrls }) => {
+    const settings = {
+        dots: imageUrls.length > 1,
+        infinite: imageUrls.length > 1,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: imageUrls.length > 1,
+        autoplaySpeed: 3000,
+        arrows: imageUrls.length > 1,
+    };
+
+    return (
+        <div className="banner-slider">
+            <Slider {...settings}>
+                {imageUrls.map((url, index) => (
+                    <div key={index}>
+                        <img src={url} alt={`Banner ${index}`} className="banner-image" />
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    );
+};
+
 export default Banners;
+
+
+
 
 
 

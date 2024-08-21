@@ -21,3 +21,47 @@
     font-size: 16px;
   }
   
+  /* src/assets/styles/OrderConfirmation.css */
+
+/*.order-confirmation-container {
+  margin-top: 50px;
+}
+
+.confirmation-card {
+  background-color: #A3D02C;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px; /* Space between the two cards 
+}
+
+.confirmation-card .card-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.confirmation-card .card-text {
+  font-size: 16px;
+  color: #000000; /* Make the text black 
+}
+
+.order-details-card {
+  background-color: #ffffff; /* White background for the order details card 
+  color: #000000; /* Black text color 
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.order-details-card .order-number-text {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.order-details-body {
+  text-align: center;
+}*/
+
+
+/* src/assets/styles/OrderConfirmation.css */

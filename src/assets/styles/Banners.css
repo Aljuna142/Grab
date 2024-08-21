@@ -11,22 +11,25 @@
 
 .banner-image {
     width: 100%;
-    height: 300px; /* Set this to your desired height */
-    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+    height: 300px; 
+    object-fit: cover; 
 }
 
-
-
-/*.banner-slider {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px 0;
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .banner-image {
+        height: 250px; /* Height for medium screens */
+    }
 }
 
-.banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+@media (max-width: 768px) {
+    .banner-image {
+        height: 200px; /* Height for tablets */
+    }
 }
-*/
+
+@media (max-width: 480px) {
+    .banner-image {
+        height: 150px; /* Height for mobile screens */
+    }
+}

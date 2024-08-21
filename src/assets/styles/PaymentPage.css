@@ -64,23 +64,7 @@
     font-size: 16px;
   }
   
-  .place-order-button {
-    display: inline-block;
-    background-color: #A3D02C;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 20px;
-  }
   
-  .place-order-button:hover {
-    background-color: #bfe25e;
-  }
   
   .error-message {
     color: red;
@@ -103,9 +87,5 @@
       font-size: 18px; /* Adjust title font size */
     }
   
-    .place-order-button {
-      font-size: 14px; /* Adjust button font size */
-      padding: 8px 16px; /* Adjust button padding */
-    }
   }
   

@@ -1,0 +1,112 @@
+/* src/components/charts/MonthlyChart.css */
+
+/*.monthly-chart-container {
+    margin-top: 20px;
+  }
+  
+  .monthly-chart-card {
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .monthly-chart-title {
+    margin-bottom: 20px;
+  }
+  
+  .date-picker {
+    margin-bottom: 20px;
+  }
+  */
+
+
+  /* src/components/charts/MonthlyChart.css */
+/*.monthly-chart-container {
+    margin: 20px auto;
+  }
+  
+  .monthly-chart-card {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .date-picker-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+  
+  .sales-summary {
+    margin-top: 20px;
+  }
+  
+  .sales-summary .MuiTypography-body1 {
+    font-size: 16px;
+  }*/
+
+  
+  /* src/components/charts/MonthlyChart.css */
+/*.monthly-chart-container {
+    margin: 20px auto;
+  }
+  
+  .monthly-chart-card {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .date-picker-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .view-selector {
+    margin-bottom: 20px;
+  }
+  
+  .date-picker-container .react-datepicker-wrapper {
+    margin-bottom: 10px;
+  }
+  
+  .sales-summary {
+    margin-top: 20px;
+  }
+  
+  .sales-summary .MuiTypography-body1 {
+    font-size: 16px;
+  }*/
+
+
+  /* src/components/charts/MonthlyChart.css */
+.monthly-chart-container {
+  margin: 20px auto;
+}
+
+.monthly-chart-card {
+  padding: 20px;
+  position: relative;
+}
+
+.date-picker-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.view-selector {
+  margin-bottom: 20px;
+}
+
+.date-picker-container .react-datepicker-wrapper {
+  margin-bottom: 10px;
+}
+
+.sales-summary {
+  margin-top: 20px;
+}
+
+.sales-summary .MuiTypography-body1 {
+  font-size: 16px;
+}

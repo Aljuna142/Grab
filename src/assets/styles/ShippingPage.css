@@ -1,108 +1,355 @@
-.shipping-page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 20px; /* Adjust padding as needed */
-  }
-  
+/* ShippingPage.css */
+/*.shipping-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px; 
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.first-column {
+  margin-right: 10px; 
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-box:hover {
+  border-color: #A3D02C;
+}
+
+.edit-button {
+  background-color: transparent;
+  color: #A3D02C;
+  border: 1px solid #A3D02C;
+  border-radius: 4px;
+  padding: 5px 280px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-button:hover {
+  background-color: #A3D02C;
+  color: white;
+}
+
+.title {
+  color: #A3D02C;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.address-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;  
+}
+
+.second-column {
+  /* Styling for the second column 
+}
+
+.proceed-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.place-order-button {
+  display: inline-block;
+  background-color: #A3D02C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.place-order-button:hover {
+  background-color: #bfe25e;
+}
+
+/* New class for delivery methods 
+.delivery-methods {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.delivery-methods label {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.delivery-methods .radio-label {
+  flex: 1;
+}
+
+.delivery-methods .price {
+  color: #666; 
+  margin-left: 20px; }
+
+/* Media Queries for Responsiveness 
+@media (max-width: 768px) {
   .columns {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+    flex-direction: column; 
   }
-  
-  .column {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box; /* Ensure padding is included in the element’s width */
-  }
-  
+
   .first-column {
-    margin-right: 10px; /* Space between columns */
+    margin-right: 0; 
   }
-  
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
+@media (max-width: 480px) {
   .input-box {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px; 
   }
-  
-  .input-box:hover {
-    border-color: #A3D02C;
-  }
-  
+
   .edit-button {
-    background-color: transparent;
-    color: #A3D02C;
-    border: 1px solid #A3D02C;
-    border-radius: 4px;
-    padding: 5px 280px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-    align-items: center;
-    justify-content: center;
+    font-size: 12px; 
+    padding: 4px 8px; 
   }
-  
-  .edit-button:hover {
-    background-color: #A3D02C;
-    color: white;
-  }
-  
+
   .title {
-    color: #A3D02C;
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    font-size: 18px;
   }
-  
-  .address-fields {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px; /* Space between the fields */
+
+  .place-order-button {
+    font-size: 14px; 
+    padding: 8px 16px; 
   }
-  
-  .second-column {
-    /* Styling for the second column */
+}
+*/
+
+
+/* ShippingPage.css */
+.shipping-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in the element’s width */
+}
+
+.first-column {
+  margin-right: 10px; /* Space between columns */
+}
+
+/* Specific styles for ShippingPage cards */
+.shipping-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.shipping-input-box:hover {
+  border-color: #A3D02C;
+}
+
+.shipping-edit-button {
+  background-color: transparent;
+  color: #A3D02C;
+  border: 1px solid #A3D02C;
+  border-radius: 4px;
+  padding: 5px 280px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.shipping-edit-button:hover {
+  background-color: #A3D02C;
+  color: white;
+}
+
+.shipping-title {
+  color: #A3D02C;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.shipping-address-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Space between the fields */
+}
+
+.shipping-place-order-button {
+  display: inline-block;
+  background-color: #A3D02C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.shipping-place-order-button:hover {
+  background-color: #bfe25e;
+}
+
+/* Specific styles for delivery methods */
+.shipping-delivery-methods {
+  display: flex;
+  flex-direction: column; /* Stack delivery options vertically */
+  gap: 10px; /* Space between the rows */
+}
+
+.shipping-radio-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.shipping-radio-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.shipping-price {
+  margin-left: auto; /* Align price to the right */
+}
+
+/* Specific styles for payment methods */
+.shipping-payment-methods {
+  display: flex;
+  flex-direction: column; /* Stack payment options vertically */
+  gap: 10px; /* Space between the rows */
+}
+
+.shipping-radio-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.shipping-radio-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+.shipping-submit-button {
+  background-color: #A3D02C; /* Background color for the button */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 10px; /* Space above the button */
+}
+
+.shipping-submit-button:hover {
+  background-color: #8CBE2F; /* Slightly darker shade for hover effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .columns {
-      flex-direction: column; /* Stack columns vertically on smaller screens */
-    }
-  
-    .first-column {
-      margin-right: 0; /* Remove right margin on smaller screens */
-    }
+
+  .first-column {
+    margin-right: 0; /* Remove right margin on smaller screens */
   }
-  
-  @media (max-width: 480px) {
-    .input-box {
-      font-size: 14px; /* Adjust font size for smaller screens */
-    }
-  
-    .edit-button {
-      font-size: 12px; /* Adjust button font size */
-      padding: 4px 8px; /* Adjust button padding */
-    }
-  
-    .title {
-      font-size: 18px; /* Adjust title font size */
-    }
+}
+
+@media (max-width: 480px) {
+  .shipping-input-box {
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
-  
+
+  .shipping-edit-button {
+    font-size: 12px; /* Adjust button font size */
+    padding: 4px 8px; /* Adjust button padding */
+  }
+
+  .shipping-title {
+    font-size: 18px; /* Adjust title font size */
+  }
+
+  .shipping-place-order-button {
+    font-size: 14px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust button padding */
+  }
+}

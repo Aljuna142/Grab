@@ -6074,7 +6074,7 @@ import { useDispatch,useSelector } from 'react-redux';
 import { addToCart,updateCart } from '../store/slices/cartSlice';
 
 //import { addToCart } from '../store/actions/cartActions';
-import { Container, Row, Col, Image, Button, Form, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button, Form,Modal, Carousel } from 'react-bootstrap';
 import axios from 'axios';
 import ProductRatings from '../components/cards/ProductRatings';
 import ColorSwatches from '../components/ColorSwatches';
@@ -6088,6 +6088,7 @@ import CartPreviewModal from '../components/modals/cartPreviewModal';
 import { toast } from 'react-toastify'; // Import toast
 import 'react-toastify/dist/ReactToastify.css'; // Import style
 import QuantitySelector from '../components/Qty'; // Import QuantitySelector
+import ProductInquiry from '../components/ProductInquiry';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -6100,9 +6101,11 @@ const ProductDetails = () => {
   const [error, setError] = useState(null);
   const dispatch = useDispatch();
  const [showCartModal, setShowCartModal] = useState(false);
- 
+ const [showInquiryModal, setShowInquiryModal] = useState(false);
 
-
+ const handleEnquire = () => {
+    setShowInquiryModal(true);
+  };
 
   // Retrieve cart items from Redux state
   const cartItems = useSelector((state) => state.cart.items);
@@ -6283,20 +6286,33 @@ const handleAddToCart = () => {
   const handleCloseCartModal = () => setShowCartModal(false);
 
 
-
-
 /*
   const handleAddToCart = () => {
     dispatch(addToCart({ ...product, quantity }));
     alert('Your item is added to the cart');
     navigate('/cart');
-  };
-  */
+  };*/
+  
 
   const handleBuyNow = () => {
     dispatch(addToCart({ ...product, quantity }));
     navigate('/checkout');
   };
+
+  
+ 
+  {/*const handleEnquire = () => {
+    toast.info('Please contact us for more information.', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };*/}
+
 
   // Ensure originalPrice is a string
   const originalPrice = typeof product.originalPrice === 'string' ? product.originalPrice : '';
@@ -6429,7 +6445,100 @@ const handleAddToCart = () => {
           </div>*/}
 
           <div className="button-container">
-            <Button
+          <div className="button-group">
+            {product.countInStock > 0 ? (
+              <>
+                <Button
+                  className="add-to-cart-btn"
+                  variant="warning"
+                  onClick={handleAddToCart}
+                >
+                  Add to Cart
+                </Button>
+                <Button
+                  className="buy-now-btn"
+                  variant="success"
+                  onClick={handleBuyNow}
+                >
+                  Buy Now
+                </Button>
+              </>
+            ) : (
+                <>
+                <Button
+                  className="enquire-btn"
+                  variant="danger"
+                  onClick={handleEnquire}
+                  style={{
+                    border: '2px solid red',
+                    borderRadius: '0',
+                    backgroundColor: 'red',
+                    color: '#fff',
+                    fontSize: '16px',
+                    padding: '10px',
+                    fontWeight: 'bold',
+                    cursor: 'pointer',
+                    transition: 'background-color 0.3s ease, border-color 0.3s ease',
+                    width: '100%',
+                    textAlign: 'center',
+                    display: 'inline-block',
+                    whiteSpace: 'nowrap',
+                  }}
+                  onMouseOver={(e) => {
+                    e.currentTarget.style.backgroundColor = '#8abf1c';
+                    e.currentTarget.style.borderColor = '#8abf1c';
+                  }}
+                  onMouseOut={(e) => {
+                    e.currentTarget.style.backgroundColor = 'red';
+                    e.currentTarget.style.borderColor = 'red';
+                  }}
+                >
+                  Want this? Send Us Inquiry Now!
+                </Button>
+        
+                {/* Modal for Product Inquiry */}
+                <ProductInquiry 
+                  show={showInquiryModal} 
+                  onHide={() => setShowInquiryModal(false)} 
+                />
+              </>
+                
+               /*<Button
+                className="enquire-btn"
+                variant="danger"
+                onClick={handleEnquire}
+                style={{
+                  border: '2px solid red', /* Border color 
+                  borderRadius: '0', /* No border radius 
+                  backgroundColor: 'red', /* Button background color 
+                  color: '#fff', /* Text color 
+                  fontSize: '16px', /* Font size 
+                  padding: '10px', /* Padding 
+                  fontWeight: 'bold', /* Font weight 
+                  cursor: 'pointer', /* Pointer cursor on hover 
+                  transition: 'background-color 0.3s ease, border-color 0.3s ease', /* Smooth transition for color changes 
+                  width: '100%', /* Full width to make the button extend 
+                  textAlign: 'center', /* Center text alignment 
+                  display: 'inline-block', /* Ensure button fits its content 
+                  whiteSpace: 'nowrap', /* Prevent text wrapping 
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.backgroundColor = '#8abf1c'; /* Darker background color on hover 
+                  e.currentTarget.style.borderColor = '#8abf1c'; /* Darker border color on hover 
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.backgroundColor = 'red'; /* Original background color 
+                  e.currentTarget.style.borderColor = 'red'; /* Original border color 
+                }}
+              >
+                Want this? Send Us Inquiry Now!
+              </Button>*/
+              
+            )}
+          </div>
+
+
+           {/* <Button
               className="AddToCart"
               variant="warning"
               type="button"
@@ -6437,11 +6546,11 @@ const handleAddToCart = () => {
               onClick={handleAddToCart}
             >
               Add to Cart
-            </Button>
+            </Button>*/}
           
 
-            <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
-            <Button
+            
+           {/* <Button
               className="BuyNow"
               variant="success"
               type="button"
@@ -6449,7 +6558,8 @@ const handleAddToCart = () => {
               onClick={handleBuyNow}
             >
               Buy Now
-            </Button>
+            </Button>*/}
+            <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
           </div>
           <div className="actions-row">
             <Button variant="light">

@@ -402,7 +402,7 @@ const SignUp = () => {
 export default SignUp;without connection*/
 
 // src/components/SignUp.js
-import React, { useState } from 'react';
+/* no user import React, { useState } from 'react';
 import { Form, Alert, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import '../../assets/styles/SignUp.css';
@@ -528,6 +528,500 @@ const SignUp = () => {
                         type="button"
                         className="custom-button"
                         onClick={handleCreateAccount}
+                    >
+                        Create Account
+                    </button>
+                    <button
+                        type="button"
+                        className="login-link"
+                        onClick={() => navigate('/login')}
+                    >
+                        Login
+                    </button>
+                </div>
+            </Form>
+        </Container>
+    );
+};
+
+export default SignUp;no user*/
+/*user registerimport React, { useState } from 'react';
+import { Form, Alert, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import '../../assets/styles/SignUp.css';
+
+const SignUp = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        password: '',
+        gender: '',
+        dob: '',
+        mobile: '',
+        email: ''
+    });
+    const [showAlert, setShowAlert] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const validateForm = () => {
+        const { username, password, gender, dob, mobile, email } = formData;
+        if (!username || !email || !password || !mobile || !dob || !gender) {
+            return 'All fields are required';
+        }
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+            return 'Invalid email format';
+        }
+        if (!/^\d{10}$/.test(mobile)) {
+            return 'Invalid mobile number format (must be 10 digits)';
+        }
+        return '';
+    };
+
+    const handleCreateAccount = async () => {
+        const validationError = validateForm();
+        if (validationError) {
+            setShowAlert(`error: ${validationError}`);
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setShowAlert('success');
+                setTimeout(() => {
+                    navigate('/login');
+                }, 3000);
+            } else {
+                const errorData = await response.json();
+                setShowAlert(`error: ${errorData.message}`);
+            }
+        } catch (error) {
+            console.error('Error creating account:', error);
+            setShowAlert('error: Something went wrong!');
+        }
+    };
+
+    return (
+        <Container className="form-container">
+            <h2>Create Account</h2>
+            {showAlert && (
+                <Alert variant={showAlert.startsWith('error') ? 'danger' : 'success'} dismissible>
+                    {showAlert.replace('error: ', '')}
+                </Alert>
+            )}
+            <Form>
+                <Form.Group controlId="formUsername">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your username" 
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control 
+                        type="password" 
+                        placeholder="Enter your password" 
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formGender">
+                    <Form.Label>Gender</Form.Label>
+                    <Form.Control 
+                        as="select" 
+                        name="gender"
+                        value={formData.gender}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group controlId="formDob">
+                    <Form.Label>Date of Birth</Form.Label>
+                    <Form.Control 
+                        type="date" 
+                        name="dob"
+                        value={formData.dob}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formMobile">
+                    <Form.Label>Mobile</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your mobile number" 
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <div className="button-group">
+                    <button
+                        type="button"
+                        className="custom-button"
+                        onClick={handleCreateAccount}
+                    >
+                        Create Account
+                    </button>
+                    <button
+                        type="button"
+                        className="login-link"
+                        onClick={() => navigate('/login')}
+                    >
+                        Login
+                    </button>
+                </div>
+            </Form>
+        </Container>
+    );
+};
+
+export default SignUp;register successfulll*/
+/*import React, { useState } from 'react';
+import { Form, Alert, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import '../../assets/styles/SignUp.css';
+
+const SignUp = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        password: '',
+        gender: '',
+        dob: '',
+        mobile: '',
+        email: ''
+    });
+    const [showAlert, setShowAlert] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const validateForm = () => {
+        const { username, password, gender, dob, mobile, email } = formData;
+        if (!username || !email || !password || !mobile || !dob || !gender) {
+            return 'All fields are required';
+        }
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+            return 'Invalid email format';
+        }
+        if (!/^\d{10}$/.test(mobile)) {
+            return 'Invalid mobile number format (must be 10 digits)';
+        }
+        return '';
+    };
+
+    const handleCreateAccount = async (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        const validationError = validateForm();
+        if (validationError) {
+            setShowAlert(`error: ${validationError}`);
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setShowAlert('success');
+                setTimeout(() => {
+                    navigate('/login');
+                }, 3000);
+            } else {
+                const errorData = await response.json();
+                setShowAlert(`error: ${errorData.message}`);
+            }
+        } catch (error) {
+            console.error('Error creating account:', error);
+            setShowAlert('error: Something went wrong!');
+        }
+    };
+
+    return (
+        <Container className="form-container">
+            <h2>Create Account</h2>
+            {showAlert && (
+                <Alert variant={showAlert.startsWith('error') ? 'danger' : 'success'} dismissible>
+                    {showAlert.replace('error: ', '')}
+                </Alert>
+            )}
+            <Form onSubmit={handleCreateAccount}>
+                {/* Form Inputs }
+                <Form.Group controlId="formUsername">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your username" 
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control 
+                        type="password" 
+                        placeholder="Enter your password" 
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formGender">
+                    <Form.Label>Gender</Form.Label>
+                    <Form.Control 
+                        as="select" 
+                        name="gender"
+                        value={formData.gender}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group controlId="formDob">
+                    <Form.Label>Date of Birth</Form.Label>
+                    <Form.Control 
+                        type="date" 
+                        name="dob"
+                        value={formData.dob}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formMobile">
+                    <Form.Label>Mobile</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your mobile number" 
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <div className="button-group">
+                    <button
+                        type="submit"
+                        className="custom-button"
+                    >
+                        Create Account
+                    </button>
+                    <button
+                        type="button"
+                        className="login-link"
+                        onClick={() => navigate('/login')}
+                    >
+                        Login
+                    </button>
+                </div>
+            </Form>
+        </Container>
+    );
+};
+
+export default SignUp;*/
+
+import React, { useState } from 'react';
+import { Form, Alert, Container } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import '../../assets/styles/SignUp.css';
+
+const SignUp = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        password: '',
+        gender: '',
+        dob: '',
+        mobile: '',
+        email: ''
+    });
+    const [showAlert, setShowAlert] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const validateForm = () => {
+        const { username, password, gender, dob, mobile, email } = formData;
+        if (!username || !email || !password || !mobile || !dob || !gender) {
+            return 'All fields are required';
+        }
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+            return 'Invalid email format';
+        }
+        if (!/^\d{10}$/.test(mobile)) {
+            return 'Invalid mobile number format (must be 10 digits)';
+        }
+        return '';
+    };
+
+    const handleCreateAccount = async (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        const validationError = validateForm();
+        if (validationError) {
+            setShowAlert(`error: ${validationError}`);
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/auth/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setShowAlert('success');
+                setTimeout(() => {
+                    navigate('/login');
+                }, 3000);
+            } else {
+                const errorData = await response.json();
+                setShowAlert(`error: ${errorData.message}`);
+            }
+        } catch (error) {
+            console.error('Error creating account:', error);
+            setShowAlert('error: Something went wrong!');
+        }
+    };
+
+    return (
+        <Container className="form-container">
+            <h2>Create Account</h2>
+            {showAlert && (
+                <Alert variant={showAlert.startsWith('error') ? 'danger' : 'success'} dismissible>
+                    {showAlert.replace('error: ', '')}
+                </Alert>
+            )}
+            <Form onSubmit={handleCreateAccount}>
+                {/* Form Inputs */}
+                <Form.Group controlId="formUsername">
+                    <Form.Label>Username</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your username" 
+                        name="username"
+                        value={formData.username}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control 
+                        type="password" 
+                        placeholder="Enter your password" 
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formGender">
+                    <Form.Label>Gender</Form.Label>
+                    <Form.Control 
+                        as="select" 
+                        name="gender"
+                        value={formData.gender}
+                        onChange={handleChange}
+                    >
+                        <option value="">Select your gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group controlId="formDob">
+                    <Form.Label>Date of Birth</Form.Label>
+                    <Form.Control 
+                        type="date" 
+                        name="dob"
+                        value={formData.dob}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formMobile">
+                    <Form.Label>Mobile</Form.Label>
+                    <Form.Control 
+                        type="text" 
+                        placeholder="Enter your mobile number" 
+                        name="mobile"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                </Form.Group>
+                <div className="button-group">
+                    <button
+                        type="submit"
+                        className="custom-button"
                     >
                         Create Account
                     </button>

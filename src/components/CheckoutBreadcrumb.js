@@ -115,7 +115,7 @@ export default CheckoutBreadcrumb;*/
 
 
 
-import React from 'react';
+/*pakka import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../assets/styles/Breadcrumb.css';
 
@@ -163,7 +163,57 @@ const CheckoutBreadcrumb = () => {
   );
 };
 
+export default CheckoutBreadcrumb;pakka*/
+
+
+
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import '../assets/styles/Breadcrumb.css';
+
+const CheckoutBreadcrumb = () => {
+  const location = useLocation();
+
+  return (
+    <nav className="breadcrumb-container">
+      <Link
+        to="/order-summary"
+        className={`breadcrumb-item-link ${
+          location.pathname === '/order-summary' ? 'active' : ''
+        }`}
+      >
+        Order Summary
+      </Link>
+      &gt;
+      <Link
+        to="/information"
+        className={`breadcrumb-item-link ${
+          location.pathname === '/information' ? 'active' : ''
+        }`}
+      >
+        Information
+      </Link>
+      &gt;
+      <Link
+        to="/payment"
+        className={`breadcrumb-item-link ${
+          location.pathname === '/payment' ? 'active' : ''
+        }`}
+      >
+        Payment
+      </Link>
+      &gt;
+      <Link
+        to="/shipping"
+        className={`breadcrumb-item-link ${
+          location.pathname === '/shipping' ? 'active' : ''
+        }`}
+      >
+        Shipping
+      </Link>
+    </nav>
+  );
+};
+
 export default CheckoutBreadcrumb;
-
-
 

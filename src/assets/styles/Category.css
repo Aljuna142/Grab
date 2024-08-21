@@ -86,12 +86,17 @@
     padding: 10px 0;
     flex-grow: 1;
     scrollbar-width: none; 
+    text-decoration: none; /* Remove the underline */
+    color: black; 
 }
 
 .category-items::-webkit-scrollbar {
     display: none; 
 }
 .category-item {
+    font-weight: bold;
+    text-decoration: none; /* Ensure there's no underline on the text */
+    color: black;
     flex: 0 0 calc(20% - 24px); 
     margin: 0 12px; 
 }
