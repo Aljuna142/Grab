@@ -53,7 +53,7 @@ ReactDOM.render(
   rootElement
 );*/
 
-import React from 'react';
+/*normalimport React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store/store';// Adjust the path as needed
@@ -64,5 +64,22 @@ ReactDOM.render(
     <App />
   </Provider>,
   document.getElementById('root')
-);
+);normal*/
 
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react'; // Import PersistGate
+import store, { persistor } from './store/store'; // Adjust the path as needed
+import App from './App';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
+  </Provider>,
+  document.getElementById('root')
+);

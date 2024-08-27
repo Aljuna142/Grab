@@ -4214,7 +4214,7 @@ const ShippingPage = () => {
 export default ShippingPage;again redirect to sign in*/
 
 
-import React, { useState, useEffect } from 'react';
+/*token invalid import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import CheckoutBreadcrumb from '../components/CheckoutBreadcrumb';
@@ -4510,5 +4510,939 @@ const ShippingPage = () => {
   );
 };
 
+export default ShippingPage;token invalid */
+
+
+/*tkn msng import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import CheckoutBreadcrumb from '../components/CheckoutBreadcrumb';
+import OrderSummary from '../components/OrderSummary';
+import { selectCartItems } from '../store/slices/cartSlice';
+import { selectUser, selectAuthStatus, selectAuthError } from '../store/slices/authSlice';
+import '../assets/styles/ShippingPage.css';
+import { toast } from 'react-toastify';
+
+const ShippingPage = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const cartItems = useSelector(selectCartItems);
+  const user = useSelector(selectUser);
+  const authStatus = useSelector(selectAuthStatus);
+  const authError = useSelector(selectAuthError);
+
+  const [address, setAddress] = useState({
+    email: '',
+    streetAddress: '',
+    apartment: '',
+    city: '',
+    country: '',
+    state: '',
+    postalCode: '',
+  });
+
+  const [addressId, setAddressId] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState('');
+  const [deliveryMethod, setDeliveryMethod] = useState('');
+  const [shippingPrice, setShippingPrice] = useState(0);
+
+  useEffect(() => {
+    if (location.state) {
+      const { addressId } = location.state;
+      setAddressId(addressId);
+      // Fetch and set the address details using addressId if necessary
+    }
+  }, [location.state]);
+
+  useEffect(() => {
+    if (deliveryMethod === 'Delivery') {
+      const itemsPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+      setShippingPrice(itemsPrice > 500 ? 0 : 15);
+    } else {
+      setShippingPrice(0);
+    }
+  }, [deliveryMethod, cartItems]);
+
+  const getToken = () => localStorage.getItem('token');
+
+  const handlePaymentChange = (e) => {
+    setPaymentMethod(e.target.value);
+  };
+
+  const handleDeliveryChange = (e) => {
+    setDeliveryMethod(e.target.value);
+  };
+
+  const handleSubmitClick = async () => {
+    if (!addressId) {
+      toast.warning('Address ID is missing');
+      return;
+    }
+
+    const token = getToken();
+    if (!token) {
+      console.log(localStorage.getItem('token'));
+
+      toast.warning('Token is missing');
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:5000/api/v1/addresses/address/${addressId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify(address),
+      });
+
+      if (response.ok) {
+        toast.success('Address updated successfully');
+      } else {
+        const error = await response.json();
+        toast.warning(`Failed to update address: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An error occurred while updating the address:', err);
+      toast.warning('An error occurred while updating the address');
+    }
+  };
+
+  const handlePlaceOrderClick = async () => {
+    
+    if (!addressId || !paymentMethod || !deliveryMethod) {
+      toast.warning('Address ID, Payment Method, or Delivery Method is missing');
+      return;
+    }
+
+    if (!user) {
+      toast.warning('Please sign in to place an order');
+      navigate('/login');
+      return;
+    }
+
+    const token = getToken();
+    if (!token) {
+      toast.warning('Token is missing');
+      return;
+    }
+
+    try {
+      const itemsPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+      const shippingPrice = deliveryMethod === 'Delivery' ? (itemsPrice > 500 ? 0 : 15) : 0;
+      const totalPrice = itemsPrice + shippingPrice;
+
+      const response = await fetch('http://localhost:5000/api/v1/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          orderItems: cartItems.map(item => ({
+            product: item.id,
+            name: item.name,
+            qty: item.quantity,
+            image: item.image,
+            price: item.price,
+            originalPrice: item.originalPrice,
+          })),
+          deliveryMethod,
+          shippingAddress: {
+            address: address.streetAddress,
+            apartment: address.apartment,
+            city: address.city,
+            country: address.country,
+            state: address.state,
+            postalCode: address.postalCode,
+          },
+          paymentMethod,
+          paymentResult: 'Pending',
+          itemsPrice,
+          shippingPrice,
+          totalPrice,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        const orderId = data._id;
+        toast.success('Your order has been placed successfully');
+        navigate(`/order-confirmation/${orderId}`);
+      } else {
+        const error = await response.json();
+        toast.warning(`Failed to place the order: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An error occurred while placing the order:', err);
+      toast.warning('An error occurred while placing the order');
+    }
+  };
+
+  return (
+    <div className="shipping-page">
+      <CheckoutBreadcrumb />
+      <div className="columns">
+        <div className="column first-column">
+          <div className="shipping-card">
+            <div className="input-container">
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="shipping-input-box"
+                value={address.email}
+                onChange={(e) => setAddress({ ...address, email: e.target.value })}
+              />
+              <button className="shipping-edit-button">EDIT</button>
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Billing</h2>
+            <input
+              type="text"
+              placeholder="Street Address"
+              className="shipping-input-box"
+              value={address.streetAddress}
+              onChange={(e) => setAddress({ ...address, streetAddress: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Apartment, Suite, Unit, etc. (optional)"
+              className="shipping-input-box"
+              value={address.apartment}
+              onChange={(e) => setAddress({ ...address, apartment: e.target.value })}
+            />
+            <div className="shipping-address-fields">
+              <input
+                type="text"
+                placeholder="Town/City"
+                className="shipping-input-box"
+                value={address.city}
+                onChange={(e) => setAddress({ ...address, city: e.target.value })}
+              />
+              <input
+                type="text"
+                placeholder="Country"
+                className="shipping-input-box"
+                value={address.country}
+                onChange={(e) => setAddress({ ...address, country: e.target.value })}
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="State (optional)"
+              className="shipping-input-box"
+              value={address.state}
+              onChange={(e) => setAddress({ ...address, state: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Postal Code (optional)"
+              className="shipping-input-box"
+              value={address.postalCode}
+              onChange={(e) => setAddress({ ...address, postalCode: e.target.value })}
+            />
+            <button
+              className="shipping-submit-button"
+              onClick={handleSubmitClick}
+            >
+              Submit
+            </button>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Delivery Methods</h2>
+            <div>
+              <input
+                type="radio"
+                value="Delivery"
+                checked={deliveryMethod === 'Delivery'}
+                onChange={handleDeliveryChange}
+              />
+              Delivery
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Pick-up"
+                checked={deliveryMethod === 'Pick-up'}
+                onChange={handleDeliveryChange}
+              />
+              Pick-up
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Payment Methods</h2>
+            <div>
+              <input
+                type="radio"
+                value="Cash on Delivery"
+                checked={paymentMethod === 'Cash on Delivery'}
+                onChange={handlePaymentChange}
+              />
+              Cash on Delivery
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Pay by Card"
+                checked={paymentMethod === 'Pay by Card'}
+                onChange={handlePaymentChange}
+              />
+              Pay by Card
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Shipping Price</h2>
+            <p className="shipping-price">
+              {deliveryMethod === 'Delivery' ? `Shipping Price: ${shippingPrice} AED` : 'Shipping is free for Pick-up'}
+            </p>
+          </div>
+        </div>
+
+        <div className="column second-column">
+          <OrderSummary />
+        </div>
+      </div>
+      <div className="shipping-footer">
+        <button
+          className="shipping-place-order-button"
+          onClick={handlePlaceOrderClick}
+        >
+          Place Order
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ShippingPage;tokn msng*/
+
+
+
+
+/*TOKEN VALID import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import CheckoutBreadcrumb from '../components/CheckoutBreadcrumb';
+import OrderSummary from '../components/OrderSummary';
+import { selectCartItems } from '../store/slices/cartSlice';
+import { selectUser, selectAuthStatus, selectAuthError } from '../store/slices/authSlice';
+import '../assets/styles/ShippingPage.css';
+import { toast } from 'react-toastify';
+
+const ShippingPage = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const cartItems = useSelector(selectCartItems);
+  const user = useSelector(selectUser);
+  const authStatus = useSelector(selectAuthStatus);
+  const authError = useSelector(selectAuthError);
+
+  const [address, setAddress] = useState({
+    email: '',
+    streetAddress: '',
+    apartment: '',
+    city: '',
+    country: '',
+    state: '',
+    postalCode: '',
+  });
+
+  const [addressId, setAddressId] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState('');
+  const [deliveryMethod, setDeliveryMethod] = useState('');
+  const [shippingPrice, setShippingPrice] = useState(0);
+
+  useEffect(() => {
+    if (location.state) {
+      const { addressId } = location.state;
+      setAddressId(addressId);
+      // Fetch and set the address details using addressId if necessary
+    }
+  }, [location.state]);
+
+  useEffect(() => {
+    if (deliveryMethod === 'Delivery') {
+      const itemsPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+      setShippingPrice(itemsPrice > 500 ? 0 : 15);
+    } else {
+      setShippingPrice(0);
+    }
+  }, [deliveryMethod, cartItems]);
+
+  const getToken = () => localStorage.getItem('authToken'); // Ensure consistency with key
+
+  const handlePaymentChange = (e) => {
+    setPaymentMethod(e.target.value);
+  };
+
+  const handleDeliveryChange = (e) => {
+    setDeliveryMethod(e.target.value);
+  };
+
+  const handleSubmitClick = async () => {
+    if (!addressId) {
+      toast.warning('Address ID is missing');
+      return;
+    }
+
+    const token = getToken();
+    console.log('Token retrieved for address update:', token); // Debugging token retrieval
+
+    if (!token) {
+      toast.warning('Token is missing');
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:5000/api/v1/addresses/address/${addressId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        withCredentials: true, 
+        body: JSON.stringify(address),
+      });
+
+      if (response.ok) {
+        toast.success('Address updated successfully');
+      } else {
+        const error = await response.json();
+        toast.warning(`Failed to update address: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An error occurred while updating the address:', err);
+      toast.warning('An error occurred while updating the address');
+    }
+  };
+
+  const handlePlaceOrderClick = async () => {
+    if (!addressId || !paymentMethod || !deliveryMethod) {
+      toast.warning('Address ID, Payment Method, or Delivery Method is missing');
+      return;
+    }
+
+    if (!user) {
+      toast.warning('Please sign in to place an order');
+      navigate('/login');
+      return;
+    }
+
+    const token = getToken();
+    console.log('Token retrieved for placing order:', token); // Debugging token retrieval
+
+    if (!token) {
+      toast.warning('Token is missing');
+      return;
+    }
+
+    try {
+      const itemsPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+      const shippingPrice = deliveryMethod === 'Delivery' ? (itemsPrice > 500 ? 0 : 15) : 0;
+      const totalPrice = itemsPrice + shippingPrice;
+
+      const response = await fetch('http://localhost:5000/api/v1/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          orderItems: cartItems.map(item => ({
+            product: item.id,
+            name: item.name,
+            qty: item.quantity,
+            image: item.image,
+            price: item.price,
+            originalPrice: item.originalPrice,
+          })),
+          deliveryMethod,
+          shippingAddress: {
+            address: address.streetAddress,
+            apartment: address.apartment,
+            city: address.city,
+            country: address.country,
+            state: address.state,
+            postalCode: address.postalCode,
+          },
+          paymentMethod,
+          paymentResult: 'Pending',
+          itemsPrice,
+          shippingPrice,
+          totalPrice,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        const orderId = data._id;
+        toast.success('Your order has been placed successfully');
+        navigate(`/order-confirmation/${orderId}`);
+      } else {
+        const error = await response.json();
+        toast.warning(`Failed to place the order: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An error occurred while placing the order:', err);
+      toast.warning('An error occurred while placing the order');
+    }
+  };
+
+  return (
+    <div className="shipping-page">
+      <CheckoutBreadcrumb />
+      <div className="columns">
+        <div className="column first-column">
+          <div className="shipping-card">
+            <div className="input-container">
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="shipping-input-box"
+                value={address.email}
+                onChange={(e) => setAddress({ ...address, email: e.target.value })}
+              />
+              <button className="shipping-edit-button">EDIT</button>
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Billing</h2>
+            <input
+              type="text"
+              placeholder="Street Address"
+              className="shipping-input-box"
+              value={address.streetAddress}
+              onChange={(e) => setAddress({ ...address, streetAddress: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Apartment, Suite, Unit, etc. (optional)"
+              className="shipping-input-box"
+              value={address.apartment}
+              onChange={(e) => setAddress({ ...address, apartment: e.target.value })}
+            />
+            <div className="shipping-address-fields">
+              <input
+                type="text"
+                placeholder="Town/City"
+                className="shipping-input-box"
+                value={address.city}
+                onChange={(e) => setAddress({ ...address, city: e.target.value })}
+              />
+              <input
+                type="text"
+                placeholder="Country"
+                className="shipping-input-box"
+                value={address.country}
+                onChange={(e) => setAddress({ ...address, country: e.target.value })}
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="State (optional)"
+              className="shipping-input-box"
+              value={address.state}
+              onChange={(e) => setAddress({ ...address, state: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Postal Code (optional)"
+              className="shipping-input-box"
+              value={address.postalCode}
+              onChange={(e) => setAddress({ ...address, postalCode: e.target.value })}
+            />
+            <button
+              className="shipping-submit-button"
+              onClick={handleSubmitClick}
+            >
+              Submit
+            </button>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Delivery Methods</h2>
+            <div>
+              <input
+                type="radio"
+                value="Delivery"
+                checked={deliveryMethod === 'Delivery'}
+                onChange={handleDeliveryChange}
+              />
+              Delivery
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Pick-up"
+                checked={deliveryMethod === 'Pick-up'}
+                onChange={handleDeliveryChange}
+              />
+              Pick-up
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Payment Methods</h2>
+            <div>
+              <input
+                type="radio"
+                value="Cash on Delivery"
+                checked={paymentMethod === 'Cash on Delivery'}
+                onChange={handlePaymentChange}
+              />
+              Cash on Delivery
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Pay by Card"
+                checked={paymentMethod === 'Pay by Card'}
+                onChange={handlePaymentChange}
+              />
+              Pay by Card
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Shipping Price</h2>
+            <p className="shipping-price">
+              {deliveryMethod === 'Delivery' ? `Shipping Price: ${shippingPrice} AED` : 'Shipping is free for Pick-up'}
+            </p>
+          </div>
+        </div>
+
+        <div className="column second-column">
+          <OrderSummary />
+        </div>
+      </div>
+      <div className="shipping-footer">
+        <button
+          className="shipping-place-order-button"
+          onClick={handlePlaceOrderClick}
+        >
+          Place Order
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default ShippingPage;*/
+
+import React, { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import CheckoutBreadcrumb from '../components/CheckoutBreadcrumb';
+import OrderSummary from '../components/OrderSummary';
+import { selectCartItems } from '../store/slices/cartSlice';
+import { selectUser, selectAuthStatus, selectAuthError } from '../store/slices/authSlice';
+import '../assets/styles/ShippingPage.css';
+import { toast } from 'react-toastify';
+
+const ShippingPage = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const cartItems = useSelector(selectCartItems);
+  const user = useSelector(selectUser);
+  const authStatus = useSelector(selectAuthStatus);
+  const authError = useSelector(selectAuthError);
+
+  const [address, setAddress] = useState({
+    email: '',
+    streetAddress: '',
+    apartment: '',
+    city: '',
+    country: '',
+    state: '', // Ensure state is included
+    postalCode: '',
+  });
+
+  const [addressId, setAddressId] = useState(null);
+  const [paymentMethod, setPaymentMethod] = useState('');
+  const [deliveryMethod, setDeliveryMethod] = useState('');
+  const [shippingPrice, setShippingPrice] = useState(0);
+
+  useEffect(() => {
+    if (location.state) {
+      const { addressId } = location.state;
+      setAddressId(addressId);
+      // Fetch and set the address details using addressId if necessary
+    }
+  }, [location.state]);
+
+  useEffect(() => {
+    if (deliveryMethod === 'Delivery') {
+      const itemsPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+      setShippingPrice(itemsPrice > 500 ? 0 : 15);
+    } else {
+      setShippingPrice(0);
+    }
+  }, [deliveryMethod, cartItems]);
+
+  const getToken = () => localStorage.getItem('authToken'); // Ensure consistency with key
+
+  const handlePaymentChange = (e) => {
+    setPaymentMethod(e.target.value);
+  };
+
+  const handleDeliveryChange = (e) => {
+    setDeliveryMethod(e.target.value);
+  };
+
+  const handleSubmitClick = async () => {
+    if (!addressId) {
+      toast.warning('Address ID is missing');
+      return;
+    }
+
+    const token = getToken();
+    if (!token) {
+      toast.warning('Token is missing');
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:5000/api/v1/addresses/address/${addressId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        withCredentials: true, 
+        body: JSON.stringify(address),
+      });
+
+      if (response.ok) {
+        toast.success('Address updated successfully');
+      } else {
+        const error = await response.json();
+        toast.warning(`Failed to update address: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An error occurred while updating the address:', err);
+      toast.warning('An error occurred while updating the address');
+    }
+  };
+
+  const handlePlaceOrderClick = async () => {
+    if (!addressId || !paymentMethod || !deliveryMethod) {
+      toast.warning('Address ID, Payment Method, or Delivery Method is missing');
+      return;
+    }
+
+    if (!user) {
+      toast.warning('Please sign in to place an order');
+      navigate('/login');
+      return;
+    }
+
+    const token = getToken();
+    if (!token) {
+      toast.warning('Token is missing');
+      return;
+    }
+
+    if (!address.streetAddress || !address.city || !address.country || !address.state) {
+      toast.warning('Please fill in all required address fields');
+      return;
+    }
+
+    try {
+      const itemsPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+      const shippingPrice = deliveryMethod === 'Delivery' ? (itemsPrice > 500 ? 0 : 15) : 0;
+      const totalPrice = itemsPrice + shippingPrice;
+
+      const response = await fetch('http://localhost:5000/api/v1/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          orderItems: cartItems.map(item => ({
+            product: item.id,
+            name: item.name,
+            qty: item.quantity,
+            image: item.image,
+            price: item.price,
+            originalPrice: item.originalPrice,
+          })),
+          deliveryMethod,
+          shippingAddress: {
+            address: address.streetAddress,
+            apartment: address.apartment,
+            city: address.city,
+            country: address.country,
+            state: address.state,
+            postalCode: address.postalCode,
+          },
+          paymentMethod,
+          paymentResult: 'Pending',
+          itemsPrice,
+          shippingPrice,
+          totalPrice,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        const orderId = data._id;
+        toast.success('Your order has been placed successfully');
+        navigate(`/order-confirmation/${orderId}`);
+      } else {
+        const error = await response.json();
+        toast.warning(`Failed to place the order: ${error.message}`);
+      }
+    } catch (err) {
+      console.error('An error occurred while placing the order:', err);
+      toast.warning('An error occurred while placing the order');
+    }
+  };
+
+  return (
+    <div className="shipping-page">
+      <CheckoutBreadcrumb />
+      <div className="columns">
+        <div className="column first-column">
+          <div className="shipping-card">
+            <div className="input-container">
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="shipping-input-box"
+                value={address.email}
+                onChange={(e) => setAddress({ ...address, email: e.target.value })}
+              />
+              <button className="shipping-edit-button">EDIT</button>
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Billing</h2>
+            <input
+              type="text"
+              placeholder="Street Address"
+              className="shipping-input-box"
+              value={address.streetAddress}
+              onChange={(e) => setAddress({ ...address, streetAddress: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Apartment, Suite, Unit, etc. (optional)"
+              className="shipping-input-box"
+              value={address.apartment}
+              onChange={(e) => setAddress({ ...address, apartment: e.target.value })}
+            />
+            <div className="shipping-address-fields">
+              <input
+                type="text"
+                placeholder="Town/City"
+                className="shipping-input-box"
+                value={address.city}
+                onChange={(e) => setAddress({ ...address, city: e.target.value })}
+              />
+              <input
+                type="text"
+                placeholder="Country"
+                className="shipping-input-box"
+                value={address.country}
+                onChange={(e) => setAddress({ ...address, country: e.target.value })}
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="State (optional)"
+              className="shipping-input-box"
+              value={address.state}
+              onChange={(e) => setAddress({ ...address, state: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Postal Code (optional)"
+              className="shipping-input-box"
+              value={address.postalCode}
+              onChange={(e) => setAddress({ ...address, postalCode: e.target.value })}
+            />
+            <button
+              className="shipping-submit-button"
+              onClick={handleSubmitClick}
+            >
+              Submit
+            </button>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Delivery Methods</h2>
+            <div>
+              <input
+                type="radio"
+                value="Delivery"
+                checked={deliveryMethod === 'Delivery'}
+                onChange={handleDeliveryChange}
+              />
+              Delivery
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Pick-up"
+                checked={deliveryMethod === 'Pick-up'}
+                onChange={handleDeliveryChange}
+              />
+              Pick-up
+            </div>
+          </div>
+
+          <div className="shipping-card">
+            <h2 className="shipping-title">Payment Methods</h2>
+            <div>
+              <input
+                type="radio"
+                value="Cash on Delivery"
+                checked={paymentMethod === 'Cash on Delivery'}
+                onChange={handlePaymentChange}
+              />
+              Cash on Delivery
+            </div>
+            <div>
+              <input
+                type="radio"
+                value="Pay by Card"
+                checked={paymentMethod === 'Pay by Card'}
+                onChange={handlePaymentChange}
+              />
+              Pay by Card
+            </div>
+          </div>
+
+          <button
+            className="shipping-place-order-button"
+            onClick={handlePlaceOrderClick}
+          >
+            Place Order
+          </button>
+        </div>
+
+        <div className="column second-column">
+          <OrderSummary
+            items={cartItems}
+            shippingPrice={shippingPrice}
+            paymentMethod={paymentMethod}
+            deliveryMethod={deliveryMethod}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default ShippingPage;
+
 

@@ -1,0 +1,36 @@
+/* src/assets/styles/Dashboard.css */
+
+/* Add styles for the new CustomerStats component */
+/* CustomerStats.css */
+.custom-card-bg {
+    background-color:white; /* Background color for the card */
+}
+
+.custom-header {
+    font-size: 1.5rem; /* Font size for the header */
+    color: #333; /* Text color */
+    font-weight: bold; /* Font weight */
+    font-style:italic; /* Font style */
+}
+
+.customer-stats {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.customer-stats h3 {
+    margin-bottom: 20px;
+}
+
+/* Add styles for the additional content column */
+.additional-content {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Adjustments for the new row */
+.row.mt-4 {
+    margin-top: 2rem;
+}

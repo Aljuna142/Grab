@@ -610,7 +610,7 @@ const App = () => {
 
 export default App;*/
 
-import React from 'react';
+/*normal import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
@@ -637,7 +637,7 @@ const App = () => {
     return (
         <Router>
             <Routes>
-                {/* Routes for pages with Header and Footer*/ }
+                {/* Routes for pages with Header and Footer}
                 <Route path="/" element={<><Header /><Home /><Footer /></>} />
                 <Route path="/signup" element={<><Header /><SignUp /><Footer /></>} />
                 <Route path="/login" element={<><Header /><Login /><Footer /></>} />
@@ -654,16 +654,16 @@ const App = () => {
                 <Route path="/shipping" element={<><Header /><ShippingPage /><Footer /></>} />
                 <Route path="/brand/:brandName" element={<><Header /><BrandPage /><Footer /></>} />
 
-                {/* Routes for Dashboard without Header and Footer */}
+                {/* Routes for Dashboard without Header and Footer }
                 <Route path="/dashboard/*" element={<Dashboard />} />
-                {/* Other Routes */}
+                {/* Other Routes }
             </Routes>
             <ToastContainer />
         </Router>
     );
 }
 
-export default App;
+export default App;normal*/
 
 
 
@@ -725,3 +725,145 @@ const App = () => {
 }
 
 export default App;theme*/
+
+
+
+/*good working with dashoard import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux'; // Import useDispatch from react-redux
+import './App.css';
+import Home from './pages/Home';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import SignUp from './components/register/SignUp';
+import Login from './components/register/Login';
+import ProductDetails from './pages/ProductDetails';
+import WishlistPage from './pages/WishlistPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage'; 
+import OrderSummaryPage from './pages/OrderSummaryPage'; 
+import OrderConfirmation from './pages/OrderConfirmation';
+import Accessories from './components/accessories/Accessories';
+import Networking from './components/networking/Networking';
+import LaptopPage from './components/laptops/LaptopPage';
+import BrandPage from './pages/BrandPage';  // Import the BrandPage component
+import { ToastContainer } from 'react-toastify';
+import InformationPage from './pages/InformationPage';
+import ShippingPage from './pages/ShippingPage';
+import Dashboard from './pages/Dashboard'; // Import the Dashboard page
+import { setUser } from './store/slices/authSlice'; // Import setUser from the authSlice
+
+const App = () => {
+    const dispatch = useDispatch(); // Initialize dispatch
+
+    useEffect(() => {
+        const token = localStorage.getItem('authToken');
+        if (token) {
+            dispatch(setUser({ token })); // Dispatch setUser with the token from localStorage
+            // Optionally, fetch the user's details from your server using the token here
+        }
+    }, [dispatch]);
+
+
+
+    return (
+        <Router>
+            <Routes>
+                {/* Routes for pages with Header and Footer }
+                <Route path="/" element={<><Header /><Home /><Footer /></>} />
+                <Route path="/signup" element={<><Header /><SignUp /><Footer /></>} />
+                <Route path="/login" element={<><Header /><Login /><Footer /></>} />
+                <Route path="/product/:id" element={<><Header /><ProductDetails /><Footer /></>} />
+                <Route path="/wishlist" element={<><Header /><WishlistPage /><Footer /></>} />
+                <Route path="/cart" element={<><Header /><CartPage /><Footer /></>} />
+                <Route path="/checkout" element={<><Header /><CheckoutPage /><Footer /></>} />
+                <Route path="/order-summary" element={<><Header /><OrderSummaryPage /><Footer /></>} />
+                <Route path="/order-confirmation/:orderId" element={<><Header /><OrderConfirmation /><Footer /></>} />
+                <Route path="/products/category/accessories" element={<><Header /><Accessories /><Footer /></>} />
+                <Route path="/products/category/networking" element={<><Header /><Networking /><Footer /></>} />
+                <Route path="/products/category/laptop" element={<><Header /><LaptopPage /><Footer /></>} />
+                <Route path="/information" element={<><Header /><InformationPage /><Footer /></>} />
+                <Route path="/shipping" element={<><Header /><ShippingPage /><Footer /></>} />
+                <Route path="/brand/:brandName" element={<><Header /><BrandPage /><Footer /></>} />
+
+                {/* Routes for Dashboard without Header and Footer }
+                <Route path="/dashboard/*" element={<Dashboard />} />
+                {/* Other Routes }
+            </Routes>
+            <ToastContainer />
+        </Router>
+    );
+}
+
+export default App;good dashboard */
+
+
+
+
+import  {React, useEffect}from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import './App.css';
+import Home from './pages/Home';
+import Header from './components/common/Header';
+import Footer from './components/common/Footer';
+import SignUp from './components/register/SignUp';
+import Login from './components/register/Login';
+import ProductDetails from './pages/ProductDetails';
+import WishlistPage from './pages/WishlistPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
+import OrderSummaryPage from './pages/OrderSummaryPage';
+import OrderConfirmation from './pages/OrderConfirmation';
+import Accessories from './components/accessories/Accessories';
+import Networking from './components/networking/Networking';
+import LaptopPage from './components/laptops/LaptopPage';
+import BrandPage from './pages/BrandPage';
+import InformationPage from './pages/InformationPage';
+import ShippingPage from './pages/ShippingPage';
+//import Dashboard from './pages/Dashboard';
+import DashboardRoutes from './components/dashboard/DashboardRoutes';
+import { ToastContainer } from 'react-toastify';
+import { setUser } from './store/slices/authSlice';
+
+const App = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const token = localStorage.getItem('authToken');
+        if (token) {
+            dispatch(setUser({ token }));
+        }
+    }, [dispatch]);
+
+    return (
+        <Router>
+            <Routes>
+                {/* Routes for pages with Header and Footer */}
+                <Route path="/" element={<><Header /><Home /><Footer /></>} />
+                <Route path="/signup" element={<><Header /><SignUp /><Footer /></>} />
+                <Route path="/login" element={<><Header /><Login /><Footer /></>} />
+                <Route path="/product/:id" element={<><Header /><ProductDetails /><Footer /></>} />
+                <Route path="/wishlist" element={<><Header /><WishlistPage /><Footer /></>} />
+                <Route path="/cart" element={<><Header /><CartPage /><Footer /></>} />
+                <Route path="/checkout" element={<><Header /><CheckoutPage /><Footer /></>} />
+                <Route path="/order-summary" element={<><Header /><OrderSummaryPage /><Footer /></>} />
+                <Route path="/order-confirmation/:orderId" element={<><Header /><OrderConfirmation /><Footer /></>} />
+                <Route path="/products/category/accessories" element={<><Header /><Accessories /><Footer /></>} />
+                <Route path="/products/category/networking" element={<><Header /><Networking /><Footer /></>} />
+                <Route path="/products/category/laptop" element={<><Header /><LaptopPage /><Footer /></>} />
+                <Route path="/information" element={<><Header /><InformationPage /><Footer /></>} />
+                <Route path="/shipping" element={<><Header /><ShippingPage /><Footer /></>} />
+                <Route path="/brand/:brandName" element={<><Header /><BrandPage /><Footer /></>} />
+
+                {/* Routes for Dashboard */}
+                <Route path="/dashboard/*" element={<DashboardRoutes />}>
+                    
+                </Route>
+            </Routes>
+            <ToastContainer />
+        </Router>
+    );
+}
+
+export default App;
