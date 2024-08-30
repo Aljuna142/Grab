@@ -357,7 +357,7 @@
         font-size: 14px;
     }
 }without badge*/
- .product-card {
+ /*last.product-card {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -470,7 +470,7 @@
     color: #ff0000;
 }
 
-/*.instock-badge {
+.instock-badge {
     background-color: #A3D02C;
     color: #000;
     font-size: 14px;
@@ -492,7 +492,7 @@
     font-weight: bold;
     border-radius: 5px;
   }
-  */
+  
    .badge {
     position: absolute;
     top: 10px;
@@ -524,11 +524,11 @@
   }
   
   .instock-badge::after {
-    border-color: transparent transparent #A3D02C transparent; /* Arrow pointing down */
+    border-color: transparent transparent #A3D02C transparent; /* Arrow pointing down 
   }
   
   .outofstock-badge::after {
-    border-color: transparent transparent rgb(92, 85, 219) transparent; /* Arrow pointing down*/ 
+    border-color: transparent transparent rgb(92, 85, 219) transparent; /* Arrow pointing down
   }
 
 
@@ -560,6 +560,342 @@
     .current-price {
         font-size: 14px;
     }
+}*/
+
+/*card expand  Product card styling 
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 15px;
+    max-width: 100%; /* Ensure the card takes up the full width of its grid cell 
+    box-sizing: border-box; /* Ensure padding and border are included in the element's width and height 
 }
+.product-card a {
+    text-decoration: none;
+    color: inherit; /* Ensure the link inherits the text color 
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the image is contained within its div 
+}
+
+.product-card .product-name {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.product-card .product-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-card .current-price {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.product-card .original-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.product-card .product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #f39c12;
+}
+
+.product-card .badge-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.product-card .instock-badge, .product-card .outofstock-badge {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.product-card .instock-badge {
+    background-color: #A3D02C;
+    color: #000;
+}
+
+.product-card .outofstock-badge {
+    background-color: rgb(31, 131, 223);
+    color: white;
+}
+
+/* Wishlist Button 
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.wishlist-btn i {
+    font-size: 1.5rem;
+    color: #ccc; /* Default color 
+}
+
+.wishlist-btn i.text-danger {
+    color: #ff0000;
+}
+
+/* Hover effects
+.product-card:hover {
+    transform: translateY(-5px);
+}*/
+
+/* General font settings */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif; /* You can replace 'Arial' with your preferred font */
+}
+
+/* Product card styling */
+/*normal card .product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 15px;
+    max-width: 300px;
+    box-sizing: border-box;
+    font-family:'Lora', sans-serif; /* Ensuring font family is applied 
+}normal card */
+
+
+
+
+/* Product card styling */
+.product-card.default {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 15px;
+    max-width: 300px; /* Default size */
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif; /* Ensuring font family is applied */
+}
+
+.product-card.expanded {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 15px;
+    max-width: 100%; /* Expand according to layout */
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif; /* Ensuring font family is applied */
+}
+
+/* Other styling remains the same */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Removing the underline for links*/
+
+.product-card a {
+    text-decoration: none;
+    color: inherit; /* Ensure the link inherits the text color */
+}
+
+/* Hover effect for product name*/
+
+.product-card .product-name {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product-card .product-name:hover {
+    color: #f39c12; /* Yellow-orange color on hover */
+}
+
+.product-card .product-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product-card .current-price {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.product-card .original-price {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.product-card .product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #f39c12;
+}
+
+/* Badge styles */
+.product-card .badge-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.product-card .instock-badge, .product-card .outofstock-badge {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.product-card .instock-badge {
+    background-color: #A3D02C;
+    color: #000;
+}
+
+.product-card .outofstock-badge {
+    background-color: rgb(31, 131, 223);
+    color: white;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.wishlist-btn i {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.wishlist-btn i.text-danger {
+    color: #ff0000;
+}
+
+/* Hover effects */
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Specific font settings for different elements */
+.product-card .product-name,
+.product-card .current-price,
+.product-card .original-price,
+.product-card .product-rating {
+    font-family: 'Arial', sans-serif; /* Apply font family to all text elements within the card */
+}
+
+
+
+/*
+product-card .product-name,
+product-card .current-price,
+.product-card .original-price,
+.product-card .product-rating{
+font-family: 'Arial', sans-serif;
+
+max-width:45%
+product-card .product-rating 
+product-family:'Arial',sansserif
+
+
+
+
+
+max -width :45%
+product-card .product-rating 
+product-family:'Arial',sansserif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
 
 

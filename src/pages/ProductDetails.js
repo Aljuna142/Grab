@@ -6068,7 +6068,7 @@ const ProductDetails = () => {
 
 export default ProductDetails;new2*/
 
-import React, { useState, useEffect } from 'react';
+/*good final import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch,useSelector } from 'react-redux';
 import { addToCart,updateCart } from '../store/slices/cartSlice';
@@ -6170,7 +6170,7 @@ const ProductDetails = () => {
   };
   */
 
-  const handleQuantityChange = (newQuantity) => {
+  /*good const handleQuantityChange = (newQuantity) => {
     setQuantity(newQuantity);
     dispatch(updateCart({ id: product._id.toString(), quantity: newQuantity }));
   };
@@ -6254,7 +6254,7 @@ const ProductDetails = () => {
   setShowCartModal(true); // Show the cart preview modal
 };*/
 
-const handleAddToCart = () => {
+/*continue const handleAddToCart = () => {
     dispatch(addToCart({ 
       id: product._id.toString(), 
       image: product.image, 
@@ -6294,7 +6294,7 @@ const handleAddToCart = () => {
   };*/
   
 
-  const handleBuyNow = () => {
+  /*continueconst handleBuyNow = () => {
     dispatch(addToCart({ ...product, quantity }));
     navigate('/checkout');
   };
@@ -6311,7 +6311,7 @@ const handleAddToCart = () => {
       draggable: true,
       progress: undefined,
     });
-  };*/}
+  }; }
 
 
   // Ensure originalPrice is a string
@@ -6383,7 +6383,7 @@ const handleAddToCart = () => {
             <span className="current-price">{product.price}</span>
             <span className="original-price">{price.originalPrice}</span>
             <span className="inclusive-vat">{priceRest.join(' ')}</span>
-          </div>*/}
+          </div>}
 
 
 
@@ -6411,7 +6411,7 @@ const handleAddToCart = () => {
               quantity={quantity}
               onQuantityChange={handleQuantityChange}
             />
-          </div>*/}
+          </div>}
 
      <QuantitySelector
   productId={product._id.toString()}
@@ -6442,7 +6442,7 @@ const handleAddToCart = () => {
                 </Form.Group>
               </Col>
             </Row>
-          </div>*/}
+          </div>}
 
           <div className="button-container">
           <div className="button-group">
@@ -6496,7 +6496,7 @@ const handleAddToCart = () => {
                   Want this? Send Us Inquiry Now!
                 </Button>
         
-                {/* Modal for Product Inquiry */}
+                {/* Modal for Product Inquiry }
                 <ProductInquiry 
                   show={showInquiryModal} 
                   onHide={() => setShowInquiryModal(false)} 
@@ -6532,7 +6532,7 @@ const handleAddToCart = () => {
                 }}
               >
                 Want this? Send Us Inquiry Now!
-              </Button>*/
+              </Button>
               
             )}
           </div>
@@ -6546,7 +6546,7 @@ const handleAddToCart = () => {
               onClick={handleAddToCart}
             >
               Add to Cart
-            </Button>*/}
+            </Button>}
           
 
             
@@ -6558,7 +6558,7 @@ const handleAddToCart = () => {
               onClick={handleBuyNow}
             >
               Buy Now
-            </Button>*/}
+            </Button>}
             <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
           </div>
           <div className="actions-row">
@@ -6631,6 +6631,1113 @@ const handleAddToCart = () => {
 };
 
 
+export default ProductDetails;good final */
+
+
+
+/*import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, updateCart } from '../store/slices/cartSlice';
+import { Container, Row, Col, Image, Button, Carousel } from 'react-bootstrap';
+import axios from 'axios';
+import ProductRatings from '../components/cards/ProductRatings';
+import ColorSwatches from '../components/ColorSwatches';
+import '../assets/styles/ProductDetails.css';
+import iconstabby from '../assets/images/icons/iconstabby.svg';
+import ReviewSection from '../components/reviews/ReviewSection';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import CartPreviewModal from '../components/modals/cartPreviewModal';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import QuantitySelector from '../components/Qty';
+import ProductInquiry from '../components/ProductInquiry';
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const dispatch = useDispatch();
+  const [showCartModal, setShowCartModal] = useState(false);
+  const [showInquiryModal, setShowInquiryModal] = useState(false);
+
+  const handleEnquire = () => {
+    setShowInquiryModal(true);
+  };
+
+  const cartItems = useSelector((state) => state.cart.items);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+        setProduct(data.product);
+        setLoading(false);
+      } catch (error) {
+        setError('Product not found');
+        setLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  useEffect(() => {
+    if (product) {
+      const cartItem = cartItems.find((item) => item.id === product._id.toString());
+      if (cartItem) {
+        setQuantity(cartItem.quantity);
+      } else {
+        setQuantity(1);
+      }
+    }
+  }, [product, cartItems]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <h2>{error}</h2>;
+  }
+
+  if (!product) {
+    return <div>Product not available</div>;
+  }
+
+  const reviews = Array.isArray(product.reviews) ? product.reviews : [];
+  const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
+  const images = color.images || product.images || [];
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+    dispatch(updateCart({ id: product._id.toString(), quantity: newQuantity }));
+  };
+
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  const handleColorClick = (index) => {
+    setSelectedColorIndex(index);
+    setCurrentImageIndex(0);
+  };
+
+  const specifications = {
+    Brand: product.brand || 'N/A',
+    'Model Number': product.modelNumber || 'N/A',
+    Processor: product.processor || 'N/A',
+    'Memory RAM': product.memoryRam || 'N/A',
+    Storage: product.storage || 'N/A',
+    Graphics: product.graphics || 'N/A',
+    Keyboard: product.keyboard || 'N/A',
+    Wifi: product.wifi || 'N/A',
+    Battery: product.battery || 'N/A',
+    Resolution: product.resolution || 'N/A',
+    'Power Supply': product.powerSupply || 'N/A',
+    Bluetooth: product.bluetooth || 'N/A',
+    Webcam: product.webcam || 'N/A',
+    Speaker: product.speaker || 'N/A',
+    Ports: product.ports || 'N/A',
+    Color: product.color || 'N/A'
+  };
+
+  const keyPoints = [
+    'HP 255 G8',
+    'AMD Ryzen 5-5500U',
+    '8GB RAM',
+    '256GB SSD',
+    '15.6” FHD',
+    'Arabic keyboard'
+  ];
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ 
+      id: product._id.toString(), 
+      image: product.image, 
+      name: product.name, 
+      price: product.price, 
+      originalPrice: product.originalPrice,
+      quantity: 1
+    }));
+
+    toast.success('Your item has been successfully added to the cart!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+    setQuantity(1);
+    setShowCartModal(true);
+  };
+
+  const handleCloseCartModal = () => setShowCartModal(false);
+
+  const handleBuyNow = () => {
+    dispatch(addToCart({ ...product, quantity }));
+    navigate('/checkout');
+  };
+
+  const originalPrice = typeof product.originalPrice === 'string' ? product.originalPrice : '';
+  const [priceAmount, ...priceRest] = originalPrice.split(' ');
+
+  return (
+    <Container>
+      <Row>
+        <Col md={4} className="product-image-col">
+          <div className="product-image-carousel">
+            <Row>
+              <Col xs={3} className="product-thumbnails-container">
+                <div className="product-thumbnails">
+                  {images.length > 0 &&
+                    images.map((image, index) => (
+                      <Image
+                        key={index}
+                        src={image}
+                        alt={product.name}
+                        fluid
+                        className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                        onClick={() => handleThumbnailClick(index)}
+                      />
+                    ))}
+                </div>
+              </Col>
+              <Col xs={9}>
+                <div className="product-image-zoom">
+                  <Carousel
+                    activeIndex={currentImageIndex}
+                    onSelect={(selectedIndex) => setCurrentImageIndex(selectedIndex)}
+                  >
+                    {images.length > 0 &&
+                      images.map((image, index) => (
+                        <Carousel.Item key={index}>
+                          <Image src={image} alt={product.name} fluid />
+                        </Carousel.Item>
+                      ))}
+                  </Carousel>
+                </div>
+              </Col>
+            </Row>
+            <ColorSwatches
+              colors={product.colors}
+              selectedColorIndex={selectedColorIndex}
+              onColorClick={handleColorClick}
+            />
+          </div>
+        </Col>
+  
+        <Col md={5} className="product-details-col">
+          <h3 className="product-title">{product.name}</h3>
+          <div className="product-rating">
+            <ProductRatings rating={product.rating} reviews={reviews} />
+          </div>
+  
+          <div className="price-container">
+            <span className="current-price">{product.price}AED</span>
+            {product.originalPrice && (
+              <span style={{ fontSize: '1em' }} className="original-price">{product.originalPrice}AED</span>
+            )}
+            <span style={{ fontSize: '0.8em', color: 'gray', textDecoration: 'none' }} className="inclusive-vat">Inclusive VAT</span>
+          </div>
+  
+          <div className="details-info">
+            <div>
+              <strong>Status:</strong>{' '}
+              <span style={{ color: product.countInStock > 0 ? 'green' : 'red' }}>
+                {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+              </span>
+            </div>
+            <div>
+              <strong>SKU:</strong> {product._id}
+            </div>
+            <div>
+              <strong>Categories:</strong> {product.categories ? product.categories.join(', ') : 'N/A'}
+            </div>
+            <div>
+              <strong>Brand:</strong> {product.brand}
+            </div>
+          </div>
+  
+          <QuantitySelector
+            productId={product._id.toString()}
+            quantity={quantity}
+            onQuantityChange={handleQuantityChange}
+          />
+  
+          <div className="button-container">
+            <div className="button-group">
+              {product.countInStock > 0 ? (
+                <>
+                  <Button
+                    className="add-to-cart-btn"
+                    variant="warning"
+                    onClick={handleAddToCart}
+                  >
+                    Add to Cart
+                  </Button>
+                  <Button
+                    className="buy-now-btn"
+                    variant="success"
+                    onClick={handleBuyNow}
+                  >
+                    Buy Now
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button
+                    className="enquire-btn"
+                    variant="danger"
+                    onClick={handleEnquire}
+                    style={{
+                      border: '2px solid red',
+                      borderRadius: '0',
+                      backgroundColor: 'red',
+                      color: '#fff',
+                      fontSize: '16px',
+                      padding: '10px',
+                      fontWeight: 'bold',
+                      cursor: 'pointer',
+                      transition: 'background-color 0.3s ease, border-color 0.3s ease',
+                      width: '100%',
+                      textAlign: 'center',
+                      display: 'inline-block',
+                      whiteSpace: 'nowrap',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#8abf1c';
+                      e.currentTarget.style.borderColor = '#8abf1c';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = 'red';
+                      e.currentTarget.style.borderColor = 'red';
+                    }}
+                  >
+                    Want this? Send Us Inquiry Now!
+                  </Button>
+                  <ProductInquiry 
+                    show={showInquiryModal} 
+                    onHide={() => setShowInquiryModal(false)} 
+                  />
+                </>
+              )}
+            </div>
+            <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
+          </div>
+  
+          <div className="actions-row">
+            <Button variant="light">
+              <i className="fas fa-comments"></i> Chat with Specialist
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-phone"></i> Request a Callback
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-boxes"></i> Request Bulk Purchase
+            </Button>
+          </div>
+  
+          <ul className="key-points">
+            {keyPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </Col>
+  
+        <Col md={3} className="empty-col">
+          <div className="first-div">
+            This item can be changed, replaced, or refunded within 15 days of the purchase day for Free.
+          </div>
+          <div className="second-div">
+            For other countries, our agent will contact you for delivery estimation.
+          </div>
+          <div className="third-div">
+            <div className="icon-container">
+              <img src={iconstabby} alt="Icon" />
+            </div>
+          </div>
+          <div className="fourth-div">
+            <Button style={{ backgroundColor: '#FCDC00', borderRadius: '5px' }}>
+              Get My Coupon
+            </Button>
+          </div>
+          <div className="fifth-div">
+            <h5>TRUSTED SHIPPING</h5>
+            <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to grab your A to Z technology products.</p>
+          </div>
+          <div className="sixth-div">
+            <h5>Express Delivery Within All Mobile Cities In UAE</h5>
+            <p>Grabatoz offers express delivery for all our customers to receive your orders in quick time without any further delay.</p>
+            <h5>Delivery in Remote Areas</h5>
+            <p>Delivery in remote areas will be considered as normal delivery, which takes place within 3 working days. Click for more details.</p>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12}>
+          <div className="product-description">
+            <h4>Product Description</h4>
+            <p>{product.description}</p>
+          </div>
+        </Col>
+      </Row>
+      <ReviewSection reviews={reviews} />
+    </Container>
+  );
+};
+
+
+export default ProductDetails;good*/
+
+
+
+
+/*img add by dashbaord  not showing image import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, updateCart } from '../store/slices/cartSlice';
+import { Container, Row, Col, Image, Button, Carousel } from 'react-bootstrap';
+import axios from 'axios';
+import ProductRatings from '../components/cards/ProductRatings';
+import ColorSwatches from '../components/ColorSwatches';
+import '../assets/styles/ProductDetails.css';
+import iconstabby from '../assets/images/icons/iconstabby.svg';
+import ReviewSection from '../components/reviews/ReviewSection';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import CartPreviewModal from '../components/modals/cartPreviewModal';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import QuantitySelector from '../components/Qty';
+import ProductInquiry from '../components/ProductInquiry';
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const dispatch = useDispatch();
+  const [showCartModal, setShowCartModal] = useState(false);
+  const [showInquiryModal, setShowInquiryModal] = useState(false);
+
+  const handleEnquire = () => {
+    setShowInquiryModal(true);
+  };
+
+  const cartItems = useSelector((state) => state.cart.items);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+        setProduct(data.product);
+        setLoading(false);
+      } catch (error) {
+        setError('Product not found');
+        setLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  useEffect(() => {
+    if (product) {
+      const cartItem = cartItems.find((item) => item.id === product._id.toString());
+      if (cartItem) {
+        setQuantity(cartItem.quantity);
+      } else {
+        setQuantity(1);
+      }
+    }
+  }, [product, cartItems]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <h2>{error}</h2>;
+  }
+
+  if (!product) {
+    return <div>Product not available</div>;
+  }
+
+  const reviews = Array.isArray(product.reviews) ? product.reviews : [];
+  const color = (product.colors && product.colors[selectedColorIndex]) || {};
+  const images = (color.images || product.images || []);
+
+
+
+  /*const color = product.colors && product.colors[selectedColorIndex] ? product.colors[selectedColorIndex] : product.colors ? product.colors[0] : {};
+  const images = color.images && Array.isArray(color.images) ? color.images : (product.images && Array.isArray(product.images) ? product.images : []);
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+    dispatch(updateCart({ id: product._id.toString(), quantity: newQuantity }));
+  };
+
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  const handleColorClick = (index) => {
+    setSelectedColorIndex(index);
+    setCurrentImageIndex(0);
+  };
+
+  const specifications = {
+    Brand: product.brand || 'N/A',
+    'Model Number': product.modelNumber || 'N/A',
+    Processor: product.processor || 'N/A',
+    'Memory RAM': product.memoryRam || 'N/A',
+    Storage: product.storage || 'N/A',
+    Graphics: product.graphics || 'N/A',
+    Keyboard: product.keyboard || 'N/A',
+    Wifi: product.wifi || 'N/A',
+    Battery: product.battery || 'N/A',
+    Resolution: product.resolution || 'N/A',
+    'Power Supply': product.powerSupply || 'N/A',
+    Bluetooth: product.bluetooth || 'N/A',
+    Webcam: product.webcam || 'N/A',
+    Speaker: product.speaker || 'N/A',
+    Ports: product.ports || 'N/A',
+    Color: product.color || 'N/A'
+  };
+
+  const keyPoints = [
+    'HP 255 G8',
+    'AMD Ryzen 5-5500U',
+    '8GB RAM',
+    '256GB SSD',
+    '15.6” FHD',
+    'Arabic keyboard'
+  ];
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ 
+      id: product._id.toString(), 
+      image: product.image, 
+      name: product.name, 
+      price: product.price, 
+      originalPrice: product.originalPrice,
+      quantity: 1
+    }));
+
+    toast.success('Your item has been successfully added to the cart!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+    setQuantity(1);
+    setShowCartModal(true);
+  };
+
+  const handleCloseCartModal = () => setShowCartModal(false);
+
+  const handleBuyNow = () => {
+    dispatch(addToCart({ ...product, quantity }));
+    navigate('/checkout');
+  };
+
+  const originalPrice = typeof product.originalPrice === 'string' ? product.originalPrice : '';
+  const [priceAmount, ...priceRest] = originalPrice.split(' ');
+
+  return (
+    <Container>
+      <Row>
+        <Col md={4} className="product-image-col">
+          <div className="product-image-carousel">
+            <Row>
+              <Col xs={3} className="product-thumbnails-container">
+                <div className="product-thumbnails">
+                  {images.length > 0 &&
+                    images.map((image, index) => (
+                      <Image
+                        key={index}
+                        src={image}
+                        alt={product.name}
+                        fluid
+                        className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                        onClick={() => handleThumbnailClick(index)}
+                      />
+                    ))}
+                </div>
+              </Col>
+              <Col xs={9}>
+                <div className="product-image-zoom">
+                  <Carousel
+                    activeIndex={currentImageIndex}
+                    onSelect={(selectedIndex) => setCurrentImageIndex(selectedIndex)}
+                  >
+                    {images.length > 0 &&
+                      images.map((image, index) => (
+                        <Carousel.Item key={index}>
+                          <Image src={image} alt={product.name} fluid />
+                        </Carousel.Item>
+                      ))}
+                  </Carousel>
+                </div>
+              </Col>
+            </Row>
+            <ColorSwatches
+              colors={product.colors}
+              selectedColorIndex={selectedColorIndex}
+              onColorClick={handleColorClick}
+            />
+          </div>
+        </Col>
+  
+        <Col md={5} className="product-details-col">
+          <h3 className="product-title">{product.name}</h3>
+          <div className="product-rating">
+            <ProductRatings rating={product.rating} reviews={reviews} />
+          </div>
+  
+          <div className="price-container">
+            <span className="current-price">{product.price}AED</span>
+            {product.originalPrice && (
+              <span style={{ fontSize: '1em' }} className="original-price">{product.originalPrice}AED</span>
+            )}
+            <span style={{ fontSize: '0.8em', color: 'gray', textDecoration: 'none' }} className="inclusive-vat">Inclusive VAT</span>
+          </div>
+  
+          <div className="details-info">
+            <div>
+              <strong>Status:</strong>{' '}
+              <span style={{ color: product.countInStock > 0 ? 'green' : 'red' }}>
+                {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+              </span>
+            </div>
+            <div>
+              <strong>SKU:</strong> {product._id}
+            </div>
+            <div>
+              <strong>Categories:</strong> {product.categories ? product.categories.join(', ') : 'N/A'}
+            </div>
+            <div>
+              <strong>Brand:</strong> {product.brand}
+            </div>
+          </div>
+  
+          <QuantitySelector
+            productId={product._id.toString()}
+            quantity={quantity}
+            onQuantityChange={handleQuantityChange}
+          />
+  
+          <div className="button-container">
+            <div className="button-group">
+              {product.countInStock > 0 ? (
+                <>
+                  <Button
+                    className="add-to-cart-btn"
+                    variant="warning"
+                    onClick={handleAddToCart}
+                  >
+                    Add to Cart
+                  </Button>
+                  <Button
+                    className="buy-now-btn"
+                    variant="success"
+                    onClick={handleBuyNow}
+                  >
+                    Buy Now
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button
+                    className="enquire-btn"
+                    variant="danger"
+                    onClick={handleEnquire}
+                    style={{
+                      border: '2px solid red',
+                      borderRadius: '0',
+                      backgroundColor: 'red',
+                      color: '#fff',
+                      fontSize: '16px',
+                      padding: '10px',
+                      fontWeight: 'bold',
+                      cursor: 'pointer',
+                      transition: 'background-color 0.3s ease, border-color 0.3s ease',
+                      width: '100%',
+                      textAlign: 'center',
+                      display: 'inline-block',
+                      whiteSpace: 'nowrap',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#8abf1c';
+                      e.currentTarget.style.borderColor = '#8abf1c';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = 'red';
+                      e.currentTarget.style.borderColor = 'red';
+                    }}
+                  >
+                    Want this? Send Us Inquiry Now!
+                  </Button>
+                  <ProductInquiry 
+                    show={showInquiryModal} 
+                    onHide={() => setShowInquiryModal(false)} 
+                  />
+                </>
+              )}
+            </div>
+            <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
+          </div>
+  
+          <div className="actions-row">
+            <Button variant="light">
+              <i className="fas fa-comments"></i> Chat with Specialist
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-phone"></i> Request a Callback
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-boxes"></i> Request Bulk Purchase
+            </Button>
+          </div>
+  
+          <ul className="key-points">
+            {keyPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </Col>
+  
+        <Col md={3} className="empty-col">
+          <div className="first-div">
+            This item can be changed, replaced, or refunded within 15 days of the purchase day for Free.
+          </div>
+          <div className="second-div">
+            For other countries, our agent will contact you for delivery estimation.
+          </div>
+          <div className="third-div">
+            <div className="icon-container">
+              <img src={iconstabby} alt="Icon" />
+            </div>
+          </div>
+          <div className="fourth-div">
+            <Button style={{ backgroundColor: '#FCDC00', borderRadius: '5px' }}>
+              Get My Coupon
+            </Button>
+          </div>
+          <div className="fifth-div">
+            <h5>TRUSTED SHIPPING</h5>
+            <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to grab your A to Z technology products.</p>
+          </div>
+          <div className="sixth-div">
+            <h5>Express Delivery Within All Mobile Cities In UAE</h5>
+            <p>Grabatoz offers express delivery for all our customers to receive your orders in quick time without any further delay.</p>
+            <h5>Delivery in Remote Areas</h5>
+            <p>Delivery in remote areas will be considered as normal delivery, which takes place within 3 working days. Click for more details.</p>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12}>
+          <div className="product-description">
+            <h4>Product Description</h4>
+            <p>{product.description}</p>
+          </div>
+        </Col>
+      </Row>
+      <ReviewSection reviews={reviews} />
+    </Container>
+  );
+};
+
+export default ProductDetails;dashboard added */
+
+import React, { useState, useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart, updateCart } from '../store/slices/cartSlice';
+import { Container, Row, Col, Image, Button, Carousel } from 'react-bootstrap';
+import axios from 'axios';
+import ProductRatings from '../components/cards/ProductRatings';
+import ColorSwatches from '../components/ColorSwatches';
+import '../assets/styles/ProductDetails.css';
+import iconstabby from '../assets/images/icons/iconstabby.svg';
+import ReviewSection from '../components/reviews/ReviewSection';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import CartPreviewModal from '../components/modals/cartPreviewModal';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import QuantitySelector from '../components/Qty';
+import ProductInquiry from '../components/ProductInquiry';
+
+const ProductDetails = () => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const [product, setProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const dispatch = useDispatch();
+  const [showCartModal, setShowCartModal] = useState(false);
+  const [showInquiryModal, setShowInquiryModal] = useState(false);
+
+  const handleEnquire = () => {
+    setShowInquiryModal(true);
+  };
+
+  const cartItems = useSelector((state) => state.cart.items);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        const { data } = await axios.get(`http://localhost:5000/api/v1/product/${id}`);
+        setProduct(data.product);
+        setLoading(false);
+      } catch (error) {
+        setError('Product not found');
+        setLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  useEffect(() => {
+    if (product) {
+      const cartItem = cartItems.find((item) => item.id === product._id.toString());
+      if (cartItem) {
+        setQuantity(cartItem.quantity);
+      } else {
+        setQuantity(1);
+      }
+    }
+  }, [product, cartItems]);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <h2>{error}</h2>;
+  }
+
+  if (!product) {
+    return <div>Product not available</div>;
+  }
+
+  const reviews = Array.isArray(product.reviews) ? product.reviews : [];
+  const color = (product.colors && product.colors[selectedColorIndex]) || {};
+  const images = (color.images && color.images.length > 0) ? color.images : product.images || [];
+
+  // Handle case where product has no images
+  const hasImages = images.length > 0;
+  const imageSrc = hasImages ? images[currentImageIndex] : product.image;
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+    dispatch(updateCart({ id: product._id.toString(), quantity: newQuantity }));
+  };
+
+  const handleThumbnailClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  const handleColorClick = (index) => {
+    setSelectedColorIndex(index);
+    setCurrentImageIndex(0);
+  };
+
+  const specifications = {
+    Brand: product.brand || 'N/A',
+    'Model Number': product.modelNumber || 'N/A',
+    Processor: product.processor || 'N/A',
+    'Memory RAM': product.memoryRam || 'N/A',
+    Storage: product.storage || 'N/A',
+    Graphics: product.graphics || 'N/A',
+    Keyboard: product.keyboard || 'N/A',
+    Wifi: product.wifi || 'N/A',
+    Battery: product.battery || 'N/A',
+    Resolution: product.resolution || 'N/A',
+    'Power Supply': product.powerSupply || 'N/A',
+    Bluetooth: product.bluetooth || 'N/A',
+    Webcam: product.webcam || 'N/A',
+    Speaker: product.speaker || 'N/A',
+    Ports: product.ports || 'N/A',
+    Color: product.color || 'N/A'
+  };
+
+  const keyPoints = [
+    'HP 255 G8',
+    'AMD Ryzen 5-5500U',
+    '8GB RAM',
+    '256GB SSD',
+    '15.6” FHD',
+    'Arabic keyboard'
+  ];
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({ 
+      id: product._id.toString(), 
+      image: product.image, 
+      name: product.name, 
+      price: product.price, 
+      originalPrice: product.originalPrice,
+      quantity: 1
+    }));
+
+    toast.success('Your item has been successfully added to the cart!', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+
+    setQuantity(1);
+    setShowCartModal(true);
+  };
+
+  const handleCloseCartModal = () => setShowCartModal(false);
+
+  const handleBuyNow = () => {
+    dispatch(addToCart({ ...product, quantity }));
+    navigate('/checkout');
+  };
+
+  const originalPrice = typeof product.originalPrice === 'string' ? product.originalPrice : '';
+  const [priceAmount, ...priceRest] = originalPrice.split(' ');
+
+  return (
+    <Container>
+      <Row>
+        <Col md={4} className="product-image-col">
+          <div className="product-image-carousel">
+            <Row>
+              <Col xs={3} className="product-thumbnails-container">
+                {hasImages && (
+                  <div className="product-thumbnails">
+                    {images.map((image, index) => (
+                      <Image
+                        key={index}
+                        src={image}
+                        alt={product.name}
+                        fluid
+                        className={`thumbnail ${index === currentImageIndex ? 'active' : ''}`}
+                        onClick={() => handleThumbnailClick(index)}
+                      />
+                    ))}
+                  </div>
+                )}
+              </Col>
+              <Col xs={9}>
+                <div className="product-image-zoom">
+                  {hasImages ? (
+                    <Carousel
+                      activeIndex={currentImageIndex}
+                      onSelect={(selectedIndex) => setCurrentImageIndex(selectedIndex)}
+                    >
+                      {images.map((image, index) => (
+                        <Carousel.Item key={index}>
+                          <Image src={image} alt={product.name} fluid />
+                        </Carousel.Item>
+                      ))}
+                    </Carousel>
+                  ) : (
+                    <Image src={imageSrc} alt={product.name} fluid />
+                  )}
+                </div>
+              </Col>
+            </Row>
+            <ColorSwatches
+              colors={product.colors}
+              selectedColorIndex={selectedColorIndex}
+              onColorClick={handleColorClick}
+            />
+          </div>
+        </Col>
+  
+        <Col md={5} className="product-details-col">
+          <h3 className="product-title">{product.name}</h3>
+          <div className="product-rating">
+            <ProductRatings rating={product.rating} reviews={reviews} />
+          </div>
+  
+          <div className="price-container">
+            <span className="current-price">{product.price}AED</span>
+            {product.originalPrice && (
+              <span style={{ fontSize: '1em' }} className="original-price">{product.originalPrice}AED</span>
+            )}
+            <span style={{ fontSize: '0.8em', color: 'gray', textDecoration: 'none' }} className="inclusive-vat">Inclusive VAT</span>
+          </div>
+  
+          <div className="details-info">
+            <div>
+              <strong>Status:</strong>{' '}
+              <span style={{ color: product.countInStock > 0 ? 'green' : 'red' }}>
+                {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
+              </span>
+            </div>
+            <div>
+              <strong>SKU:</strong> {product._id}
+            </div>
+            <div>
+              <strong>Categories:</strong> {product.categories ? product.categories.join(', ') : 'N/A'}
+            </div>
+            <div>
+              <strong>Brand:</strong> {product.brand}
+            </div>
+          </div>
+  
+          <QuantitySelector
+            productId={product._id.toString()}
+            quantity={quantity}
+            onQuantityChange={handleQuantityChange}
+          />
+  
+          <div className="button-container">
+            <div className="button-group">
+              {product.countInStock > 0 ? (
+                <>
+                  <Button
+                    className="add-to-cart-btn"
+                    variant="warning"
+                    onClick={handleAddToCart}
+                  >
+                    Add to Cart
+                  </Button>
+                  <Button
+                    className="buy-now-btn"
+                    variant="success"
+                    onClick={handleBuyNow}
+                  >
+                    Buy Now
+                  </Button>
+                </>
+              ) : (
+                <>
+                  <Button
+                    className="inquiry-btn"
+                    variant="danger"
+                    onClick={handleEnquire}
+                    style={{
+                      border: '2px solid red',
+                      backgroundColor: 'red',
+                      color: '#fff',
+                      fontSize: '16px',
+                      padding: '10px',
+                      fontWeight: 'bold',
+                      cursor: 'pointer',
+                      transition: 'background-color 0.3s ease, border-color 0.3s ease',
+                      width: '100%',
+                      textAlign: 'center',
+                      display: 'inline-block',
+                      whiteSpace: 'nowrap',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = '#8abf1c';
+                      e.currentTarget.style.borderColor = '#8abf1c';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = 'red';
+                      e.currentTarget.style.borderColor = 'red';
+                    }}
+                  >
+                    Want this? Send Us Inquiry Now!
+                  </Button>
+                  <ProductInquiry
+                    show={showInquiryModal}
+                    onHide={() => setShowInquiryModal(false)}
+                  />
+                </>
+              )}
+            </div>
+            <CartPreviewModal show={showCartModal} handleClose={handleCloseCartModal} />
+          </div>
+  
+          <div className="actions-row">
+            <Button variant="light">
+              <i className="fas fa-comments"></i> Chat with Specialist
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-phone"></i> Request a Callback
+            </Button>
+            <Button variant="light">
+              <i className="fas fa-boxes"></i> Request Bulk Purchase
+            </Button>
+          </div>
+  
+          <ul className="key-points">
+            {keyPoints.map((point, index) => (
+              <li key={index}>{point}</li>
+            ))}
+          </ul>
+        </Col>
+  
+        <Col md={3} className="empty-col">
+          <div className="first-div">
+            This item can be changed, replaced, or refunded within 15 days of the purchase day for Free.
+          </div>
+          <div className="second-div">
+            For other countries, our agent will contact you for delivery estimation.
+          </div>
+          <div className="third-div">
+            <div className="icon-container">
+              <img src={iconstabby} alt="Icon" />
+            </div>
+          </div>
+          <div className="fourth-div">
+            <Button style={{ backgroundColor: '#FCDC00', borderRadius: '5px' }}>
+              Get My Coupon
+            </Button>
+          </div>
+          <div className="fifth-div">
+            <h5>TRUSTED SHIPPING</h5>
+            <p>Free shipping when you spend AED500 & above. User-friendly atmosphere to grab your A to Z technology products.</p>
+          </div>
+          <div className="sixth-div">
+            <h5>Express Delivery Within All Mobile Cities In UAE</h5>
+            <p>Grabatoz offers express delivery for all our customers to receive your orders in quick time without any further delay.</p>
+            <h5>Delivery in Remote Areas</h5>
+            <p>Delivery in remote areas will be considered as normal delivery, which takes place within 3 working days. Click for more details.</p>
+          </div>
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12}>
+          <div className="product-description">
+            <h4>Product Description</h4>
+            <p>{product.description}</p>
+          </div>
+        </Col>
+      </Row>
+      <ReviewSection reviews={reviews} />
+    </Container>
+  );
+};
+
 export default ProductDetails;
+
+
+
 
 

@@ -66,6 +66,45 @@
     border: 1px solid #ddd; /* Border for visual separation */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
+/* Horizontal Scrolling for Product Cards */
+.popular-picks-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.product-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.product-cards-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.scroll-button {
+    background-color: #000; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) { /* Adjust for laptops and desktops */

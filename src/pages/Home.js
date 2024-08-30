@@ -1351,7 +1351,7 @@ const Home = () => {
 
 export default Home;xx*/
 
-import React, { useState, useEffect } from 'react';
+/*normal but today popular view normal view not a scroll view import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Banners from '../components/banners/Banner';
@@ -1435,6 +1435,7 @@ const Home = () => {
                             price={product.price}
                             originalPrice={product.originalPrice}
                             countInStock={product.countInStock} 
+                            size="default"
                         />
                     ))}
                 </div>
@@ -1489,6 +1490,176 @@ const Home = () => {
     link1="/brand/apple"
     link2="/brand/samsung"
 />
+
+                <div className="shop-sections">
+                    <ShopSection title="Shop Apple" products={products.filter(p => p.brand === 'Apple')} />
+                    <ShopSection title="Shop Samsung" products={products.filter(p => p.brand === 'Samsung')} />
+                </div>
+
+                <LogoSection />
+                <CoreAspects />
+            </div>
+        </div>
+    );
+};
+
+export default Home;good normal but today popilar picks like normal view */
+
+import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import Banners from '../components/banners/Banner';
+import DoubleBanner from '../components/banners/DoubleBanner';
+import Category from '../components/category/Category';
+import Brands from '../components/brands/Brands';
+import ShopSection from '../components/shop/ShopSection';
+import ProductCard from '../components/cards/ProductCard';
+import Accessories from '../components/accessories/Accessories';
+import Networking from '../components/networking/Networking';
+import LogoSection from '../components/logosection/Logosection';
+import CoreAspects from '../components/core/CoreAspects';
+
+// Image Imports
+import BannerLaptop from '../assets/images/Banners/banner laptop.png';
+import BannerLED from '../assets/images/Banners/banner led 2.png';
+import BannerMicrosoftSurface from '../assets/images/Banners/banner microsoft surface.png';
+import BannerHpandDell from '../assets/images/Banners/hpanddellbanner-5.png';
+import BannerAcc from '../assets/images/Banners/bannerAcc-6.jpg';
+import BannerAcerAsus from '../assets/images/Banners/ACER-ASUSBanner-7.webp';
+import BannerNetAcc from '../assets/images/Banners/NetAccBanner-8.webp';
+import BannerMsiLenovo from '../assets/images/Banners/Msi-LenovoBanner.webp';
+import BannerAppleSamsung from '../assets/images/Banners/Apple-SamsungBanner.webp';
+import HpBanner from '../assets/images/Banners/hp-banner.webp';
+import DellBanner from '../assets/images/Banners/dell-banner.webp';
+import AcerBanner from '../assets/images/Banners/acer-banner.webp';
+import AsusBanner from '../assets/images/Banners/asus-banner.webp';
+import AppleBanner from '../assets/images/Banners/apple-banner.webp';
+import SamsungBanner from '../assets/images/Banners/samsung-banner.webp';
+
+const Home = () => {
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const { data } = await axios.get('http://localhost:5000/api/v1/products');
+                setProducts(data.products);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+                setError('Failed to fetch products');
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchProducts();
+    }, []);
+
+    const scrollLeft = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+    };
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
+
+    const bannerImages = {
+        initial: [BannerLaptop, BannerLED, BannerMicrosoftSurface],
+        hpAndDell: [BannerHpandDell],
+        acc: [BannerAcc],
+        acerAsus: [BannerAcerAsus],
+        netAcc: [BannerNetAcc],
+        msiLenovo: [BannerMsiLenovo],
+        appleSamsung: [BannerAppleSamsung]
+    };
+
+    return (
+        <div>
+            <Banners imageUrls={bannerImages.initial} />
+            <Category />
+            <Brands />
+            <div className="main-content">
+                <h1>Today's Popular Picks</h1>
+                <div className="popular-picks-container">
+                    <button className="scroll-button left" onClick={scrollLeft}>{"<"}</button>
+                    <div className="product-cards-container" ref={scrollRef}>
+                        {products.map(product => (
+                            <ProductCard
+                                key={product._id}
+                                id={product._id}
+                                image={product.image}
+                                name={product.name}
+                                rating={product.rating}
+                                reviews={product.numOfReviews}
+                                price={product.price}
+                                originalPrice={product.originalPrice}
+                                countInStock={product.countInStock}
+                                size="default"
+                            />
+                        ))}
+                    </div>
+                    <button className="scroll-button right" onClick={scrollRight}>{">"}</button>
+                </div>
+
+                <DoubleBanner 
+                    image1={HpBanner}
+                    image2={DellBanner}
+                    link1="/brand/hp"
+                    link2="/brand/dell"
+                />
+
+                <div className="shop-sections">
+                    <ShopSection title="Shop HP" products={products.filter(p => p.brand === 'HP')} />
+                    <ShopSection title="Shop Dell" products={products.filter(p => p.brand === 'Dell')} />
+                </div>
+
+                <Link to="/products/category/accessories">
+                    <Banners imageUrls={bannerImages.acc} />
+                </Link>
+                <Accessories />
+
+                <DoubleBanner 
+                    image1={AcerBanner}
+                    image2={AsusBanner}
+                    link1="/brand/acer"
+                    link2="/brand/asus"
+                />
+
+                <div className="shop-sections">
+                    <ShopSection title="Shop Acer" products={products.filter(p => p.brand === 'Acer')} />
+                    <ShopSection title="Shop Asus" products={products.filter(p => p.brand === 'Asus')} />
+                </div>
+
+                <Link to="/products/category/networking">
+                    <Banners imageUrls={bannerImages.netAcc} />
+                </Link>
+                <Networking />
+
+                <Link to="/brand/msi-lenovo">
+                    <Banners imageUrls={bannerImages.msiLenovo} />
+                </Link>
+
+                <div className="shop-sections">
+                    <ShopSection title="Shop MSI" products={products.filter(p => p.brand === 'MSI')} />
+                    <ShopSection title="Shop Lenovo" products={products.filter(p => p.brand === 'Lenovo')} />
+                </div>
+
+                <DoubleBanner 
+                    image1={AppleBanner}
+                    image2={SamsungBanner}
+                    link1="/brand/apple"
+                    link2="/brand/samsung"
+                />
 
                 <div className="shop-sections">
                     <ShopSection title="Shop Apple" products={products.filter(p => p.brand === 'Apple')} />
