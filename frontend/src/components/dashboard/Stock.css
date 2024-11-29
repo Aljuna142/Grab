@@ -1,0 +1,193 @@
+/* Stock.css */
+/*.stock-page {
+    padding: 20px;
+}
+
+.stock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stock-actions button {
+    margin-left: 10px;
+}
+
+.stock-table-container {
+    width: 100%;
+}
+
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stock-table th, .stock-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.stock-table th {
+    background-color: #f4f4f4;
+}
+
+.actions-col {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .save-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn:hover, .save-btn:hover, .delete-btn:hover {
+    color: #007bff;
+}
+
+.filter-button, .export-button, .add-stock-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+*/
+
+
+/* Stock page general styles */
+.stock-page {
+    display: flex;
+}
+
+.stock-sidebar {
+    width: 250px; /* Adjust as needed */
+    /* Add other sidebar styles if necessary */
+}
+
+/* Content area */
+.stock-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on the sidebar width */
+    position: relative;
+    z-index: 1; /* Ensure the content is above the sidebar */
+}
+
+/* Header styles */
+.stock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Action buttons */
+.stock-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.stock-actions button {
+    padding: 10px 20px;
+    background-color: #f23e14; /* Header button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.stock-actions button:hover {
+    background-color: #d12d0c; /* Darker hover effect */
+}
+
+/* Stock table styles */
+.stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.stock-table th, .stock-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.stock-table th {
+    background-color: #f23e14; /* Table header background color */
+    color: white;
+    font-weight: bold;
+}
+
+/* Actions column styling */
+.actions-col {
+    display: flex;
+    gap: 15px;
+}
+
+.action-icon {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Icon color styles */
+.edit-icon {
+    color: #007bff; /* Blue for edit */
+}
+
+.save-icon {
+    color: #28a745; /* Green for save */
+}
+
+.delete-icon {
+    color: #dc3545; /* Red for delete */
+}
+
+.action-icon:hover {
+    opacity: 0.7; /* Hover effect for icons */
+}
+
+/* Table row styling */
+.stock-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.stock-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content button {
+    margin: 5px;
+}

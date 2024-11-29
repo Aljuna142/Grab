@@ -1,0 +1,221 @@
+/*.orders-detail-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.orders-controls button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f28a0c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.orders-controls button:hover {
+    background-color: #0056b3;
+}
+
+.orders-filters {
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if needed 
+    gap: 10px; /* Space between inputs 
+}
+
+.orders-filters input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Allow inputs to grow 
+    min-width: 120px; /* Set a minimum width for inputs 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f28a0c;
+}
+
+.edit-button,
+.delete-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    color: #007bff;
+}
+
+.delete-button:hover {
+    color: red;
+}*/
+
+.orders-detail-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.orders-controls {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.orders-controls button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f09e07; /* Primary button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.orders-controls button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.orders-filters {
+    margin-bottom: 20px;
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows filters to wrap on smaller screens */
+    gap: 10px; /* Space between filter inputs */
+}
+
+.filter-row input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Full width of the container */
+    max-width: 200px; /* Limit the maximum width of inputs */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Bottom border for table rows */
+}
+
+th {
+    background-color: #f09e07; /* Header background color */
+}
+
+.edit-button,
+.delete-button,
+.return-button,
+.refund-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for button hover */
+}
+
+.edit-button {
+    color: #515253; /* Blue for edit */
+}
+
+.delete-button {
+    color: #dc3545; /* Red for delete */
+}
+
+.return-button {
+    background-color: #28a745; /* Green for return */
+    color: white;
+}
+
+.refund-button {
+    background-color: #ffc107; /* Yellow for refund */
+    color: white;
+}
+
+.edit-button:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.delete-button:hover {
+    color: #a00000; /* Darker red on hover */
+}
+
+.return-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.refund-button:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .orders-header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .orders-controls {
+        margin-top: 10px; /* Space between header and controls */
+    }
+
+    .filter-row {
+        flex-direction: column; /* Stack filter inputs vertically */
+    }
+
+    .filter-row input {
+        max-width: 100%; /* Full width for inputs */
+    }
+
+    th, td {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    .orders-controls button {
+        margin-bottom: 10px; /* Space between buttons on small screens */
+    }
+}

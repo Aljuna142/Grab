@@ -1,0 +1,66 @@
+/* PurchaseForm.css */
+
+/* Form Layout */
+.purchase-form .form-group {
+    margin-bottom: 20px;
+}
+
+.purchase-form .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.purchase-form .form-control {
+    border-radius: 4px;
+}
+
+/* Product Table */
+.purchase-form .table {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.purchase-form .table th,
+.purchase-form .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.purchase-form .table .form-control {
+    width: 100%;
+    text-align: center;
+}
+
+.purchase-form .table .btn-danger {
+    padding: 5px 10px;
+}
+
+/* Description */
+.purchase-form .ql-container {
+    height: 150px;
+    border-radius: 4px;
+}
+
+/* Buttons */
+.purchase-form .btn-save {
+    background-color: #F45631;
+    border-color: #F45631;
+    color: white;
+}
+
+.purchase-form .btn-save:hover {
+    background-color: #d94226;
+    border-color: #d94226;
+}
+
+.purchase-form .btn-edit {
+    background-color: #F45631;
+    border-color: #F45631;
+    color: white;
+    margin-left: 10px;
+}
+
+.purchase-form .btn-edit:hover {
+    background-color: #d94226;
+    border-color: #d94226;
+}

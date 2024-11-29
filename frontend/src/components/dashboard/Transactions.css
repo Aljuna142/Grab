@@ -1,0 +1,82 @@
+/* src/components/dashboard/Transactions.css */
+
+.transactions-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.transactions-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.add-transaction-button {
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-transaction-button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.transaction-list {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.transaction-list th,
+.transaction-list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.transaction-list th {
+    background-color: #e49e06;
+    font-weight: bold;
+}
+
+.transaction-item:hover {
+    background-color: #f1f1f1; /* Light gray for hover effect */
+}
+
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007BFF; /* Blue */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Darker Red */
+}

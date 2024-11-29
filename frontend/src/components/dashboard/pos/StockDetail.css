@@ -1,0 +1,74 @@
+.stock-detail {
+    padding: 20px; /* Add some padding around the content */
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin: 10px 0; /* Space between list items */
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+.error-message {
+    color: red; /* Style error messages in red */
+    font-weight: bold; /* Bold font for emphasis */
+}
+
+.stock-detail-container {
+    display: flex; /* Use flexbox for layout */
+}
+
+.store-sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    margin-right: 20px; /* Space between sidebar and content */
+}
+
+.stock-detail {
+    flex: 1; /* Take the remaining space */
+}
+
+.search-input {
+    margin-bottom: 20px; /* Space below the search input */
+}
+
+.search-input input {
+    width: 100%; /* Full width input field */
+    padding: 8px; /* Padding inside the input field */
+    font-size: 16px; /* Font size for better readability */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.stock-table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* Merge borders for table */
+}
+
+.stock-table th, .stock-table td {
+    padding: 12px; /* Padding inside table cells */
+    border: 1px solid #ddd; /* Light border for cells */
+    text-align: left; /* Left-align text */
+}
+
+.stock-table th {
+    background-color: #f09711; /* Light background for table headers */
+    font-weight: bold; /* Bold text for headers */
+}
+
+.stock-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+.stock-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}

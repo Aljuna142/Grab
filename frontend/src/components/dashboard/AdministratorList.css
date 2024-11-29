@@ -1,0 +1,65 @@
+.administrator-list-container {
+    display: flex; /* Flex container for sidebar and content */
+}
+
+.dashboard-sidebar {
+    width: 250px; /* Width of the sidebar */
+}
+
+.administrator-list-content {
+    flex-grow: 1; /* Allows content to take remaining space */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.administrator-list {
+    padding: 20px;
+}
+
+.add-button {
+    float: right;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #f49418;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    background-color: #e68a0b;
+}
+/* Add this to your AdministratorList.css */
+
+.edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}

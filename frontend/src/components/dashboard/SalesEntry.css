@@ -1,0 +1,22 @@
+/* SalesEntry.css */
+
+.sales-entry-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.store-selection {
+    margin-bottom: 20px;
+}
+
+.store-selection label {
+    margin-right: 10px;
+}
+
+.store-selection select {
+    padding: 5px;
+}
+
+h1 {
+    color: #333;
+}

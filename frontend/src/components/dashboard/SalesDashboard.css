@@ -1,0 +1,40 @@
+/* SalesDashboard.css */
+.sales-dashboard {
+    display: flex;
+}
+
+.sales-sidebar {
+    width: 250px; /* Adjust as needed */
+}
+
+/* Content area */
+.sales-content {   
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on the sidebar width */
+    position: relative;
+    z-index: 1; /* Ensure the content is above the sidebar */
+}
+
+/* Button container styles */
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons in a row */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below the buttons */
+}
+
+.sales-entry-button {
+    padding: 10px 20px;
+    background-color: #f23e14; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sales-entry-button:hover {
+    background-color: #d12d0c; /* Darker hover effect */
+}
+
+/* Additional button styles can be added here if necessary */

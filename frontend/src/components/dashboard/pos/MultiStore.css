@@ -1,0 +1,162 @@
+/*.multi-store-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.store-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+
+.crown-excel {
+    background-color: #ff5722; /* Adjust color as needed 
+}
+
+.aljasara {
+    background-color: #4caf50; /* Adjust color as needed 
+}
+
+.shared-product {
+    background-color: #2196f3; /* Adjust color as needed 
+}*/
+
+/* MultiStore.css */
+
+/* Layout for the dashboard with sidebar and main content */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh; /* Ensure the layout takes the full height of the viewport */
+}
+
+.dashboard-sidebar {
+    width: 250px; /* Sidebar width */
+    position: fixed;
+    height: 100vh; /* Full-height sidebar */
+    left: 0;
+    top: 0;
+    z-index: 1000; /* Ensure the sidebar stays above the main content */
+}
+
+.multi-store-content {
+    margin-left: 250px; /* Offset the content by the sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ensure the content takes up the remaining space */
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.multi-store-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Space between items */
+}
+
+/* Circle shape for small screens */
+.store-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center; /* Center text horizontally */
+    overflow: hidden; /* Hide overflow text */
+    line-height: 1.2; /* Adjust line height for better fit */
+    position: relative;
+    aspect-ratio: 1; /* Maintain a circle shape */
+}
+
+.store-circle:hover {
+    transform: scale(1.1); /* Slightly enlarge the circle on hover */
+}
+
+/* Ensure the link inside the circle doesn't have an underline */
+.store-link {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Use the color from the parent element */
+}
+
+/* Label inside the circle */
+.store-label {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    word-wrap: break-word; /* Ensure long words wrap correctly */
+    white-space: normal; /* Allow text to wrap */
+    padding: 5px; /* Add padding inside the circle */
+}
+
+/* Button to add a new store */
+.add-store-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue color for the Add Store button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-store-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Context menu styles */
+.context-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1001; /* Ensure the context menu is above other content */
+}
+
+.context-menu div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.context-menu div:hover {
+    background-color: #f1f1f1;
+}
+
+/* Limit the number of items per row */
+.store-circle {
+    flex: 1 1 calc(20% - 10px); /* 20% width minus gap */
+    max-width: calc(20% - 10px); /* Ensure max width to fit 5 items per row */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .store-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Adjustments for larger screens */
+@media (min-width: 769px) {
+    .store-circle {
+        width: 150px;
+        height: 75px;
+        border-radius: 10px; /* Slightly rounded corners for rectangle */
+        aspect-ratio: auto; /* Remove circle aspect ratio */
+    }
+}

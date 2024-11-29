@@ -1,0 +1,228 @@
+/* DamageFormModal.css */
+
+.damage-modal {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    width: 100%; 
+    max-width: 1000px; 
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    z-index: 1001; 
+    padding: 20px;
+    max-height: 80vh; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.damage-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; 
+}
+
+.damage-modal h2 {
+    margin-bottom: 20px;
+}
+
+.damage-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row > div {
+    flex: 1;  
+    margin-right: 20px;
+}
+
+.form-row > div:last-child {
+    margin-right: 0;
+}
+
+.damage-modal label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.damage-modal input,
+.damage-modal select {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+.damage-modal .wide-field {
+    width: 100%;
+}
+
+.damage-modal .wide-field input {
+    width: 100%;
+    padding: 12px;
+}
+
+.damage-modal button {
+    margin-top: 20px;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer;
+}
+
+.damage-modal button:hover {
+    background-color: #0056b3;
+}
+
+.damage-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.damage-table th, .damage-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.damage-table th.product-col,
+.damage-table td.product-col {
+    width: 40%;
+}
+
+.damage-table th.unit-cost-col,
+.damage-table td.unit-cost-col,
+.damage-table th.qty-col,
+.damage-table td.qty-col,
+.damage-table th.discount-col,
+.damage-table td.discount-col,
+.damage-table th.taxes-col,
+.damage-table td.taxes-col,
+.damage-table th.subtotal-col,
+.damage-table td.subtotal-col {
+    width: 10%;
+}
+
+.damage-table input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-row-button {
+    margin-top: 20px;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer;
+}
+
+.add-row-button:hover {
+    background-color: #0056b3;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.table-row div:first-child {
+    flex: 3;
+}
+
+.table-row div:not(:first-child) {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.table-row div:last-child {
+    margin-right: 0;
+}
+
+.damage-table td textarea[name="product"] {
+    width: 100%; 
+    min-height: 50px; /* Allows the textarea to grow for at least two lines */
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    resize: none; /* Prevents manual resizing */
+    white-space: normal; /* Allows text wrapping */
+    overflow-wrap: break-word; /* Ensures long words wrap to the next line */
+    background-color: transparent;
+    line-height: 1.5; /* Increases line height for better readability */
+    box-sizing: border-box;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    margin: 0 10px;
+}
+
+
+.action-buttons button:first-child {
+    margin-right: auto; /* Pushes the first button to the left */
+}
+
+.action-buttons button:last-child {
+    margin-left: auto; /* Pushes the last button to the right */
+}
+@media (max-width: 768px) {
+    .damage-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-button, .export-button, .add-damage-button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Pagination controls */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.pagination-controls button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-controls span {
+    display: flex;
+    align-items: center;
+}

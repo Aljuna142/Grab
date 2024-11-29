@@ -1,0 +1,78 @@
+/* StoreSidebar.css */
+
+/* General Sidebar Container */
+.store-sidebar {
+    width: 250px; /* Set a fixed width for the sidebar */
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px; /* Add padding for aesthetics */
+    border-right: 1px solid #dee2e6; /* Border to separate from content */
+    height: 100vh; /* Full height for vertical layout */
+    position: fixed; /* Keep it fixed on the left */
+    top: 0; /* Align to the top */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+/* Sidebar Title */
+.store-sidebar-title {
+    font-size: 1.2rem; /* Adjusted font size for the title */
+    font-weight: bold; /* Make title bold */
+    margin-bottom: 10px; /* Space below the title */
+    padding: 10px; /* Padding around the title */
+    background-color: #b30d0dc5; /* Background color for title */
+    color: white; /* Text color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Sidebar Links */
+.store-sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding from the list */
+}
+
+.store-sidebar-link {
+    display: block; /* Block display for full width */
+    padding: 10px 15px; /* Add padding around the links */
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Link Hover Effect */
+.store-sidebar-link:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+}
+
+/* Active Link Style */
+.store-sidebar-link.active {
+    background-color: #c9e2f5; /* Highlight active link */
+    color: white; /* Change text color to white */
+}
+
+/* Separator between sections */
+.store-section-separator {
+    margin: 20px 0; /* Space above and below the separator */
+    border-bottom: 1px solid #dee2e6; /* Light border for separation */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .store-sidebar {
+        width: 100%; /* Full width on smaller screens */
+        position: relative; /* Change to relative for smaller screens */
+        height: auto; /* Auto height for content */
+    }
+}
+
+/* Content Area */
+.store-data {
+    margin-left: 270px; /* Space for the fixed sidebar */
+    padding: 20px; /* Optional padding for the content area */
+}
+
+/* Additional styles for smaller screens */
+@media (max-width: 768px) {
+    .store-data {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+}

@@ -1,0 +1,754 @@
+
+    
+
+
+
+
+
+
+    [
+      {
+          "image": "/assets/images/ProductImages/Aspire-3-1.png",
+          "images": [
+              "/assets/images/Aspire/Aspire-3-3-1.png",
+              "/assets/images/Aspire/Aspire-3-5-1.png",
+              "/assets/images/Aspire/Aspire-3-7-1.png",
+              "/assets/images/Aspire/Aspire-3-8-1.png"
+          ],
+          "name": "Acer Aspire 3 Intel Core I5-1135G7 8GB Ram 1TB HDD Nvidia MX350 2GB 15.6″ FHD Win11 ENG-ARB Keyboard Silver Color",
+          "rating": 5.00,
+          "reviews": 1,
+          "reviewText": [
+              "Amazing performance and battery life. The design is also very sleek!"
+          ],
+          "price": 1480.00,
+          "originalPrice": 2099.00,
+          "description": "The Acer Aspire 3 is a powerhouse designed to handle a wide range of computing tasks with ease.",
+          "countInStock": 5,
+          "brand": "Acer",
+          "category": "Laptop",
+          "colors": [
+              {
+                  "name": "Silver",
+                  "images": [
+                      "/assets/images/ProductImages/Aspire-3-1.png",
+                      "/assets/images/Aspire/Aspire-3-3-1.png"
+                  ]
+              }
+          ],
+          "specifications": {
+              "Brand": "Acer",
+              "Model Number": "Aspire 3",
+              "Processor": "Intel Core i5-1135G7",
+              "Memory RAM": "8GB",
+              "Storage": "1TB HDD",
+              "Graphics": "Nvidia MX350 2GB",
+              "Keyboard": "ENG-ARB",
+              "Wifi": "802.11ac",
+              "Battery": "Up to 9 hours",
+              "Resolution": "1920x1080",
+              "Power Supply": "45W AC adapter",
+              "Bluetooth": "Yes",
+              "Webcam": "720p HD",
+              "Speaker": "Stereo",
+              "Ports": "2x USB 3.2, 1x USB 2.0, HDMI",
+              "Color": "Silver"
+          }
+      },
+      {
+          "image": "/assets/images/ProductImages/HPProductImage.jpg",
+          "images": [
+              "/assets/images/Aspire/Aspire-3-3-1.png",
+              "/assets/images/Aspire/Aspire-3-5-1.png",
+              "/assets/images/Aspire/Aspire-3-7-1.png",
+              "/assets/images/Aspire/Aspire-3-8-1.png"
+          ],
+          "name": "HP Pavilion x360 Convertible 14-dw1053cl 14\" FHD Touchscreen Laptop - Intel Core i5-1135G7",
+          "rating": 4.50,
+          "reviews": 2,
+          "reviewText": [
+              "The touchscreen is responsive and the laptop's performance is solid for everyday tasks.",
+              "Good value for money. The design is sleek and the performance is impressive."
+          ],
+          "price": 1299.00,
+          "originalPrice": 1699.00,
+          "description": "The HP Pavilion x360 Convertible 14-dw1053cl is a versatile 2-in-1 laptop with a 14-inch FHD touchscreen display.",
+          "countInStock": 3,
+          "brand": "HP",
+          "category": "Laptop",
+          "colors": [
+              {
+                  "name": "Silver",
+                  "images": [
+                      "/assets/images/ProductImages/Aspire-3-1.png",
+                      "/assets/images/Aspire/Aspire-3-3-1.png"
+                  ]
+              }
+          ],
+          "specifications": {
+              "Brand": "HP",
+              "Model Number": "Pavilion x360 Convertible 14-dw1053cl",
+              "Processor": "Intel Core i5-1135G7",
+              "Memory RAM": "8GB",
+              "Storage": "256GB SSD",
+              "Graphics": "Intel Iris Xe",
+              "Keyboard": "Backlit Keyboard",
+              "Wifi": "802.11ax",
+              "Battery": "Up to 10 hours",
+              "Resolution": "1920x1080",
+              "Power Supply": "45W AC adapter",
+              "Bluetooth": "Yes",
+              "Webcam": "720p HD",
+              "Speaker": "Dual speakers",
+              "Ports": "2x USB 3.2, 1x USB-C, HDMI",
+              "Color": "Silver"
+          }
+      },
+      {
+          "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+          "images": [
+              "/assets/images/Aspire/Aspire-3-3-1.png",
+              "/assets/images/Aspire/Aspire-3-5-1.png",
+              "/assets/images/Aspire/Aspire-3-7-1.png",
+              "/assets/images/Aspire/Aspire-3-8-1.png"
+          ],
+          "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+          "rating": 4.20,
+          "reviews": 3,
+          "reviewText": [
+              "Excellent performance for the price. The SSD makes a big difference in speed."
+          ],
+          "price": 1199.00,
+          "originalPrice": 1499.00,
+          "description": "The Dell Inspiron 15 3505 is a reliable and affordable laptop equipped with an AMD Ryzen 5 5500U processor.",
+          "countInStock": 4,
+          "brand": "Dell",
+          "category": "Laptop",
+          "colors": [
+              {
+                  "name": "Silver",
+                  "images": [
+                      "/assets/images/ProductImages/Aspire-3-1.png",
+                      "/assets/images/Aspire/Aspire-3-3-1.png"
+                  ]
+              }
+          ],
+          "specifications": {
+              "Brand": "Dell",
+              "Model Number": "Inspiron 15 3505",
+              "Processor": "AMD Ryzen 5 5500U",
+              "Memory RAM": "8GB",
+              "Storage": "256GB SSD",
+              "Graphics": "AMD Radeon Graphics",
+              "Keyboard": "Standard Keyboard",
+              "Wifi": "802.11ac",
+              "Battery": "Up to 8 hours",
+              "Resolution": "1920x1080",
+              "Power Supply": "45W AC adapter",
+              "Bluetooth": "Yes",
+              "Webcam": "720p HD",
+              "Speaker": "Stereo",
+              "Ports": "2x USB 3.2, 1x USB 2.0, HDMI",
+              "Color": "Silver"
+          }
+      },
+      {
+          "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+          "images": [
+              "/assets/images/Aspire/Aspire-3-3-1.png",
+              "/assets/images/Aspire/Aspire-3-5-1.png",
+              "/assets/images/Aspire/Aspire-3-7-1.png",
+              "/assets/images/Aspire/Aspire-3-8-1.png"
+          ],
+          "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+          "rating": 4.80,
+          "reviews": 5,
+          "reviewText": [
+              "The performance is outstanding, especially with the Ryzen 7 processor and 16GB RAM."
+          ],
+          "price": 1799.00,
+          "originalPrice": 2299.00,
+          "description": "The Acer Aspire 3 with Ryzen 7 5700U processor, 16GB RAM, and 512GB SSD is a high-performance laptop designed to meet the needs of demanding users.",
+          "countInStock": 2,
+          "brand": "Acer",
+          "category": "Laptop",
+          "colors": [
+              {
+                  "name": "Silver",
+                  "images": [
+                      "/assets/images/ProductImages/Aspire-3-1.png",
+                      "/assets/images/Aspire/Aspire-3-3-1.png"
+                  ]
+              }
+          ],
+          "specifications": {
+              "Brand": "Acer",
+              "Model Number": "Aspire 3",
+              "Processor": "AMD Ryzen 7 5700U",
+              "Memory RAM": "16GB",
+              "Storage": "512GB SSD",
+              "Graphics": "AMD Radeon Graphics",
+              "Keyboard": "Standard Keyboard",
+              "Wifi": "802.11ax",
+              "Battery": "Up to 10 hours",
+              "Resolution": "1920x1080",
+              "Power Supply": "45W AC adapter",
+              "Bluetooth": "Yes",
+              "Webcam": "720p HD",
+              "Speaker": "Stereo",
+              "Ports": "2x USB 3.2, 1x USB-C, HDMI",
+              "Color": "Black"
+          }
+      },
+      {
+          "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+          "images": [
+              "/assets/images/Aspire/Aspire-3-3-1.png",
+              "/assets/images/Aspire/Aspire-3-5-1.png",
+              "/assets/images/Aspire/Aspire-3-7-1.png",
+              "/assets/images/Aspire/Aspire-3-8-1.png"
+          ],
+          "name": "ASUS VivoBook 15 X515EA 15.6\" FHD Laptop - Intel Core i3-1115G4 4GB RAM 256GB SSD",
+          "rating": 4.10,
+          "reviews": 7,
+          "reviewText": [
+              "Decent laptop for everyday use. It's fast enough for web browsing and office work."
+          ],
+          "price": 999.00,
+          "originalPrice": 1299.00,
+          "description": "The ASUS VivoBook 15 X515EA is a budget-friendly laptop with Intel Core i3-1115G4, 4GB RAM, and 256GB SSD, perfect for everyday computing tasks.",
+          "countInStock": 6,
+          "brand": "ASUS",
+          "category": "Laptop",
+          "colors": [
+              {
+                  "name": "Silver",
+                  "images": [
+                      "/assets/images/ProductImages/Aspire-3-1.png",
+                      "/assets/images/Aspire/Aspire-3-3-1.png"
+                  ]
+              }
+          ],
+          "specifications": {
+              "Brand": "ASUS",
+              "Model Number": "VivoBook 15 X515EA",
+              "Processor": "Intel Core i3-1115G4",
+              "Memory RAM": "4GB",
+              "Storage": "256GB SSD",
+              "Graphics": "Intel UHD Graphics",
+              "Keyboard": "Standard Keyboard",
+              "Wifi": "802.11ac",
+              "Battery": "Up to 6 hours",
+              "Resolution": "1920x1080",
+              "Power Supply": "45W AC adapter",
+              "Bluetooth": "Yes",
+              "Webcam": "720p HD",
+              "Speaker": "Stereo",
+              "Ports": "2x USB 3.2, 1x USB 2.0, HDMI",
+              "Color": "Silver"
+          }
+      },
+      {
+        "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+        "images": [
+            "/assets/images/Aspire/Aspire-3-3-1.png",
+            "/assets/images/Aspire/Aspire-3-5-1.png",
+            "/assets/images/Aspire/Aspire-3-7-1.png",
+            "/assets/images/Aspire/Aspire-3-8-1.png"
+        ],
+        "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+        "sku": "GF63-9SC-066",
+        "rating": 4.60,
+        "reviews": 3,
+        "reviewText": [
+            "Great gaming laptop with good performance and cooling.",
+            "The build quality is solid, and it handles games smoothly.",
+            "Fantastic value for the price. The SSD provides fast load times."
+        ],
+        "price": 1899.00,
+        "originalPrice": 2399.00,
+        "description": "The MSI GF63 Thin 9SC-066 is designed for gamers who need powerful performance in a sleek and portable form factor. Equipped with an Intel Core i5-9300H processor, 8GB of RAM, and a 512GB SSD, this laptop delivers the speed and responsiveness required for gaming and demanding applications. The 15.6-inch Full HD display offers clear and immersive visuals, while the advanced cooling system ensures optimal performance during extended gaming sessions. The laptop’s black design and lightweight build make it easy to take on the go, while its robust performance and fast SSD make it a reliable choice for gamers.",
+        "countInStock": 4,
+        "brand": "MSI",
+        "category": "Gaming Laptop",
+        "colors": [
+            {
+                "name": "Silver",
+                "images": [
+                    "/assets/images/ProductImages/Aspire-3-1.png",
+                    "/assets/images/Aspire/Aspire-3-3-1.png"
+                ]
+            }
+        ],
+        "specifications": {
+            "Brand": "MSI",
+            "Model Number": "GF63 Thin 9SC-066",
+            "Processor": "Intel Core i5-9300H",
+            "Memory RAM": "8GB",
+            "Storage": "512GB SSD",
+            "Graphics": "NVIDIA GeForce GTX 1650",
+            "Keyboard": "Backlit Keyboard",
+            "Wifi": "802.11ac",
+            "Battery": "51Wh",
+            "Resolution": "1920 x 1080",
+            "Power Supply": "120W Adapter",
+            "Bluetooth": "5.0",
+            "Webcam": "720p HD",
+            "Speaker": "2W x 2",
+            "Ports": "3x USB 3.1, 1x HDMI, 1x RJ45",
+            "Color": "Black"
+        }
+    },
+
+    {
+    "image": "/assets/images/ProductImages/LenovoProductImage.jpeg",
+    "images": [
+        "/assets/images/Aspire/Aspire-3-3-1.png",
+        "/assets/images/Aspire/Aspire-3-5-1.png",
+        "/assets/images/Aspire/Aspire-3-7-1.png",
+        "/assets/images/Aspire/Aspire-3-8-1.png"
+    ],
+    "name": "Lenovo ThinkPad X1 Carbon Gen 9 14\" FHD Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Black",
+    "sku": "X1C-G9-1165G7",
+    "rating": 4.90,
+    "reviews": 6,
+    "reviewText": [
+        "Exceptional build quality and performance. The keyboard is superb.",
+        "The display is bright and sharp, and the laptop is very durable.",
+        "Excellent for business use. The performance is top-notch.",
+        "A premium laptop with excellent battery life and performance.",
+        "Very happy with this purchase. It’s a powerful and reliable machine.",
+        "The ThinkPad X1 Carbon is a solid choice for professionals."
+    ],
+    "price": 2299.00,
+    "originalPrice": 2899.00,
+    "description": "The Lenovo ThinkPad X1 Carbon Gen 9 is a high-performance laptop designed for professionals who need a powerful and reliable computing solution. Featuring an Intel Core i7-1165G7 processor, 16GB of RAM, and a 512GB SSD, this laptop delivers exceptional performance and responsiveness for demanding tasks. The 14-inch Full HD display offers vibrant colors and sharp details, while the laptop’s lightweight and durable design ensures portability and reliability. With its advanced features and robust build quality, the ThinkPad X1 Carbon is an ideal choice for business users and professionals who require a dependable and high-performing laptop.",
+    "countInStock": 3,
+    "brand": "Lenovo",
+    "category": "Laptop",
+    "colors": [
+        {
+            "name": "Silver",
+            "images": [
+                "/assets/images/ProductImages/Aspire-3-1.png",
+                "/assets/images/Aspire/Aspire-3-3-1.png"
+            ]
+        }
+    ],
+    "specifications": {
+        "Brand": "Lenovo",
+        "Model Number": "ThinkPad X1 Carbon Gen 9",
+        "Processor": "Intel Core i7-1165G7",
+        "Memory RAM": "16GB",
+        "Storage": "512GB SSD",
+        "Graphics": "Integrated Intel Iris Xe",
+        "Keyboard": "Backlit Keyboard",
+        "Wifi": "802.11ax",
+        "Battery": "57Wh",
+        "Resolution": "1920 x 1080",
+        "Power Supply": "65W USB-C Adapter",
+        "Bluetooth": "5.1",
+        "Webcam": "720p HD with ThinkShutter",
+        "Speaker": "Stereo speakers with Dolby Atmos",
+        "Ports": "2x Thunderbolt 4, 2x USB 3.2, 1x HDMI 2.0, 1x Audio Jack",
+        "Color": "Black"
+    }
+},
+{
+  "image": "/assets/images/ProductImages/AppleProductImage.webp",
+  "images": [
+      "/assets/images/Aspire/Aspire-3-3-1.png",
+      "/assets/images/Aspire/Aspire-3-5-1.png",
+      "/assets/images/Aspire/Aspire-3-7-1.png",
+      "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Apple MacBook Air (M2, 2022) 13.6\" Retina Display - Apple M2 Chip 8GB RAM 256GB SSD - Space Gray",
+  "sku": "MBA-M2-2022",
+  "rating": 4.95,
+  "reviews": 7,
+  "reviewText": [
+      "The M2 chip provides incredible performance and battery life.",
+      "The Retina display is stunning and the laptop is incredibly light.",
+      "Excellent build quality and performance. Worth every cent.",
+      "The MacBook Air M2 is a fantastic machine for everyday use and professional work.",
+      "Love the design and performance. It’s a great upgrade from my old MacBook.",
+      "The battery life is exceptional, and the performance is top-notch.",
+      "A premium laptop with a beautiful display and powerful performance."
+  ],
+  "price": 4199.00,
+  "originalPrice": 4799.00,
+  "description": "The Apple MacBook Air (M2, 2022) combines sleek design with powerful performance, thanks to the new Apple M2 chip. With an 8GB RAM and 256GB SSD, this laptop offers fast performance and responsive multitasking for a wide range of applications. The 13.6-inch Retina display delivers stunning visuals with vibrant colors and sharp details, making it perfect for both work and entertainment. The MacBook Air’s lightweight and compact design make it easy to carry, while its advanced features and long battery life provide a superior computing experience. Whether you’re a student, professional, or creative, the MacBook Air M2 is designed to meet your needs with style and efficiency.",
+  "countInStock": 2,
+  "brand": "Apple",
+  "category": "Laptop",
+  "colors": [
+      {
+          "name": "Silver",
+          "images": [
+              "/assets/images/ProductImages/Aspire-3-1.png",
+              "/assets/images/Aspire/Aspire-3-3-1.png"
+          ]
+      }
+  ],
+  "specifications": {
+      "Brand": "Apple",
+      "Model Number": "MacBook Air (M2, 2022)",
+      "Processor": "Apple M2 Chip",
+      "Memory RAM": "8GB",
+      "Storage": "256GB SSD",
+      "Graphics": "Apple 8-core GPU",
+      "Keyboard": "Magic Keyboard with Touch ID",
+      "Wifi": "802.11ax Wi-Fi 6",
+      "Battery": "Up to 18 hours",
+      "Resolution": "2560 x 1664",
+      "Power Supply": "30W USB-C Power Adapter",
+      "Bluetooth": "5.0",
+      "Webcam": "720p FaceTime HD",
+      "Speaker": "Stereo speakers",
+      "Ports": "2x Thunderbolt / USB 4, 1x 3.5mm headphone jack",
+      "Color": "Space Gray"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+  "images": [
+      "/assets/images/Aspire/Aspire-3-3-1.png",
+      "/assets/images/Aspire/Aspire-3-5-1.png",
+      "/assets/images/Aspire/Aspire-3-7-1.png",
+      "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+  "sku": "GBP-15-AMOLED",
+  "rating": 4.85,
+  "reviews": 5,
+  "reviewText": [
+      "The AMOLED display is beautiful and the performance is excellent.",
+      "Great laptop with a premium feel and solid performance.",
+      "The design is sleek, and the performance is very smooth.",
+      "Fantastic display and fast performance. Highly recommended.",
+      "The battery life is impressive, and the overall experience is great."
+  ],
+  "price": 2499.00,
+  "originalPrice": 2999.00,
+  "description": "The Samsung Galaxy Book Pro combines cutting-edge technology with a sleek design, featuring a 15.6-inch AMOLED display for stunning visuals. Powered by an Intel Core i7-1165G7 processor, 16GB of RAM, and a 512GB SSD, it delivers exceptional performance and speed for both productivity and entertainment. The laptop's slim and lightweight design makes it highly portable, while its advanced features and long battery life ensure a top-notch user experience. Whether you're working on professional tasks, enjoying multimedia content, or simply on the go, the Galaxy Book Pro is engineered to meet your needs with style and efficiency.",
+  "countInStock": 3,
+  "brand": "Samsung",
+  "category": "Laptop",
+  "colors": [
+      {
+          "name": "Silver",
+          "images": [
+              "/assets/images/ProductImages/Aspire-3-1.png",
+              "/assets/images/Aspire/Aspire-3-3-1.png"
+          ]
+      }
+  ],
+  "specifications": {
+      "Brand": "Samsung",
+      "Model Number": "Galaxy Book Pro 15.6\"",
+      "Processor": "Intel Core i7-1165G7",
+      "Memory RAM": "16GB",
+      "Storage": "512GB SSD",
+      "Graphics": "Intel Iris Xe Graphics",
+      "Keyboard": "Backlit Keyboard",
+      "Wifi": "802.11ax Wi-Fi 6",
+      "Battery": "Up to 20 hours",
+      "Resolution": "1920 x 1080 (Full HD)",
+      "Power Supply": "65W USB-C Power Adapter",
+      "Bluetooth": "5.1",
+      "Webcam": "720p HD",
+      "Speaker": "AKG Stereo Speakers",
+      "Ports": "2x Thunderbolt 4, 1x USB-C, 1x MicroSD card reader, 1x 3.5mm headphone jack",
+      "Color": "Mystic Silver"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/LaptopBag.webp",
+  "images": [
+      "/assets/images/ProductImages/LaptopBag.webp"
+  ],
+  "name": "Laptop Bag",
+  "sku": "LB-2024",
+  "rating": 4.50,
+  "reviews": 15,
+  "reviewText": [],
+  "price": 190.00,
+  "originalPrice": 220.00,
+  "description": "A stylish and durable laptop bag.",
+  "countInStock": 10,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "specifications": {
+      "Material": "Synthetic Leather",
+      "Dimensions": "15 x 12 x 4 inches",
+      "Weight": "1.2 lbs",
+      "Compatible Devices": "Laptops up to 15.6 inches",
+      "Pockets": "Main compartment, front zip pocket",
+      "Color Options": "Black, Grey"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/keyboard.webp",
+  "images": [
+      "/assets/images/ProductImages/keyboard.webp"
+  ],
+  "name": "Keyboard",
+  "sku": "KB-2024",
+  "rating": 4.30,
+  "reviews": 10,
+  "reviewText": [],
+  "price": 99.00,
+  "originalPrice": 149.00,
+  "description": "A high-quality keyboard for all your typing needs.",
+  "countInStock": 20,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "specifications": {
+      "Type": "Mechanical",
+      "Backlight": "RGB",
+      "Connectivity": "Wired",
+      "Key Switches": "Cherry MX",
+      "Dimensions": "17 x 5.5 x 1.5 inches",
+      "Weight": "2 lbs",
+      "Color Options": "Black, White"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/HpGamingHeadset.webp",
+  "images": [
+      "/assets/images/ProductImages/HpGamingHeadset.webp"
+  ],
+  "name": "HP Gaming Headset",
+  "sku": "HP-GH-2024",
+  "rating": 4.70,
+  "reviews": 20,
+  "reviewText": [],
+  "price": 299.00,
+  "originalPrice": 349.00,
+  "description": "A comfortable gaming headset with excellent sound quality.",
+  "countInStock": 15,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "specifications": {
+      "Type": "Over-Ear",
+      "Connectivity": "Wired",
+      "Microphone": "Noise-Cancelling",
+      "Driver Size": "50mm",
+      "Frequency Response": "20 Hz - 20 kHz",
+      "Weight": "0.5 lbs",
+      "Color Options": "Black, Red"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/DDR5.webp",
+  "images": [
+      "/assets/images/ProductImages/DDR5.webp"
+  ],
+  "name": "DDR5 RAM",
+  "sku": "DDR5-16GB-2024",
+  "rating": 4.80,
+  "reviews": 25,
+  "reviewText": [],
+  "price": 399.00,
+  "originalPrice": 499.00,
+  "description": "High-speed DDR5 RAM for improved performance.",
+  "countInStock": 12,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "specifications": {
+      "Type": "DDR5",
+      "Capacity": "16GB",
+      "Speed": "4800 MHz",
+      "Form Factor": "DIMM",
+      "Compatibility": "Desktop",
+      "Color Options": "Black, Silver"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/MicrosoftBluetoothMouse.webp",
+  "images": [
+      "/assets/images/ProductImages/MicrosoftBluetoothMouse.webp"
+  ],
+  "name": "Microsoft Bluetooth Mouse",
+  "sku": "MS-BM-2024",
+  "rating": 4.60,
+  "reviews": 18,
+  "reviewText": [],
+  "price": 149.00,
+  "originalPrice": 199.00,
+  "description": "A wireless mouse with Bluetooth connectivity.",
+  "countInStock": 25,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "specifications": {
+      "Type": "Wireless",
+      "Connectivity": "Bluetooth",
+      "Buttons": "3",
+      "DPI": "1600",
+      "Battery Life": "Up to 12 months",
+      "Weight": "0.15 lbs",
+      "Color Options": "Black, Blue, Red"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/Mouse-1.webp",
+  "images": [
+      "/assets/images/ProductImages/Mouse-1.webp"
+  ],
+  "name": "Wireless Mouse",
+  "sku": "WM-2024",
+  "rating": 4.20,
+  "reviews": 12,
+  "reviewText": [],
+  "price": 79.00,
+  "originalPrice": 99.00,
+  "description": "A compact and reliable wireless mouse.",
+  "countInStock": 30,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "specifications": {
+      "Type": "Wireless",
+      "Connectivity": "USB Receiver",
+      "Buttons": "3",
+      "DPI": "1200",
+      "Battery Life": "Up to 6 months",
+      "Weight": "0.1 lbs",
+      "Color Options": "Black, Grey, Blue"
+  }
+},
+
+{
+  "image": "/assets/images/ProductImages/xpg 2.webp",
+  "images": ["/assets/images/ProductImages/xpg 2.webp"],
+  "name": "XPG Network Card",
+  "sku": "XPG-NC-2024",
+  "rating": 4.60,
+  "reviews": 22,
+  "price": 159.00,
+  "originalPrice": 199.00,
+  "description": "High-performance network card for gaming and streaming.",
+  "countInStock": 15,
+  "brand": "XPG",
+  "category": "Networking",
+  "specifications": {
+      "Type": "Network Card",
+      "Interface": "PCIe",
+      "Max Speed": "1 Gbps",
+      "Compatibility": "Windows 10/11, Linux",
+      "Features": "Low Latency, High Throughput",
+      "Dimensions": "3.5 x 2.5 x 0.5 inches",
+      "Weight": "0.2 lbs",
+      "Color Options": "Black"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/wdblue.webp",
+  "images": ["/assets/images/ProductImages/wdblue.webp"],
+  "name": "WD Blue Network Card",
+  "sku": "WD-NC-2024",
+  "rating": 4.50,
+  "reviews": 18,
+  "price": 129.00,
+  "originalPrice": 179.00,
+  "description": "Reliable network card with great speed.",
+  "countInStock": 10,
+  "brand": "WD Blue",
+  "category": "Networking",
+  "specifications": {
+      "Type": "Network Card",
+      "Interface": "PCIe",
+      "Max Speed": "1 Gbps",
+      "Compatibility": "Windows 10/11",
+      "Features": "Stable Connection, Energy Efficient",
+      "Dimensions": "3.4 x 2.4 x 0.6 inches",
+      "Weight": "0.18 lbs",
+      "Color Options": "Blue, Black"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/samsungT7.webp",
+  "images": ["/assets/images/ProductImages/samsungT7.webp"],
+  "name": "Samsung T7 SSD",
+  "sku": "SAMSUNG-T7-2024",
+  "rating": 4.80,
+  "reviews": 30,
+  "price": 499.00,
+  "originalPrice": 549.00,
+  "description": "Fast and compact SSD for storage and speed.",
+  "countInStock": 20,
+  "brand": "Samsung",
+  "category": "Networking",
+  "specifications": {
+      "Type": "External SSD",
+      "Capacity": "1TB",
+      "Interface": "USB 3.2 Gen 2",
+      "Read Speed": "1,050 MB/s",
+      "Write Speed": "1,000 MB/s",
+      "Dimensions": "3.0 x 2.2 x 0.3 inches",
+      "Weight": "0.15 lbs",
+      "Color Options": "Black, Silver"
+  }
+},
+{
+  "image": "/assets/images/ProductImages/xpg.webp",
+  "images": ["/assets/images/ProductImages/xpg.webp"],
+  "name": "XPG Network Adapter",
+  "sku": "XPG-NA-2024",
+  "rating": 4.70,
+  "reviews": 20,
+  "price": 199.00,
+  "originalPrice": 249.00,
+  "description": "Top-tier network adapter with excellent connectivity.",
+  "countInStock": 12,
+  "brand": "XPG",
+  "category": "Networking",
+  "specifications": {
+      "Type": "Network Adapter",
+      "Interface": "USB 3.0",
+      "Max Speed": "2.5 Gbps",
+      "Compatibility": "Windows 10/11, macOS",
+      "Features": "Dual-Band, High Gain Antenna",
+      "Dimensions": "4.0 x 1.5 x 0.7 inches",
+      "Weight": "0.25 lbs",
+      "Color Options": "Black"
+  }
+}
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    

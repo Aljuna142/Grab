@@ -1,0 +1,197 @@
+/*.salesEntryModal {
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Increased width for a broader modal 
+    max-height: 80%; /* Limit the maximum height 
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Centered modal 
+    overflow-y: auto; /* Enable vertical scrolling 
+}
+
+h1 {
+    text-align: center; /* Center header text 
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+/* General form styles 
+form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically 
+}
+
+form div {
+    margin-bottom: 15px; /* Space between form elements 
+}
+
+label {
+    font-weight: bold; /* Bold labels 
+    margin-bottom: 5px; /* Space below labels 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"],
+select {
+    width: 100%; /* Full width for inputs and selects 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners 
+    box-sizing: border-box; /* Include padding in width 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Remove spinner in number input 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove spinner in number input 
+}
+
+/* Style the submit button 
+button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color 
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover 
+}
+.suggestions {
+    border: 1px solid #ccc; /* Border for suggestions 
+    background: white; /* Background color 
+    max-height: 150px; /* Max height 
+    overflow-y: auto; /* Scroll if too many suggestions 
+    position: absolute; /* Positioning 
+    z-index: 1000; /* Make sure it's on top 
+    width: calc(100% - 20px); /* Match width of input 
+}
+
+.suggestions li {
+    padding: 10px; /* Padding for items 
+    cursor: pointer; /* Pointer on hover 
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0; /* Highlight on hover 
+}
+.scrollable-dropdown {
+    max-height: 150px; /* Adjust the height as needed 
+    overflow-y: auto; /* Enables vertical scrolling*/
+    
+    
+
+
+/* Specific Modal Styling */
+.sales-modal__entryModal {
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Increased width for a broader modal */
+    max-height: 80%; /* Limit the maximum height */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: fixed; /* Centered modal */
+    overflow-y: auto; /* Enable vertical scrolling */
+    z-index: 1000;
+}
+
+/* Header Styling */
+.sales-modal__title {
+    text-align: center; /* Center header text */
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+/* General Form Styling */
+.sales-modal__form {
+    display: flex;
+    flex-direction: column; /* Arrange form elements vertically */
+}
+
+.sales-modal__form div {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+.sales-modal__label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.sales-modal__input-text,
+.sales-modal__input-number,
+.sales-modal__input-datetime,
+.sales-modal__select {
+    width: 100%; /* Full width for inputs and selects */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Removing spinner in number input */
+.sales-modal__input-number {
+    -moz-appearance: textfield; /* Remove spinner in number input */
+}
+
+.sales-modal__input-number::-webkit-inner-spin-button,
+.sales-modal__input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Remove spinner in number input */
+}
+
+/* Submit Button Styling */
+.sales-modal__button-submit {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sales-modal__button-submit:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Suggestions Box Styling */
+.sales-modal__suggestions {
+    border: 1px solid #ccc; /* Border for suggestions */
+    background: white; /* Background color */
+    max-height: 150px; /* Max height */
+    overflow-y: auto; /* Scroll if too many suggestions */
+    position: absolute; /* Positioning */
+    z-index: 1000; /* Make sure it's on top */
+    width: calc(100% - 20px); /* Match width of input */
+}
+
+.sales-modal__suggestions-item {
+    padding: 10px; /* Padding for items */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.sales-modal__suggestions-item:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Scrollable Dropdown Styling */
+.sales-modal__scrollable-dropdown {
+    max-height: 150px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+}

@@ -1,0 +1,86 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker semi-transparent background */
+    display: flex;
+    justify-content: center; /* Center the modal horizontally */
+    align-items: center; /* Center the modal vertically */
+    z-index: 1000; /* Ensure the modal is on top */
+}
+
+/* Modal Content */
+.modal-content {
+    background: white; /* White background for the modal */
+    padding: 20px; /* Padding inside the modal */
+    border-radius: 8px; /* Rounded corners */
+    width: 500px; /* Fixed width for the modal */
+    max-height: 80vh; /* Maximum height of the modal */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max height */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Modal Title */
+.modal-content h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the title text */
+}
+
+/* Form Elements */
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Padding for inputs */
+    margin: 10px 0; /* Margin between inputs */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button Styles */
+.modal-content button {
+    margin-right: 10px; /* Space between buttons */
+    padding: 12px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    background-color: #4CAF50; /* Green background for save button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for background color change */
+}
+
+.modal-content button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.modal-content button[type="button"] {
+    background-color: #f44336; /* Red background for cancel button */
+}
+
+.modal-content button[type="button"]:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+/* Input Styles for Specific Elements */
+.modal-content .order-modal__input-text,
+.modal-content .order-modal__input-number,
+.modal-content .order-modal__textarea,
+.modal-content .order-modal__select {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Padding for inputs */
+    margin: 10px 0; /* Margin between inputs */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Button Group */
+.order-modal__button-group {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above the button group */
+}

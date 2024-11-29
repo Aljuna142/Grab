@@ -1,0 +1,664 @@
+/*.modal-header {
+    background-color: #f8f9fa;
+}
+
+.modal-title {
+    color: #333;
+}
+
+.btn-danger, .btn-outline-danger {
+    
+    border-color: #F45631;
+}
+
+.btn-danger:hover, .btn-outline-danger:hover, .form-control:focus, .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Add other styles as needed 
+
+
+
+/* Specific to the ProductFormModal component 
+.products-page .modal-dialog {
+    max-width: 100%; 
+}
+.products-page .modal-header {
+    background-color: #f8f9fa;
+}
+
+.products-page .modal-title {
+    color: #333;
+}
+
+.products-page .btn-danger, 
+.products-page .btn-outline-danger {
+    
+    border-color: #F45631;
+}
+
+.products-page .btn-danger:hover, 
+.products-page .btn-outline-danger:hover, 
+.products-page .form-control:focus, 
+.products-page .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-preview-wrapper {
+    position: relative;
+    margin: 5px;
+}
+
+.image-preview {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image-remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(243, 148, 14);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px;
+}bootstrap*/
+
+
+
+
+/* ProductFormModal.css */
+/* Ensure the overlay covers the entire viewport and is behind the modal 
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure the overlay is on top but behind the modal 
+}
+
+/* Style the modal to be centered and have a maximum width 
+.custom-modal {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 10000; /* Ensure the modal content is above the overlay 
+    overflow: auto; /* Allow scrolling if the content is too long 
+}
+
+/* Header styling 
+.modal-header {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.close-btn {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Form styling 
+.modal-body {
+    max-height: 500px; /* Adjust as needed 
+    overflow-y: auto; /* Enable vertical scrolling 
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    height: 40px; /* Consistent height for input fields 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input[type="number"] {
+    -moz-appearance: textfield; /* Remove default spinner for number inputs 
+}
+
+.form-group input[type="number"]::-webkit-inner-spin-button,
+.form-group input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.image-preview-wrapper {
+    position: relative;
+    margin: 5px;
+}
+
+.image-preview {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image-remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(243, 148, 14);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px;
+}
+
+/* Footer styling 
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.modal-footer .btn {
+    margin-left: 10px;
+}*/
+
+/* okModal overlay and content 
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; 
+}
+
+.custom-modal {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 10000; 
+    max-height: 90vh;
+    overflow: hidden; 
+}
+
+/* Modal body to allow scrolling 
+.modal-body {
+    max-height: calc(90vh - 100px); 
+    overflow-y: auto; 
+    padding-right: 10px; 
+}
+
+/* Header and Title 
+.modal-header {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    color: #333;
+    margin: 0;
+}
+
+/* Buttons 
+.btn-danger, .btn-outline-danger {
+    border-color: #F45631;
+}
+
+.btn-danger:hover, .btn-outline-danger:hover {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Form Control 
+.form-control:focus, .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Radio Buttons 
+.form-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+/* Image Previews 
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-preview-wrapper {
+    position: relative;
+    margin: 5px;
+}
+
+.image-preview {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image-remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(243, 148, 14);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px;
+}
+
+/* Form Field Alignment 
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.form-group {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; 
+}
+
+.input-group, .form-group {
+    margin-bottom: 15px;
+}
+
+textarea, input[type="text"], input[type="number"] {
+    height: 40px;
+}*/
+
+/* Modal overlay and content good
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure the overlay is on top but behind the modal 
+}
+
+.custom-modal {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 10000; /* Ensure the modal content is above the overlay 
+    max-height: 90vh; /* Adjust as needed 
+    overflow: hidden; /* Hide overflow from the modal 
+}
+
+/* Modal body to allow scrolling 
+.modal-body {
+    max-height: calc(90vh - 100px); /* Adjust this value to leave space for header and footer 
+    overflow-y: auto; /* Enable vertical scrolling 
+    padding-right: 10px; /* Add padding to avoid scrollbar overlaying content */
+
+
+/* Header and Title 
+.modal-header {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    color: #333;
+    margin: 0;
+    font-size: 1.5rem; /* Adjust the font size as needed 
+    font-weight: bold; /* Apply bold font style 
+    text-align: center; /* Center-align the text 
+    width: 100%;
+}
+
+/* Buttons 
+.btn-danger, .btn-outline-danger {
+    border-color: #F45631;
+}
+
+.btn-danger:hover, .btn-outline-danger:hover {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Form Control 
+.form-control:focus, .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Radio Buttons 
+.form-check {
+    display: inline-flex; /* Use inline-flex to keep items in a row 
+    align-items: center; /* Center align items vertically 
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.form-check-input {
+    margin-right: 5px; /* Space between the radio button and label 
+}
+
+.form-check-label {
+    margin-bottom: 0; /* No extra margin below the label 
+}
+
+/* Image Previews 
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; /* Ensure the container takes full width
+    box-sizing: border-box; /* Include padding and border in the width 
+}
+
+.image-preview-wrapper {
+    position: relative;
+    margin: 5px;
+    width: calc(25% - 10px); /* Adjust this to fit your layout (4 images per row with spacing) 
+    box-sizing: border-box;
+}
+
+.image-preview {
+    width: 100%; /* Make sure image previews use full width of the wrapper 
+    height: auto; /* Maintain aspect ratio 
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image-remove-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(243, 148, 14);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin: 5px;
+}
+
+/* Form Field Alignment 
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.form-group {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Adjust this as needed 
+    box-sizing: border-box;
+}
+
+.input-group, .form-group {
+    margin-bottom: 15px;
+}
+
+textarea, input[type="text"], input[type="number"], select {
+    height: 40px; /* Ensures consistent height for text fields and dropdowns 
+    width: 100%; /* Full width for text fields and dropdowns 
+    box-sizing: border-box; /* Ensures padding and border are included in the height 
+}
+
+label {
+    display: block; /* Makes label occupy a full line 
+    margin-bottom: 5px; /* Adds space between label and input 
+}
+
+input[type="file"] {
+    display: block; /* Ensures file input displays as block element 
+}*/
+
+/* Modal overlay and content */
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure the overlay is on top but behind the modal */
+}
+
+.custom-modal {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 10000; /* Ensure the modal content is above the overlay */
+    max-height: 90vh; /* Adjust as needed */
+    overflow: hidden; /* Hide overflow from the modal */
+}
+
+/* Modal body to allow scrolling */
+.modal-body {
+    max-height: calc(90vh - 100px); /* Adjust this value to leave space for header and footer */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Add padding to avoid scrollbar overlaying content */
+}
+
+/* Header and Title specific to the product modal */
+.product-modal-header {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-modal-title {
+    color: #333;
+    margin: 0;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Apply bold font style */
+    text-align: center; /* Center-align the text */
+    width: 100%;
+}
+
+/* Buttons */
+.btn-danger, .btn-outline-danger {
+    border-color: #F45631;
+}
+
+.btn-danger:hover, .btn-outline-danger:hover {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Form Control */
+.form-control:focus, .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Radio Buttons */
+.form-check {
+    display: inline-flex; /* Use inline-flex to keep items in a row */
+    align-items: center; /* Center align items vertically */
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.form-check-input {
+    margin-right: 5px; /* Space between the radio button and label */
+}
+
+.form-check-label {
+    margin-bottom: 0; /* No extra margin below the label */
+}
+
+/* Image Previews */
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.image-preview-wrapper {
+    position: relative;
+    width: calc(25% - 10px); /* Four images per row with spacing */
+    box-sizing: border-box;
+}
+
+.image-preview {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.image-remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgb(243, 148, 14);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    margin: 0; /* Remove margin since it is positioned */
+}
+
+/* Form Field Alignment */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.form-group {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px; /* Adjust this as needed */
+    box-sizing: border-box;
+}
+
+.input-group, .form-group {
+    margin-bottom: 15px;
+}
+
+textarea, input[type="text"], input[type="number"], select {
+    height: 40px; /* Ensures consistent height for text fields and dropdowns */
+    width: 100%; /* Full width for text fields and dropdowns */
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+}
+
+label {
+    display: block; /* Makes label occupy a full line */
+    margin-bottom: 5px; /* Adds space between label and input */
+}
+
+input[type="file"] {
+    display: block; /* Ensures file input displays as block element */
+}

@@ -1,0 +1,148 @@
+/* DamagePage.css */
+.damage-page {
+    display: flex;
+}
+
+/* Sidebar styling */
+.damage-sidebar {
+    width: 250px; /* Adjust as needed */
+    /* Add other sidebar styles if necessary */
+}
+
+/* Content area */
+.damage-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on the sidebar width */
+    position: relative;
+    z-index: 1; /* Ensure the content is above the sidebar */
+}
+
+/* Header styling */
+.damage-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-button, .export-button, .add-damage-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-button {
+    background-color: #F23E14; /* Button color */
+    color: #fff;
+    border: 1px solid #F23E14; /* Outline border color */
+}
+
+.export-button {
+    background-color: #F23E14; /* Button color */
+    color: #fff;
+    border: 1px solid #F23E14; /* Outline border color */
+}
+
+.add-damage-button {
+    background-color: #F23E14; /* Button color */
+    color: #fff;
+}
+
+/* Table styling */
+.damage-table {
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are styled correctly */
+}
+
+/* Table header styling */
+.damage-table th {
+    background-color: #F23E14; /* Header background color */
+    color: white; /* Text color in the header */
+    font-weight: bold;
+    border: 1px solid #ddd; /* Light border for the header cells */
+    padding: 12px;
+}
+
+/* Table cell styling */
+.damage-table td {
+    border: 1px solid #ddd; /* Light border for table cells */
+    padding: 12px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.damage-table .product-name {
+    max-width: 300px; /* Adjust the width as needed */
+    overflow-wrap: break-word; 
+}
+
+/* Action button styling */
+.action-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Edit button color */
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #f44336; /* Delete button color */
+    color: #fff;
+}
+
+/* Footer styling */
+.table-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .damage-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-button, .export-button, .add-damage-button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Pagination controls */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.pagination-controls button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-controls span {
+    display: flex;
+    align-items: center;
+}

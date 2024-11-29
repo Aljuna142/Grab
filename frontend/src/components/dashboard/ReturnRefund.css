@@ -1,0 +1,127 @@
+/*.return-refund-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.returns-section, .refunds-section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}*/
+
+/* ReturnRefund.css */
+.return-refund-container {
+    display: flex; /* Flexbox for sidebar and content layout */
+}
+
+.return-refund-sidebar {
+    width: 250px; /* Width of the sidebar */
+    /* Add any additional styling for the sidebar here */
+}
+
+/* Content area */
+.return-refund-content {
+    flex: 1; /* Allow the content area to fill remaining space */
+    padding: 20px;
+    margin-left: 250px; /* Ensure space for the sidebar */
+    position: relative; /* Position context for child elements */
+    z-index: 1; /* Ensure the content is above the sidebar */
+    background-color: #f9f9f9; /* Background color for the content area */
+    min-height: 100vh; /* Minimum height to take full viewport height */
+    border-radius: 8px; /* Rounded corners for content */
+}
+
+/* Header styling */
+.return-refund-header {
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap; /* Wrap inputs on smaller screens */
+    gap: 10px; /* Space between inputs */
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Allow inputs to grow */
+    min-width: 150px; /* Minimum width for inputs */
+}
+
+/* Table styling */
+.return-refund-table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures border radius is respected */
+}
+
+/* Table header styling */
+.return-refund-table th {
+    background-color: #F23E14; /* Header background color */
+    color: white; /* Header text color */
+    font-weight: bold;
+    border: 1px solid #ddd; /* Light border for header */
+    padding: 12px; /* Padding in header cells */
+}
+
+/* Table cell styling */
+.return-refund-table td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 12px; /* Padding in cells */
+    text-align: left; /* Left align text */
+}
+
+/* Action button styling */
+.action-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Edit button color */
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #f44336; /* Delete button color */
+    color: #fff;
+}
+
+/* Footer styling */
+.table-footer {
+    margin-top: 20px; /* Space above footer */
+    font-size: 14px; /* Font size for footer */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .filter-row {
+        flex-direction: column; /* Stack inputs on smaller screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .filter-row input {
+        width: 100%; /* Full width for inputs */
+    }
+}

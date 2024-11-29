@@ -1,0 +1,82 @@
+/* Container styling for alignment and padding */
+.accounts-container {
+    padding: 20px;
+}
+
+/* Title styling */
+.accounts-title {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Add New Account button */
+.accounts-add-button {
+    background-color: #e49709; /* Custom color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.accounts-add-button:hover {
+    background-color: #d48806;
+}
+
+/* Accounts Table */
+.accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.accounts-table th,
+.accounts-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.accounts-table th {
+    background-color: #e1980f;
+    color: white;
+    font-weight: bold;
+}
+
+/* Action buttons for Edit and Delete */
+.accounts-edit-button,
+.accounts-delete-button {
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 4px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+/* Edit Button Styling */
+.accounts-edit-button {
+    background-color: #4CAF50;
+}
+
+.accounts-edit-button:hover {
+    background-color: #45a049;
+}
+
+/* Delete Button Styling */
+.accounts-delete-button {
+    background-color: #f44336;
+}
+
+.accounts-delete-button:hover {
+    background-color: #d32f2f;
+}

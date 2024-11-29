@@ -1,0 +1,345 @@
+.purchases-page {
+    display: flex;
+}
+
+/* Sidebar styling */
+.purchases-sidebar {
+    width: 250px; /* Adjust as needed */
+    /* Add other sidebar styles if necessary */
+}
+
+/* Content area */
+.purchases-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on the sidebar width */
+    position: relative;
+    z-index: 1; /* Ensure the content is above the sidebar */
+}
+
+/* Header styling */
+.purchases-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-button, .export-button, .add-purchase-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-button {
+    background-color: #F23E14; /* Button color */
+    color: #fff;
+    border: 1px solid #F23E14; /* Outline border color */
+}
+
+.export-button {
+    background-color: #F23E14; /* Button color */
+    color: #fff;
+    border: 1px solid #F23E14; /* Outline border color */
+}
+
+.add-purchase-button {
+    background-color: #F23E14; /* Button color */
+    color: #fff;
+}
+
+/* Table styling */
+.purchases-table {
+    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are styled correctly */
+}
+
+/* Table header styling */
+.purchases-table th {
+    background-color: #F23E14; /* Header background color */
+    color: white; /* Text color in the header */
+    font-weight: bold;
+    border: 1px solid #ddd; /* Light border for the header cells */
+    padding: 12px;
+}
+
+/* Table cell styling */
+.purchases-table td {
+    border: 1px solid #ddd; /* Light border for table cells */
+    padding: 12px;
+    text-align: left;
+    word-wrap:break-word;
+}
+
+.purchases-table .product-name {
+    max-width: 300px; /* Adjust the width as needed */
+    overflow-wrap: break-word; 
+
+}
+/* Action button styling */
+.action-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: #4CAF50; /* Edit button color */
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #f44336; /* Delete button color */
+    color: #fff;
+}
+
+/* Footer styling */
+.table-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.purchase-modal::-webkit-scrollbar {
+    display: none;
+}
+
+.purchase-modal {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    width: 100%; 
+    max-width: 1000px; 
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative; 
+    z-index: 1001; 
+    padding: 20px;
+    max-height: 80vh; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.purchase-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; 
+}
+
+.purchase-modal h2 {
+    margin-bottom: 20px;
+}
+
+.purchase-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row > div {
+    flex: 1;  
+    margin-right: 20px;
+}
+
+.form-row > div:last-child {
+    margin-right: 0;
+}
+
+.purchase-modal label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.purchase-modal input,
+.purchase-modal select {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+.purchase-modal .wide-field {
+    width: 100%;
+}
+
+.purchase-modal .wide-field input {
+    width: 100%;
+    padding: 12px;
+}
+
+.purchase-modal button {
+    margin-top: 20px;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer;
+}
+
+.purchase-modal button:hover {
+    background-color: #0056b3;
+}
+
+.purchase-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.purchase-table th, .purchase-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.purchase-table th.product-col,
+.purchase-table td.product-col {
+    width: 40%;
+}
+
+.purchase-table th.unit-cost-col,
+.purchase-table td.unit-cost-col,
+.purchase-table th.qty-col,
+.purchase-table td.qty-col,
+.purchase-table th.discount-col,
+.purchase-table td.discount-col,
+.purchase-table th.taxes-col,
+.purchase-table td.taxes-col,
+.purchase-table th.subtotal-col,
+.purchase-table td.subtotal-col {
+    width: 10%;
+}
+
+.purchase-table input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.add-row-button {
+    margin-top: 20px;
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 4px; 
+    background-color: #007bff; 
+    color: #fff; 
+    cursor: pointer;
+}
+
+.add-row-button:hover {
+    background-color: #0056b3;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.table-row div:first-child {
+    flex: 3;
+}
+
+.table-row div:not(:first-child) {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.table-row div:last-child {
+    margin-right: 0;
+}
+
+.purchase-table td textarea[name="product"] {
+    width: 100%; 
+    min-height: 50px; /* Allows the textarea to grow for at least two lines */
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    resize: none; /* Prevents manual resizing */
+    white-space: normal; /* Allows text wrapping */
+    overflow-wrap: break-word; /* Ensures long words wrap to the next line */
+    background-color: transparent;
+    line-height: 1.5; /* Increases line height for better readability */
+    box-sizing: border-box;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-buttons button {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .purchases-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-button, .export-button, .add-purchase-button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Pagination controls */
+.pagination-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.pagination-controls button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination-controls span {
+    display: flex;
+    align-items: center;
+}
+/*
+pagination error 
+
+.pagination-controls.error {
+    color: red;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+*/
