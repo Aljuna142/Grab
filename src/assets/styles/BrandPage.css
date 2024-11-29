@@ -1,0 +1,147 @@
+/*.brand-page-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-header img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.brand-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #e60023;
+    font-size: 1.1rem;
+}
+
+.no-products {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
+    margin-top: 50px;
+}
+*/
+
+
+
+.brand-page-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-header img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.brand-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Adjust the gap between cards */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust based on your design */
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #e60023;
+    font-size: 1.1rem;
+}
+
+.no-products {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #777;
+    margin-top: 50px;
+}

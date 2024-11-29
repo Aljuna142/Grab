@@ -1,0 +1,43 @@
+/* CategoryFilter.css */
+/*.category-filter {
+    margin-bottom: 20px;
+}
+
+.category-filter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.category-filter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-filter li {
+    margin-bottom: 10px;
+}
+
+.category-filter input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+*/
+
+
+
+.category-filter {
+    margin: 1rem;
+  }
+  
+  .filter-section {
+    margin-bottom: 1rem;
+  }
+  
+  .brand-checkbox {
+    margin-bottom: 0.5rem;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  

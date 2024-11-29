@@ -1,0 +1,114 @@
+.damages-page {
+    display: flex;
+}
+
+/* Sidebar styling */
+.damages-sidebar {
+    width: 250px; /* Adjust as needed */
+    /* Add other sidebar styles if necessary */
+}
+
+/* Content area */
+.damages-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust based on the sidebar width */
+    position: relative;
+    z-index: 1; /* Ensure the content is above the sidebar */
+}
+
+/* Header styling */
+.damages-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-button, .export-button, .add-damage-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #F45631; /* Outline border color */
+}
+
+.export-button {
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #F45631; /* Outline border color */
+}
+
+.add-damage-button {
+    background-color: #F45631; /* Button color */
+    color: #fff;
+}
+
+/* Table styling */
+.damages-table {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table-transparent {
+    background: transparent;
+}
+
+.damages-table th, .damages-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #333; /* Distinct border color */
+}
+
+.damages-table th {
+    background-color: #fff; /* Keep header background white */
+    font-weight: bold;
+    border: 1px solid;
+}
+
+/* Action button styling */
+.action-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.action-button:nth-of-type(1) {
+    background-color: #4CAF50; /* Edit button color */
+    color: #fff;
+}
+
+.action-button:nth-of-type(2) {
+    background-color: #f44336; /* Delete button color */
+    color: #fff;
+}
+
+/* Footer styling */
+.table-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .damages-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-button, .export-button, .add-damage-button {
+        margin-bottom: 10px;
+    }
+}

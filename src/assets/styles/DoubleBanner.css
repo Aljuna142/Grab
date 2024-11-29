@@ -1,0 +1,42 @@
+/* src/assets/styles/DoubleBanner.css */
+/*.double-banner-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.double-banner-image {
+    width: 100%; 
+    height: auto; 
+    max-width: calc(50% - 10px); 
+    object-fit: cover; 
+    border-radius: 5px; }
+   
+
+.double-banner-image:not(:first-child) {
+    margin-left: 20px; 
+
+
+
+}
+*/
+
+.double-banner-container {
+    display: flex;
+    justify-content: space-between; /* Space between banners */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Optional: Adjust padding as needed */
+}
+
+.banner-link {
+    display: block; /* Ensure the link wraps the image fully */
+    width: calc(50% - 10px); /* Ensure that each banner takes up half of the container's width with some space for gap */
+}
+
+.double-banner-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area while preserving aspect ratio */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}

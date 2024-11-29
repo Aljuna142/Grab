@@ -1,0 +1,99 @@
+/* TopCustomers.css 
+.custom-card-bg {
+    background-color:white ; /* Background color for the card 
+}
+
+.custom-header {
+    font-size: 1.5rem; /* Font size for the header 
+    color: #333; /* Text color 
+    font-weight: bold; /* Font weight 
+    font-style: italic; /* Font style 
+}
+
+.table thead th {
+    background-color: #f5f5f5; /* Header background color 
+    color: #333; /* Header text color 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows 
+}
+
+.table td img {
+    border: 2px solid #ddd; /* Border around avatars 
+}*/
+
+/*perfect card .custom-card {
+    background-color: white; /* Card background color 
+    border: 1px solid #ddd; /* Card border color 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean effect 
+    border-radius: 8px; /* Rounded corners 
+    padding: 15px; /* Padding for inner content 
+    max-width: 300px; /* Width of the card 
+    margin: auto; /* Center align 
+}
+
+.custom-title {
+    font-size: 1rem; /* Font size for the customer name 
+    color: #333; /* Text color 
+    font-weight: bold; /* Font weight 
+}
+
+.custom-orders {
+    font-size: 0.9rem; /* Font size for the orders text 
+    color: #666; /* Subtle text color 
+}
+
+.custom-card img {
+    border: 2px solid #ddd; /* Border around the avatar 
+}
+
+.custom-card-body {
+    display: flex;
+    align-items: center; /* Align items vertically center 
+}*/
+
+.top-customers-container {
+    max-width: 300px; /* Container width */
+    margin: auto; /* Center align */
+}
+
+.custom-title-card {
+    background-color: white; /* Title card background color */
+    border: none; /* Remove border */
+    text-align: center; /* Center align text */
+}
+
+.custom-header {
+    font-size: 1.2rem; /* Font size for the header */
+    color: #333; /* Text color */
+    font-weight: bold; /* Font weight */
+}
+
+.custom-card {
+    background-color: white; /* Card background color */
+    border: 1px solid #ddd; /* Card border color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean effect */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding for inner content */
+}
+
+.custom-title {
+    font-size: 1rem; /* Font size for the customer name */
+    color: #333; /* Text color */
+    font-weight: bold; /* Font weight */
+}
+
+.custom-orders {
+    font-size: 0.9rem; /* Font size for the orders text */
+    color: #666; /* Subtle text color */
+}
+
+.custom-card img {
+    border: 2px solid #ddd; /* Border around the avatar */
+}
+
+.custom-card-body {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+}

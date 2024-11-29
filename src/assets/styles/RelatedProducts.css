@@ -1,0 +1,13 @@
+
+.related-products-title-container {
+    background-color: #f8f9fa; /* Set your desired background color */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.related-products-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}

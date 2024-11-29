@@ -1,0 +1,41 @@
+.brand-filter {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .filter-section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .brand-checkbox {
+    margin-bottom: 10px;
+  }
+  
+  .brand-checkbox input {
+    margin-right: 8px;
+  }
+  
+  .brand-checkbox label {
+    font-size: 14px;
+  }
+  

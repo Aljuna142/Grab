@@ -1,0 +1,62 @@
+/*.dashboard-sidebar {
+    background-color: #A3D02C; /* Background color for the sidebar 
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+*/
+/* src/assets/styles/Dashboard.css */
+.dashboard-sidebar {
+    background-color:#F5F5F5; /* Sidebar background color */
+    color: #333; /* Text color in the sidebar */
+    padding: 20px;
+    width: 250px; /* Adjust the width as needed */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+.dashboard-content {
+    margin-left: 250px; /* Margin to make space for the sidebar */
+    padding: 20px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Color for the section titles */
+    margin-bottom: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #666; /* Color for the menu items */
+    font-size: 14px;
+}
+
+.sidebar-link:hover {
+    background-color: #A3D02C; /* Highlight color on hover */
+    color: #333;
+}
+
+.sidebar-link svg {
+    margin-right: 10px;
+}

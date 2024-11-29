@@ -1,0 +1,47 @@
+/*.modal-header {
+    background-color: #f8f9fa;
+}
+
+.modal-title {
+    color: #333;
+}
+
+.btn-danger, .btn-outline-danger {
+    
+    border-color: #F45631;
+}
+
+.btn-danger:hover, .btn-outline-danger:hover, .form-control:focus, .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}
+
+/* Add other styles as needed */
+
+
+
+/* Specific to the ProductFormModal component */
+.products-page .modal-dialog {
+    max-width: 100%; /* Increase the modal width to 80% of the viewport */
+}
+.products-page .modal-header {
+    background-color: #f8f9fa;
+}
+
+.products-page .modal-title {
+    color: #333;
+}
+
+.products-page .btn-danger, 
+.products-page .btn-outline-danger {
+    
+    border-color: #F45631;
+}
+
+.products-page .btn-danger:hover, 
+.products-page .btn-outline-danger:hover, 
+.products-page .form-control:focus, 
+.products-page .form-check-input:focus {
+    border-color: #F45631;
+    box-shadow: none;
+}

@@ -1,0 +1,42 @@
+/* PriceRangeFilter.css */
+.price-range-filter {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price-range-filter label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.price-slider {
+    width: 100%;
+    appearance: none;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.price-slider:hover {
+    opacity: 1;
+}
+
+/* LaptopPage.css */
+.laptop-page {
+    padding: 20px;
+}
+
+.laptop-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.laptop-cards-container p {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+}
