@@ -1,0 +1,553 @@
+[{
+  "_id": {
+    "$oid": "66dc1b087a378c5c68da6f43"
+  },
+  "date": {
+    "$date": "2024-09-07T00:00:00.000Z"
+  },
+  "refNo": "8085",
+  "status": "complete",
+  "customerName": "sita",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 2000,
+      "qty": 4,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 7600,
+      "note": "okay",
+      "_id": {
+        "$oid": "670e5f6c9004da30a364e39a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-07T09:21:12.099Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T12:26:20.761Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66dc1b087a378c5c68da6f46"
+  },
+  "date": {
+    "$date": "2024-09-07T00:00:00.000Z"
+  },
+  "refNo": "8080",
+  "status": "complete",
+  "customerName": "sita",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 2000,
+      "qty": 3,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 5700,
+      "note": "okay",
+      "_id": {
+        "$oid": "66dc1b087a378c5c68da6f47"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-07T09:21:12.356Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-07T09:21:12.356Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66dc1f997a378c5c68da6f64"
+  },
+  "date": {
+    "$date": "2024-09-07T00:00:00.000Z"
+  },
+  "refNo": "9090",
+  "status": "complete",
+  "customerName": "Kalai",
+  "products": [
+    {
+      "product": "msi",
+      "unitCost": 2000,
+      "qty": 1,
+      "discount": 0,
+      "taxes": "inclusive",
+      "subtotal": 2000,
+      "note": "speaker problem",
+      "_id": {
+        "$oid": "66dc1f997a378c5c68da6f65"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-07T09:40:41.230Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-07T09:40:41.230Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66dc1f997a378c5c68da6f67"
+  },
+  "date": {
+    "$date": "2024-09-07T00:00:00.000Z"
+  },
+  "refNo": "9090",
+  "status": "complete",
+  "customerName": "Kalai",
+  "products": [
+    {
+      "product": "msi",
+      "unitCost": 2000,
+      "qty": 1,
+      "discount": 0,
+      "taxes": "inclusive",
+      "subtotal": 2000,
+      "note": "speaker problem",
+      "_id": {
+        "$oid": "66dc1f997a378c5c68da6f68"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-07T09:40:41.541Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-07T09:40:41.541Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66dc234f7a378c5c68da6f83"
+  },
+  "date": {
+    "$date": "2024-09-07T00:00:00.000Z"
+  },
+  "refNo": "9091",
+  "status": "complete",
+  "customerName": "amutha",
+  "products": [
+    {
+      "product": "apple",
+      "unitCost": 2000,
+      "qty": 1,
+      "discount": 0,
+      "taxes": "inclusive",
+      "subtotal": 2000,
+      "note": "k",
+      "_id": {
+        "$oid": "66dc234f7a378c5c68da6f84"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-07T09:56:31.284Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-07T09:56:31.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66dc234f7a378c5c68da6f86"
+  },
+  "date": {
+    "$date": "2024-09-07T00:00:00.000Z"
+  },
+  "refNo": "9091",
+  "status": "complete",
+  "customerName": "amutha",
+  "products": [
+    {
+      "product": "apple",
+      "unitCost": 2000,
+      "qty": 1,
+      "discount": 0,
+      "taxes": "inclusive",
+      "subtotal": 2000,
+      "note": "k",
+      "_id": {
+        "$oid": "66dc234f7a378c5c68da6f87"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-07T09:56:31.618Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-07T09:56:31.618Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e608d9004da30a364e3a4"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "9988",
+  "status": "complete",
+  "customerName": "alj",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 1000,
+      "qty": 12,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 11880,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e608d9004da30a364e3a5"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T12:31:09.525Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T12:31:09.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e608d9004da30a364e3a7"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "9988",
+  "status": "complete",
+  "customerName": "alj",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 1000,
+      "qty": 12,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 11880,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e608d9004da30a364e3a8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T12:31:09.713Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T12:31:09.713Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e6c8db57aaddd2190f79c"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "2222",
+  "status": "complete",
+  "customerName": "Hasan",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e6c8db57aaddd2190f79d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T13:22:21.198Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T13:22:21.198Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e6c8db57aaddd2190f79f"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "2222",
+  "status": "complete",
+  "customerName": "Hasan",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e6c8db57aaddd2190f7a0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T13:22:21.586Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T13:22:21.586Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e6cf2b57aaddd2190f7af"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "5432",
+  "status": "complete",
+  "customerName": "rishan",
+  "storeName": "Al-Jasara",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e6cf2b57aaddd2190f7b0"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T13:24:02.180Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T13:24:02.180Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e6cf2b57aaddd2190f7b2"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "5432",
+  "status": "complete",
+  "customerName": "rishan",
+  "storeName": "Al-Jasara",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e6cf2b57aaddd2190f7b3"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T13:24:02.430Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T13:24:02.430Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e6eaab57aaddd2190f7c3"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "9009",
+  "status": "complete",
+  "customerName": "ayan",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e6eaab57aaddd2190f7c4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T13:31:22.864Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T13:31:22.864Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e6eabb57aaddd2190f7c6"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "9009",
+  "status": "complete",
+  "customerName": "ayan",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670e6eabb57aaddd2190f7c7"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T13:31:23.232Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T13:31:23.232Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670fb1abe622d113478816fe"
+  },
+  "date": {
+    "$date": "2024-10-16T00:00:00.000Z"
+  },
+  "refNo": "7887",
+  "status": "complete",
+  "customerName": "ayana",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "670fb1cee622d11347881715"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T12:29:31.456Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T12:30:06.783Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6710c93c3645486982c005da"
+  },
+  "date": {
+    "$date": "2024-10-17T00:00:00.000Z"
+  },
+  "refNo": "2222",
+  "status": "complete",
+  "customerName": "Rihab",
+  "storeName": "WH1",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "6710c93c3645486982c005db"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-17T08:22:20.704Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-17T08:22:20.704Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6710c93c3645486982c005dd"
+  },
+  "date": {
+    "$date": "2024-10-17T00:00:00.000Z"
+  },
+  "refNo": "2222",
+  "status": "complete",
+  "customerName": "Rihab",
+  "storeName": "WH1",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 990,
+      "note": "battery",
+      "_id": {
+        "$oid": "6710c93c3645486982c005de"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-17T08:22:20.922Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-17T08:22:20.922Z"
+  },
+  "__v": 0
+}]

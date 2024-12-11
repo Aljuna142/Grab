@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "6725f7a2197428b30fb7577f"
+  },
+  "name": "Jane Updated",
+  "email": "jane.updated@example.com",
+  "role": "admin",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-11-02T09:57:54.496Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672df87b24fbc44cf15ba118"
+  },
+  "name": "Aljuna",
+  "email": "alju333666@gmail.com",
+  "role": "customer",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-11-08T11:39:39.939Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672dfc4a24fbc44cf15ba11d"
+  },
+  "name": "Rehman",
+  "email": "sena100@gmail.com",
+  "role": "customer",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-11-08T11:55:54.373Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672f6c0457ee7efa5e104fa1"
+  },
+  "name": "halima",
+  "email": "aljuna1010@gmail.com",
+  "role": "customer",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-11-09T14:04:52.827Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "672f8aa357ee7efa5e104fb0"
+  },
+  "name": "ajina",
+  "email": "ajji123@gmail.com",
+  "role": "customer",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-11-09T16:15:31.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673225e457ee7efa5e104fb5"
+  },
+  "name": "asi",
+  "email": "asi1002@gmail.com",
+  "role": "customer",
+  "isActive": true,
+  "createdAt": {
+    "$date": "2024-11-11T15:42:28.432Z"
+  },
+  "__v": 0
+}]

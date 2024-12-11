@@ -1,0 +1,3152 @@
+[{
+  "_id": {
+    "$oid": "66c0a437a90dcc7914076767"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c0a437a90dcc7914076768"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T13:23:03.358Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T13:23:03.358Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T13:23:03.359Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T13:23:03.359Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0b0d7ce98c10351a1dc68"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c0b0d7ce98c10351a1dc69"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T14:16:55.020Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T14:16:55.020Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "xyz",
+    "city": "Sharjah",
+    "country": "UAE",
+    "state": "Sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Success",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T14:16:55.021Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T14:16:55.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0b5e7ce98c10351a1dc80"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1004"
+      },
+      "name": "Lenovo ThinkPad X1 Carbon Gen 9 14\" FHD Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/LenovoProductImage.jpeg",
+      "price": 2299,
+      "originalPrice": 2899,
+      "_id": {
+        "$oid": "66c0b5e7ce98c10351a1dc81"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T14:38:31.684Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T14:38:31.684Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "anna nagar",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "deira"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2299,
+  "shippingPrice": 0,
+  "totalPrice": 2299,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T14:38:31.685Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T14:38:31.685Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0b70ace98c10351a1dc9d"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "66c0b70ace98c10351a1dc9e"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T14:43:22.271Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T14:43:22.271Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Pick-up",
+  "shippingAddress": {
+    "address": "kanaka",
+    "apartment": "kila",
+    "city": "karur",
+    "country": "india",
+    "state": "tamilnadu"
+  },
+  "paymentMethod": "Pay by Card",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T14:43:22.271Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T14:43:22.271Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0d84fe2a672564443b68f"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c0d84fe2a672564443b690"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T17:05:19.695Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T17:05:19.695Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam ",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "saudi arabia",
+    "state": "damman"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T17:05:19.696Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T17:05:19.696Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0da86e2a672564443b6a1"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "66c0da86e2a672564443b6a2"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T17:14:46.487Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T17:14:46.487Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "encave garden street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1799,
+  "shippingPrice": 0,
+  "totalPrice": 1799,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T17:14:46.488Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T17:14:46.488Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0dc49e2a672564443b6b3"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c0dc49e2a672564443b6b4"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T17:22:17.675Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T17:22:17.675Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam ",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "saudi arabia",
+    "state": "damman"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T17:22:17.675Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T17:22:17.675Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0e473e2a672564443b6c5"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "66c0e473e2a672564443b6c6"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T17:57:07.592Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T17:57:07.592Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "encave garden street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1899,
+  "shippingPrice": 0,
+  "totalPrice": 1899,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T17:57:07.592Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T17:57:07.592Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0e4f5e2a672564443b6ca"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "66c0e4f5e2a672564443b6cb"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T17:59:17.972Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T17:59:17.972Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "encave garden street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1899,
+  "shippingPrice": 0,
+  "totalPrice": 1899,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T17:59:17.972Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T17:59:17.972Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0e7d3e2a672564443b6e0"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1008"
+      },
+      "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+      "price": 2499,
+      "originalPrice": 2999,
+      "_id": {
+        "$oid": "66c0e7d3e2a672564443b6e1"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:11:31.886Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:11:31.886Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2499,
+  "shippingPrice": 0,
+  "totalPrice": 2499,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:11:31.886Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:11:31.886Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0e995e2a672564443b6e4"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1008"
+      },
+      "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+      "price": 2499,
+      "originalPrice": 2999,
+      "_id": {
+        "$oid": "66c0e995e2a672564443b6e5"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:19:01.273Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:19:01.273Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2499,
+  "shippingPrice": 0,
+  "totalPrice": 2499,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:19:01.273Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:19:01.273Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0ec63e2a672564443b6ee"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1008"
+      },
+      "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+      "price": 2499,
+      "originalPrice": 2999,
+      "_id": {
+        "$oid": "66c0ec63e2a672564443b6ef"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:30:59.188Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:30:59.188Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2499,
+  "shippingPrice": 0,
+  "totalPrice": 2499,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:30:59.188Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:30:59.188Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0eea6e2a672564443b6f5"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1008"
+      },
+      "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+      "price": 2499,
+      "originalPrice": 2999,
+      "_id": {
+        "$oid": "66c0eea6e2a672564443b6f6"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:40:38.063Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:40:38.063Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2499,
+  "shippingPrice": 0,
+  "totalPrice": 2499,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:40:38.063Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:40:38.063Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0f0a9e2a672564443b6fc"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1008"
+      },
+      "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+      "price": 2499,
+      "originalPrice": 2999,
+      "_id": {
+        "$oid": "66c0f0a9e2a672564443b6fd"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:49:13.089Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:49:13.089Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2499,
+  "shippingPrice": 0,
+  "totalPrice": 2499,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:49:13.089Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:49:13.089Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0f233e2a672564443b71a"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c0f233e2a672564443b71b"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:55:47.769Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:55:47.769Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam ",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "saudi arabia",
+    "state": "damman"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:55:47.769Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:55:47.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0f2d7e2a672564443b738"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "66c0f2d7e2a672564443b739"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T18:58:31.176Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T18:58:31.176Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "kanaka",
+    "apartment": "kila",
+    "city": "karur",
+    "country": "india",
+    "state": "tamilnadu"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T18:58:31.176Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T18:58:31.176Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0f331e2a672564443b740"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "66c0f331e2a672564443b741"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T19:00:01.999Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T19:00:01.999Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "kanaka",
+    "apartment": "kila",
+    "city": "karur",
+    "country": "india",
+    "state": "tamilnadu"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T19:00:01.999Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T19:00:01.999Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c0f3c3e2a672564443b74c"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "66c0f3c3e2a672564443b74d"
+      },
+      "createdAt": {
+        "$date": "2024-08-17T19:02:27.407Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-17T19:02:27.407Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "kanaka",
+    "apartment": "kila",
+    "city": "karur",
+    "country": "india",
+    "state": "tamilnadu"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-17T19:02:27.407Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-17T19:02:27.407Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c21e9881e7d71970d4dd46"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c21e9881e7d71970d4dd47"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T16:17:28.559Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T16:17:28.559Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam ",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "saudi arabia",
+    "state": "damman"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T16:17:28.560Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T16:17:28.560Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c21fef81e7d71970d4dd60"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "66c21fef81e7d71970d4dd61"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T16:23:11.740Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T16:23:11.740Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "encave garden street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1899,
+  "shippingPrice": 0,
+  "totalPrice": 1899,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T16:23:11.740Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T16:23:11.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c2207981e7d71970d4dd76"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c2207981e7d71970d4dd77"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T16:25:29.800Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T16:25:29.800Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam ",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "saudi arabia",
+    "state": "damman"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T16:25:29.800Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T16:25:29.800Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c2232381e7d71970d4dda0"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "66c2232381e7d71970d4dda1"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T16:36:51.069Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T16:36:51.069Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "encave garden street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1799,
+  "shippingPrice": 0,
+  "totalPrice": 1799,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T16:36:51.069Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T16:36:51.069Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c22ab181e7d71970d4de16"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "66c22ab181e7d71970d4de17"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T17:09:05.513Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T17:09:05.513Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "encave garden street",
+    "apartment": "xyz",
+    "city": "sharjah",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1899,
+  "shippingPrice": 0,
+  "totalPrice": 1899,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T17:09:05.513Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T17:09:05.513Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c22c8581e7d71970d4de37"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 2,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c22c8581e7d71970d4de38"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T17:16:53.520Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T17:16:53.520Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Pick-up",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2398,
+  "shippingPrice": 0,
+  "totalPrice": 2398,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T17:16:53.521Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T17:16:53.521Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c23b8081e7d71970d4dec8"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c23b8081e7d71970d4dec9"
+      },
+      "createdAt": {
+        "$date": "2024-08-18T18:20:48.924Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-18T18:20:48.924Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-18T18:20:48.924Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T08:14:01.739Z"
+  },
+  "__v": 0,
+  "orderStatus": "Canceled",
+  "refundRequested": true,
+  "returnReason": "Reason for return",
+  "returnRequested": true,
+  "refundReason": ""
+},
+{
+  "_id": {
+    "$oid": "66c8bdb368b0f5860420c8c1"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8bdb368b0f5860420c8c2"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T16:49:55.563Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T16:49:55.563Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T16:49:55.564Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T16:49:55.564Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8bddd68b0f5860420c8c4"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8bddd68b0f5860420c8c5"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T16:50:37.260Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T16:50:37.260Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T16:50:37.261Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T16:50:37.261Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8c1ac68b0f5860420c907"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8c1ac68b0f5860420c908"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T17:06:52.328Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T17:06:52.328Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T17:06:52.328Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T17:06:52.328Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8c1c268b0f5860420c90a"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8c1c268b0f5860420c90b"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T17:07:14.962Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T17:07:14.962Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T17:07:14.962Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T17:07:14.962Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8c1c668b0f5860420c90d"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8c1c668b0f5860420c90e"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T17:07:18.682Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T17:07:18.682Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T17:07:18.682Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T17:07:18.682Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8c1d568b0f5860420c910"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8c1d568b0f5860420c911"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T17:07:33.107Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T17:07:33.107Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T17:07:33.107Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T17:07:33.107Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8c27468b0f5860420c913"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8c27468b0f5860420c914"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T17:10:12.248Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T17:10:12.248Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T17:10:12.248Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T17:10:12.248Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8c2f568b0f5860420c916"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8c2f568b0f5860420c917"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T17:12:21.465Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T17:12:21.465Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "123 Main St",
+    "apartment": "Apt 4B",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "state": "Dubai"
+  },
+  "paymentMethod": "Credit Card",
+  "paymentResult": "Paid with credit card",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T17:12:21.465Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T17:12:21.465Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8ee4c68b0f5860420c95d"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "66c8ee4c68b0f5860420c95e"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T20:17:16.985Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T20:17:16.985Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66c8ee4c68b0f5860420c95f"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T20:17:16.986Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T20:17:16.986Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "1234"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 3098,
+  "shippingPrice": 0,
+  "totalPrice": 3098,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T20:17:16.986Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T20:17:16.986Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c8f08b68b0f5860420c985"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1006"
+      },
+      "name": "Apple MacBook Air (M2, 2022) 13.6\" Retina Display - Apple M2 Chip 8GB RAM 256GB SSD - Space Gray",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AppleProductImage.webp",
+      "price": 4199,
+      "originalPrice": 4799,
+      "_id": {
+        "$oid": "66c8f08b68b0f5860420c986"
+      },
+      "createdAt": {
+        "$date": "2024-08-23T20:26:51.779Z"
+      },
+      "updatedAt": {
+        "$date": "2024-08-23T20:26:51.779Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "1234"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 4199,
+  "shippingPrice": 0,
+  "totalPrice": 4199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-08-23T20:26:51.779Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-23T20:26:51.779Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f57e1bbcce6627e3cc32b5"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 2,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66f57e1bbcce6627e3cc32b6"
+      },
+      "createdAt": {
+        "$date": "2024-09-26T15:30:35.263Z"
+      },
+      "updatedAt": {
+        "$date": "2024-09-26T15:30:35.263Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2398,
+  "shippingPrice": 0,
+  "totalPrice": 2398,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-09-26T15:30:35.264Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-26T15:30:35.264Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f581c4bcce6627e3cc333a"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "66f581c4bcce6627e3cc333b"
+      },
+      "createdAt": {
+        "$date": "2024-09-26T15:46:12.384Z"
+      },
+      "updatedAt": {
+        "$date": "2024-09-26T15:46:12.384Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "66f581c4bcce6627e3cc333c"
+      },
+      "createdAt": {
+        "$date": "2024-09-26T15:46:12.384Z"
+      },
+      "updatedAt": {
+        "$date": "2024-09-26T15:46:12.384Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2998,
+  "shippingPrice": 0,
+  "totalPrice": 2998,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-09-26T15:46:12.384Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-26T15:46:12.384Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670ce3759b65598e051f0036"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "670ce3759b65598e051f0037"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T09:25:09.885Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T09:25:09.885Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "Saudi Arabia",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1899,
+  "shippingPrice": 0,
+  "totalPrice": 1899,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T09:25:09.886Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T09:25:09.886Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670ce3839b65598e051f003b"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1002"
+      },
+      "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+      "price": 1899,
+      "originalPrice": 2399,
+      "_id": {
+        "$oid": "670ce3839b65598e051f003c"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T09:25:23.983Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T09:25:23.983Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "Saudi Arabia",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1899,
+  "shippingPrice": 0,
+  "totalPrice": 1899,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T09:25:23.984Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T09:25:23.984Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670ce8196eca9b5cf7a39494"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670ce8196eca9b5cf7a39495"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T09:44:57.746Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T09:44:57.746Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T09:44:57.747Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T09:44:57.747Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670ce8fcd93eaa8312e9aa77"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670ce8fcd93eaa8312e9aa78"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T09:48:44.053Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T09:48:44.053Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1199,
+  "shippingPrice": 0,
+  "totalPrice": 1199,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-10-14T09:48:44.054Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T09:48:44.054Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670cec03587ba497c1a1e87f"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 2,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670cec03587ba497c1a1e880"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T10:01:39.993Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T10:01:39.993Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2398,
+  "shippingPrice": 0,
+  "totalPrice": 2398,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-10-14T10:01:39.995Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T10:01:39.995Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670ced6d29864f72d7630827"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 2,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670ced6d29864f72d7630828"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T10:07:41.121Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T10:07:41.121Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2398,
+  "shippingPrice": 0,
+  "totalPrice": 2398,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T10:07:41.122Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T10:07:41.122Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670cedba29864f72d7630831"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 3,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670cedba29864f72d7630832"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T10:08:58.390Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T10:08:58.390Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 3597,
+  "shippingPrice": 0,
+  "totalPrice": 3597,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T10:08:58.391Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T10:08:58.391Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d128bc414be5e7020960f"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66fd5261360414ea9fc6f572"
+      },
+      "name": "HP Kow 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+      "qty": 1,
+      "price": 1000,
+      "originalPrice": 1500,
+      "_id": {
+        "$oid": "670d128bc414be5e70209610"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:46:03.918Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:46:03.918Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670d128bc414be5e70209611"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:46:03.919Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:46:03.919Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2199,
+  "shippingPrice": 0,
+  "totalPrice": 2199,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T12:46:03.920Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T12:46:03.920Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d134babf1d9e27509034f"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66fd5261360414ea9fc6f572"
+      },
+      "name": "HP Kow 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+      "qty": 1,
+      "price": 1000,
+      "originalPrice": 1500,
+      "_id": {
+        "$oid": "670d134babf1d9e275090350"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:49:15.330Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:49:15.330Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670d134babf1d9e275090351"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:49:15.330Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:49:15.330Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2199,
+  "shippingPrice": 0,
+  "totalPrice": 2199,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T12:49:15.331Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T12:49:15.331Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d1351abf1d9e275090355"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66fd5261360414ea9fc6f572"
+      },
+      "name": "HP Kow 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+      "qty": 1,
+      "price": 1000,
+      "originalPrice": 1500,
+      "_id": {
+        "$oid": "670d1351abf1d9e275090356"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:49:21.562Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:49:21.562Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670d1351abf1d9e275090357"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:49:21.562Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:49:21.562Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2199,
+  "shippingPrice": 0,
+  "totalPrice": 2199,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T12:49:21.563Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T12:49:21.563Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d141ccdfd4e5408b8795f"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66fd5261360414ea9fc6f572"
+      },
+      "name": "HP Kow 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+      "qty": 1,
+      "price": 1000,
+      "originalPrice": 1500,
+      "_id": {
+        "$oid": "670d141ccdfd4e5408b87960"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:52:44.227Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:52:44.227Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "670d141ccdfd4e5408b87961"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T12:52:44.227Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T12:52:44.227Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "sharjah"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2199,
+  "shippingPrice": 0,
+  "totalPrice": 2199,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T12:52:44.228Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T12:52:44.228Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d17da273e2f706040d9fe"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "670d17da273e2f706040d9ff"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:08:42.446Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:08:42.446Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T13:08:42.447Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:08:42.447Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d18efe2425b0920de96d1"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "670d18efe2425b0920de96d2"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:13:19.642Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:13:19.642Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "createdAt": {
+    "$date": "2024-10-14T13:13:19.643Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:13:19.643Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d1bb1bcca578f91dda286"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "670d1bb1bcca578f91dda287"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:25:05.273Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:25:05.273Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T13:25:05.274Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:25:05.274Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d1c290f8e531953a1a527"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "670d1c290f8e531953a1a528"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:27:05.269Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:27:05.269Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T13:27:05.270Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:27:05.270Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d1ef80e78137dcf46d0d5"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "670d1ef80e78137dcf46d0d6"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:39:04.441Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:39:04.441Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1799,
+  "shippingPrice": 0,
+  "totalPrice": 1799,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T13:39:04.442Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:39:04.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d1ff7532bd236f4ad3627"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "670d1ff7532bd236f4ad3628"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:43:19.363Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:43:19.363Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1799,
+  "shippingPrice": 0,
+  "totalPrice": 1799,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T13:43:19.363Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:43:19.363Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670d20320ff078b5f94d6a6b"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "670d20320ff078b5f94d6a6c"
+      },
+      "createdAt": {
+        "$date": "2024-10-14T13:44:18.512Z"
+      },
+      "updatedAt": {
+        "$date": "2024-10-14T13:44:18.512Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "al ahdam",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1799,
+  "shippingPrice": 0,
+  "totalPrice": 1799,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-10-14T13:44:18.513Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-14T13:44:18.513Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759d02ec8d7b7b074a87ab0"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 2,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "6759d02ec8d7b7b074a87ab1"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T17:47:26.494Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T17:47:26.494Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 2398,
+  "shippingPrice": 0,
+  "totalPrice": 2398,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-12-11T17:47:26.496Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T17:47:26.496Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759d154c8d7b7b074a87ae0"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 3,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "6759d154c8d7b7b074a87ae1"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T17:52:20.598Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T17:52:20.598Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 3597,
+  "shippingPrice": 0,
+  "totalPrice": 3597,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-12-11T17:52:20.598Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T17:52:20.598Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759e13bc8d7b7b074a87c1c"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 0,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "6759e13bc8d7b7b074a87c1d"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T19:00:11.640Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T19:00:11.640Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "6759e13bc8d7b7b074a87c1e"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T19:00:11.640Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T19:00:11.640Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "alkhobar",
+    "country": "United Arab Emirates",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1799,
+  "shippingPrice": 0,
+  "totalPrice": 1799,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-12-11T19:00:11.641Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T19:00:11.641Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759e21ac8d7b7b074a87c60"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffc"
+      },
+      "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+      "qty": 0,
+      "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+      "price": 1199,
+      "originalPrice": 1499,
+      "_id": {
+        "$oid": "6759e21ac8d7b7b074a87c61"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T19:03:54.045Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T19:03:54.045Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe0ffe"
+      },
+      "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+      "qty": 0,
+      "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+      "price": 1799,
+      "originalPrice": 2299,
+      "_id": {
+        "$oid": "6759e21ac8d7b7b074a87c62"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T19:03:54.046Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T19:03:54.046Z"
+      }
+    },
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 1,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "6759e21ac8d7b7b074a87c63"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T19:03:54.046Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T19:03:54.046Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "bur dubai",
+    "country": "Saudi Arabia",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 1699,
+  "shippingPrice": 0,
+  "totalPrice": 1699,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-12-11T19:03:54.046Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T19:03:54.046Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759e460c8d7b7b074a87ceb"
+  },
+  "orderItems": [
+    {
+      "product": {
+        "$oid": "66b4898d0f9cff665abe1000"
+      },
+      "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+      "qty": 3,
+      "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+      "price": 1699,
+      "originalPrice": 2099,
+      "_id": {
+        "$oid": "6759e460c8d7b7b074a87cec"
+      },
+      "createdAt": {
+        "$date": "2024-12-11T19:13:36.578Z"
+      },
+      "updatedAt": {
+        "$date": "2024-12-11T19:13:36.578Z"
+      }
+    }
+  ],
+  "deliveryMethod": "Delivery",
+  "shippingAddress": {
+    "address": "Rolla street",
+    "apartment": "kyc building",
+    "city": "bur dubai",
+    "country": "Saudi Arabia",
+    "state": "bur dubai"
+  },
+  "paymentMethod": "Cash on Delivery",
+  "paymentResult": "Pending",
+  "itemsPrice": 5097,
+  "shippingPrice": 0,
+  "totalPrice": 5097,
+  "isPaid": false,
+  "isDelivered": false,
+  "orderStatus": "Pending",
+  "returnRequested": false,
+  "refundRequested": false,
+  "returnReason": "",
+  "refundReason": "",
+  "createdAt": {
+    "$date": "2024-12-11T19:13:36.579Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T19:13:36.579Z"
+  },
+  "__v": 0
+}]

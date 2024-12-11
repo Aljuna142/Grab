@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "66bdeebbf6ecc3570ece39fd"
+  },
+  "name": "halima",
+  "phone": "8508214360",
+  "email": "aljuna1010@gmail.com",
+  "address": "rolla street",
+  "city": "sharjah",
+  "state": "sharjah",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66bdf044ada3dde5d597e690"
+  },
+  "name": "halima",
+  "phone": "8508214360",
+  "email": "aljuna1010@gmail.com",
+  "address": "rolla street",
+  "city": "sharjah",
+  "state": "sharjah",
+  "createdAt": {
+    "$date": "2024-08-15T12:10:44.830Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T12:10:44.830Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66be513ce6a8207216041f77"
+  },
+  "name": "Aljuna",
+  "phone": "0555201661",
+  "email": "alju333666@gmail.com",
+  "address": "Rolla street",
+  "city": "burdubai",
+  "state": "bur dubai",
+  "createdAt": {
+    "$date": "2024-08-15T19:04:28.602Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T19:04:28.602Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66be641e3980aa6fc87e1f70"
+  },
+  "name": "Aljuna",
+  "phone": "0555201661",
+  "email": "alju333666@gmail.com",
+  "address": "Rolla street",
+  "city": "burdubai",
+  "state": "bur dubai",
+  "createdAt": {
+    "$date": "2024-08-15T20:25:02.256Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-15T20:25:02.256Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c23ba381e7d71970d4dedb"
+  },
+  "name": "Aljuna",
+  "phone": "0555201661",
+  "email": "alju333666@gmail.com",
+  "address": "Rolla street",
+  "city": "burdubai",
+  "state": "bur dubai",
+  "createdAt": {
+    "$date": "2024-08-18T18:21:23.870Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-18T18:21:23.870Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f57d77bcce6627e3cc3289"
+  },
+  "name": "Aljuna",
+  "phone": "0555201661",
+  "email": "alju333666@gmail.com",
+  "address": "Rolla street",
+  "city": "burdubai",
+  "state": "bur dubai",
+  "createdAt": {
+    "$date": "2024-09-26T15:27:51.440Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-26T15:27:51.440Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f58164bcce6627e3cc3329"
+  },
+  "name": "Aljuna",
+  "phone": "0555201661",
+  "email": "alju333666@gmail.com",
+  "address": "Rolla street",
+  "city": "burdubai",
+  "state": "bur dubai",
+  "createdAt": {
+    "$date": "2024-09-26T15:44:36.746Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-26T15:44:36.746Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759e1e3c8d7b7b074a87c4b"
+  },
+  "name": "Aljuna",
+  "phone": "0555201661",
+  "email": "alju333666@gmail.com",
+  "address": "Rolla street",
+  "city": "bur dubai",
+  "state": "bur dubai",
+  "createdAt": {
+    "$date": "2024-12-11T19:02:59.851Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T19:02:59.851Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,833 @@
+[{
+  "_id": {
+    "$oid": "66db18edcfa77acd23584005"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "8989",
+  "status": "pending",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "hp",
+      "unitCost": 20,
+      "qty": 5,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 95,
+      "note": "b",
+      "_id": {
+        "$oid": "66db396b510c0be9c738a27e"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T14:59:57.130Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T17:18:35.036Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db18edcfa77acd23584008"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "2020",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "products": [
+    {
+      "product": "hp",
+      "unitCost": 2000,
+      "qty": 3,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 5700,
+      "note": "k",
+      "_id": {
+        "$oid": "66db18edcfa77acd23584009"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T14:59:57.177Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T14:59:57.177Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db1972cfa77acd2358400e"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "2021",
+  "status": "received",
+  "supplier": "pcd",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 2,
+      "taxes": "inclusive",
+      "subtotal": 980,
+      "note": "k",
+      "_id": {
+        "$oid": "66db1972cfa77acd2358400f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:02:10.162Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:02:10.162Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db1972cfa77acd23584011"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "2021",
+  "status": "received",
+  "supplier": "pcd",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 1000,
+      "qty": 1,
+      "discount": 2,
+      "taxes": "inclusive",
+      "subtotal": 980,
+      "note": "k",
+      "_id": {
+        "$oid": "66db1972cfa77acd23584012"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:02:10.528Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:02:10.528Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db1dbf359b1a149a2822d3"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "2022",
+  "status": "pending",
+  "supplier": "TCA",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "Lenovo",
+      "unitCost": 3000,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 2850,
+      "note": "kkk",
+      "_id": {
+        "$oid": "66db1dbf359b1a149a2822d4"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:20:31.323Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:20:31.323Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db1dbf359b1a149a2822d6"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "2022",
+  "status": "pending",
+  "supplier": "TCA",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "Lenovo",
+      "unitCost": 3000,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 2850,
+      "note": "kkk",
+      "_id": {
+        "$oid": "66db1dbf359b1a149a2822d7"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:20:31.684Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:20:31.684Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db22cc359b1a149a2822fc"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "3333",
+  "status": "pending",
+  "supplier": "TCS",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "asus",
+      "unitCost": 2300,
+      "qty": 2,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 4370,
+      "note": "submit",
+      "_id": {
+        "$oid": "66db22cc359b1a149a2822fd"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:42:04.469Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:42:04.469Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db22cc359b1a149a2822ff"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "3333",
+  "status": "pending",
+  "supplier": "TCS",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "asus",
+      "unitCost": 2300,
+      "qty": 2,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 4370,
+      "note": "submit",
+      "_id": {
+        "$oid": "66db22cc359b1a149a282300"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:42:04.725Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:42:04.725Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db2468359b1a149a282341"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "4344",
+  "status": "pending",
+  "supplier": "CTS",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "msi",
+      "unitCost": 100,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 95,
+      "note": "k",
+      "_id": {
+        "$oid": "66db2468359b1a149a282342"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:48:56.069Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:48:56.069Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db2468359b1a149a282344"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "4344",
+  "status": "pending",
+  "supplier": "CTS",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "msi",
+      "unitCost": 100,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 95,
+      "note": "k",
+      "_id": {
+        "$oid": "670f69fbe622d11347881646"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:48:56.097Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T07:23:39.822Z"
+  },
+  "__v": 0,
+  "storeName": "Crown Excel"
+},
+{
+  "_id": {
+    "$oid": "66db265669174c3b20237cc4"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "4545",
+  "status": "pending",
+  "supplier": "TATA",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "apple",
+      "unitCost": 50000,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 47500,
+      "note": "k",
+      "_id": {
+        "$oid": "66db265669174c3b20237cc5"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:57:10.499Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:57:10.499Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db265669174c3b20237cc7"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "4545",
+  "status": "pending",
+  "supplier": "TATA",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "apple",
+      "unitCost": 50000,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 47500,
+      "note": "k",
+      "_id": {
+        "$oid": "66db265669174c3b20237cc8"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T15:57:10.870Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T15:57:10.870Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db289b69174c3b20237cff"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "0000",
+  "status": "pending",
+  "supplier": "RATHAN",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "ACER",
+      "unitCost": 200,
+      "qty": 6,
+      "discount": 2,
+      "taxes": "exclusive",
+      "subtotal": 1234.8,
+      "note": "KKK",
+      "_id": {
+        "$oid": "66db289b69174c3b20237d00"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T16:06:51.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T16:06:51.190Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db289b69174c3b20237d02"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "0000",
+  "status": "pending",
+  "supplier": "RATHAN",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "ACER",
+      "unitCost": 200,
+      "qty": 6,
+      "discount": 2,
+      "taxes": "exclusive",
+      "subtotal": 1234.8,
+      "note": "KKK",
+      "_id": {
+        "$oid": "66db289b69174c3b20237d03"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T16:06:51.453Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T16:06:51.453Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db2d1969174c3b20237d36"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "1212",
+  "status": "pending",
+  "supplier": "VSHA",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 590,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 560.5,
+      "note": "k",
+      "_id": {
+        "$oid": "66db2d1969174c3b20237d37"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T16:26:01.311Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T16:26:01.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db2d1969174c3b20237d39"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "1212",
+  "status": "pending",
+  "supplier": "VSHA",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "acer",
+      "unitCost": 590,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 560.5,
+      "note": "k",
+      "_id": {
+        "$oid": "66db2d1969174c3b20237d3a"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T16:26:01.580Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T16:26:01.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db35e5510c0be9c738a224"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "8989",
+  "status": "pending",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+      "unitCost": 20,
+      "qty": 5,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 95,
+      "note": "b",
+      "_id": {
+        "$oid": "66db35e5510c0be9c738a225"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T17:03:33.508Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T17:03:33.508Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66db396a510c0be9c738a27b"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "8989",
+  "status": "pending",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "paid",
+  "products": [
+    {
+      "product": "hp",
+      "unitCost": 20,
+      "qty": 5,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 95,
+      "note": "b",
+      "_id": {
+        "$oid": "66db396a510c0be9c738a27c"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-09-06T17:18:34.987Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-06T17:18:34.987Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e8589a186c2c63a7d4a21"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "0090",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1200,
+      "qty": 100,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 118800,
+      "note": "READY",
+      "_id": {
+        "$oid": "670e8589a186c2c63a7d4a22"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T15:08:57.669Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T15:08:57.669Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670e858aa186c2c63a7d4a24"
+  },
+  "date": {
+    "$date": "2024-10-15T00:00:00.000Z"
+  },
+  "refNo": "0090",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1200,
+      "qty": 100,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 118800,
+      "note": "READY",
+      "_id": {
+        "$oid": "670e858aa186c2c63a7d4a25"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-15T15:08:58.058Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-15T15:08:58.058Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f60bfe622d1134788161c"
+  },
+  "date": {
+    "$date": "2024-10-16T00:00:00.000Z"
+  },
+  "refNo": "000",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1200,
+      "qty": 100,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 118800,
+      "note": "READY",
+      "_id": {
+        "$oid": "670f60bfe622d1134788161d"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T06:44:15.424Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T06:44:15.424Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f60bfe622d1134788161f"
+  },
+  "date": {
+    "$date": "2024-10-16T00:00:00.000Z"
+  },
+  "refNo": "000",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1200,
+      "qty": 100,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 118800,
+      "note": "READY",
+      "_id": {
+        "$oid": "670f60bfe622d11347881620"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T06:44:15.681Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T06:44:15.681Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f69fbe622d11347881643"
+  },
+  "date": {
+    "$date": "2024-09-06T00:00:00.000Z"
+  },
+  "refNo": "4344",
+  "status": "pending",
+  "supplier": "CTS",
+  "paymentStatus": "paid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "msi",
+      "unitCost": 100,
+      "qty": 1,
+      "discount": 5,
+      "taxes": "inclusive",
+      "subtotal": 95,
+      "note": "k",
+      "_id": {
+        "$oid": "670f69fbe622d11347881644"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T07:23:39.584Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T07:23:39.584Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f6d1ce622d11347881662"
+  },
+  "date": {
+    "$date": "2024-10-16T00:00:00.000Z"
+  },
+  "refNo": "0009",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1200,
+      "qty": 100,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 118800,
+      "note": "READY",
+      "_id": {
+        "$oid": "670f6d1ce622d11347881663"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T07:37:00.976Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T07:37:00.976Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f6d1de622d11347881665"
+  },
+  "date": {
+    "$date": "2024-10-16T00:00:00.000Z"
+  },
+  "refNo": "0009",
+  "status": "received",
+  "supplier": "ReddingTon Gulf",
+  "paymentStatus": "unpaid",
+  "storeName": "Crown Excel",
+  "products": [
+    {
+      "product": "Hp 255 G8 AMD R5-5500U 8GB Ram 256GB SSD 15.6” FHD Win11 English Keyboard Grey Color",
+      "unitCost": 1200,
+      "qty": 100,
+      "discount": 1,
+      "taxes": "inclusive",
+      "subtotal": 118800,
+      "note": "READY",
+      "_id": {
+        "$oid": "670f6d1de622d11347881666"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-10-16T07:37:01.235Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T07:37:01.235Z"
+  },
+  "__v": 0
+}]

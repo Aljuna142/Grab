@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "66f3bd9a976b6c20951a69c5"
+  },
+  "name": "Crown Excel",
+  "path": "/pos/crown-excel",
+  "color": "red",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f3bd9a976b6c20951a69c6"
+  },
+  "name": "Al-Jasara",
+  "path": "/pos/al-jasara",
+  "color": "blue",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f3bd9a976b6c20951a69c7"
+  },
+  "name": "WH1",
+  "path": "/pos/wh1",
+  "color": "black",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f3c0fcd60790ceeb3bdbe8"
+  },
+  "name": "Tripio",
+  "path": "/pos/store-4",
+  "color": "#280488",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f6a7e2281fa6c5aa502e6f"
+  },
+  "name": "ggg",
+  "path": "/pos/store-5",
+  "color": "#0CB212",
+  "__v": 0
+}]

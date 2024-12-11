@@ -1,0 +1,1252 @@
+[{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe0ff8"
+  },
+  "image": "/assets/images/ProductImages/Aspire-3-1.png",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Acer Aspire 3 Intel Core I5-1135G7 8GB Ram 1TB HDD Nvidia MX350 2GB 15.6″ FHD Win11 ENG-ARB Keyboard Silver Color",
+  "rating": 5,
+  "reviews": 1,
+  "reviewText": [
+    "Amazing performance and battery life. The design is also very sleek!",
+    "Great laptop for both work and play. The display quality is top-notch.",
+    "This a fantastic laptop with a premium feel. Highly recommended."
+  ],
+  "price": 1480,
+  "originalPrice": 2099,
+  "description": "The Acer Aspire 3 is a powerhouse designed to handle a wide range of computing tasks with ease. Featuring the Intel Core i5-1135G7 processor, this laptop delivers impressive performance for both everyday tasks and more demanding applications. With 8GB of RAM and a 1TB HDD, you’ll have plenty of memory and storage to keep your files and applications running smoothly. The NVIDIA MX350 2GB graphics card ensures that you can enjoy enhanced visuals and a better overall gaming experience, making this laptop an excellent choice for both work and leisure. The 15.6-inch Full HD display offers crisp, clear visuals with vibrant colors, making it ideal for multimedia consumption, whether you're watching movies or working on detailed graphics projects. The laptop's sleek, silver color and modern design add a touch of elegance to your tech gear, while its robust build ensures durability. Windows 11 is pre-installed, providing the latest features and security updates to keep your system running efficiently. With a range of connectivity options and a comfortable keyboard for long typing sessions, the Acer Aspire 3 is designed to meet the needs of a diverse range of users. Whether you're a student, professional, or casual user, this laptop combines style, performance, and functionality to deliver an exceptional computing experience. Plus, the ample storage and high-performance specs make it a reliable choice for handling both work and play with ease.",
+  "countInStock": 0,
+  "brand": "Acer",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe0ff9"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.331Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.331Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe0ffc"
+  },
+  "image": "/assets/images/ProductImages/DellProductImage.jpeg",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Dell Inspiron 15 3505 Laptop - AMD Ryzen 5 5500U 8GB RAM 256GB SSD",
+  "rating": 4.2,
+  "reviews": 3,
+  "reviewText": [
+    "Excellent performance for the price. The SSD makes a big difference in speed.",
+    "The laptop runs smoothly and is great for everyday use. Build quality is decent.",
+    "Value for money. The performance is good, but the battery life could be better."
+  ],
+  "price": 1199,
+  "originalPrice": 1499,
+  "description": "The Dell Inspiron 15 3505 is a reliable and affordable laptop equipped with an AMD Ryzen 5 5500U processor, 8GB of RAM, and a 256GB SSD. This configuration ensures fast performance and responsive multitasking for various applications, whether you're working on documents, streaming media, or browsing the web. The 15-inch display offers ample screen real estate for productivity and entertainment, while the compact design makes it easy to carry around. With its solid build quality and efficient performance, this laptop is an excellent choice for students, professionals, and casual users alike. The 256GB SSD provides fast boot times and quick access to your files, enhancing the overall user experience. The laptop comes with Windows 11 pre-installed, ensuring you have the latest features and security updates.",
+  "countInStock": 1,
+  "brand": "Dell",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe0ffd"
+      }
+    }
+  ],
+  "__v": 1,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T17:52:20.614Z"
+  },
+  "seoTags": [],
+  "specifications": {
+    "Battery": "N/A",
+    "Bluetooth": "N/A",
+    "Brand": "N/A",
+    "Color": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Memory RAM": "N/A",
+    "Model Number": "N/A",
+    "Ports": "N/A",
+    "Power Supply": "N/A",
+    "Processor": "N/A",
+    "Resolution": "N/A",
+    "Speaker": "N/A",
+    "Storage": "N/A",
+    "Webcam": "N/A",
+    "Wifi": "N/A"
+  },
+  "tags": []
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe0ffe"
+  },
+  "image": "/assets/images/ProductImages/AcerProductImage.Webp",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Acer Aspire 3 Ryzen 7 5700U 16GB RAM 512GB SSD 15.6\" FHD Laptop - Black",
+  "rating": 4.8,
+  "reviews": 5,
+  "reviewText": [
+    "The performance is outstanding, especially with the Ryzen 7 processor and 16GB RAM.",
+    "Fantastic laptop for both work and gaming. The SSD is super fast.",
+    "Love the build quality and performance. Worth every penny.",
+    "The screen quality and speed are excellent. A very reliable laptop.",
+    "Great value for the price. The laptop handles all my tasks effortlessly."
+  ],
+  "price": 1799,
+  "originalPrice": 2299,
+  "description": "The Acer Aspire 3 with Ryzen 7 5700U processor, 16GB RAM, and 512GB SSD is a high-performance laptop designed to meet the needs of demanding users. The powerful processor and ample memory ensure smooth operation for multitasking and demanding applications. The 15.6-inch Full HD display provides clear and vibrant visuals, making it perfect for both work and entertainment. The laptop's sleek design and durable build quality make it a great choice for users who need a reliable and stylish computing solution. With Windows 11 pre-installed, you get access to the latest features and updates for a modern computing experience.",
+  "countInStock": 0,
+  "brand": "Acer",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe0fff"
+      }
+    }
+  ],
+  "__v": 1,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T19:00:11.650Z"
+  },
+  "seoTags": [],
+  "specifications": {
+    "Battery": "N/A",
+    "Bluetooth": "N/A",
+    "Brand": "N/A",
+    "Color": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Memory RAM": "N/A",
+    "Model Number": "N/A",
+    "Ports": "N/A",
+    "Power Supply": "N/A",
+    "Processor": "N/A",
+    "Resolution": "N/A",
+    "Speaker": "N/A",
+    "Storage": "N/A",
+    "Webcam": "N/A",
+    "Wifi": "N/A"
+  },
+  "tags": []
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1000"
+  },
+  "image": "/assets/images/ProductImages/AsusProductImage.jpeg",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Asus VivoBook 15 OLED M515 Ryzen 5 5500U 8GB RAM 512GB SSD 15.6\" Full HD Laptop - Silver",
+  "rating": 4.7,
+  "reviews": 4,
+  "reviewText": [
+    "The OLED screen is fantastic for watching movies and working on detailed projects.",
+    "Great performance with Ryzen 5 and 8GB RAM. The SSD is very fast.",
+    "Stylish design and solid build. The laptop meets all my needs.",
+    "Excellent value for the price. The display quality is a highlight."
+  ],
+  "price": 1699,
+  "originalPrice": 2099,
+  "description": "The Asus VivoBook 15 OLED M515 combines powerful performance with a stunning OLED display, making it an excellent choice for both work and play. Featuring a Ryzen 5 5500U processor, 8GB of RAM, and a 512GB SSD, this laptop offers fast and responsive performance for a wide range of applications. The 15.6-inch Full HD OLED display provides vibrant colors and deep contrasts, enhancing your viewing experience whether you’re working on creative projects or enjoying multimedia content. The sleek silver design and slim profile make it easy to carry, while the robust build ensures durability. Windows 11 is pre-installed, providing the latest features and security updates for a modern computing experience.",
+  "countInStock": 1,
+  "brand": "Asus",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe1001"
+      }
+    }
+  ],
+  "__v": 1,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T19:13:36.590Z"
+  },
+  "seoTags": [],
+  "specifications": {
+    "Battery": "N/A",
+    "Bluetooth": "N/A",
+    "Brand": "N/A",
+    "Color": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Memory RAM": "N/A",
+    "Model Number": "N/A",
+    "Ports": "N/A",
+    "Power Supply": "N/A",
+    "Processor": "N/A",
+    "Resolution": "N/A",
+    "Speaker": "N/A",
+    "Storage": "N/A",
+    "Webcam": "N/A",
+    "Wifi": "N/A"
+  },
+  "tags": []
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1002"
+  },
+  "image": "/assets/images/ProductImages/MsiProductImage.jpeg",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "MSI GF63 Thin 9SC-066 15.6\" Full HD Gaming Laptop - Intel Core i5-9300H 8GB RAM 512GB SSD - Black",
+  "rating": 4.6,
+  "reviews": 3,
+  "reviewText": [
+    "Great gaming laptop with good performance and cooling.",
+    "The build quality is solid, and it handles games smoothly.",
+    "Fantastic value for the price. The SSD provides fast load times."
+  ],
+  "price": 1899,
+  "originalPrice": 2399,
+  "description": "The MSI GF63 Thin 9SC-066 is designed for gamers who need powerful performance in a sleek and portable form factor. Equipped with an Intel Core i5-9300H processor, 8GB of RAM, and a 512GB SSD, this laptop delivers the speed and responsiveness required for gaming and demanding applications. The 15.6-inch Full HD display offers clear and immersive visuals, while the advanced cooling system ensures optimal performance during extended gaming sessions. The laptop’s black design and lightweight build make it easy to take on the go, while its robust performance and fast SSD make it a reliable choice for gamers.",
+  "countInStock": 4,
+  "brand": "MSI",
+  "category": "Gaming Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe1003"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1004"
+  },
+  "image": "/assets/images/ProductImages/LenovoProductImage.jpeg",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Lenovo ThinkPad X1 Carbon Gen 9 14\" FHD Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Black",
+  "rating": 4.9,
+  "reviews": 6,
+  "reviewText": [
+    "Exceptional build quality and performance. The keyboard is superb.",
+    "The display is bright and sharp, and the laptop is very durable.",
+    "Excellent for business use. The performance is top-notch.",
+    "A premium laptop with excellent battery life and performance.",
+    "Very happy with this purchase. It’s a powerful and reliable machine.",
+    "The ThinkPad X1 Carbon is a solid choice for professionals."
+  ],
+  "price": 2299,
+  "originalPrice": 2899,
+  "description": "The Lenovo ThinkPad X1 Carbon Gen 9 is a high-performance laptop designed for professionals who need a powerful and reliable computing solution. Featuring an Intel Core i7-1165G7 processor, 16GB of RAM, and a 512GB SSD, this laptop delivers exceptional performance and responsiveness for demanding tasks. The 14-inch Full HD display offers vibrant colors and sharp details, while the laptop’s lightweight and durable design ensures portability and reliability. With its advanced features and robust build quality, the ThinkPad X1 Carbon is an ideal choice for business users and professionals who require a dependable and high-performing laptop.",
+  "countInStock": 3,
+  "brand": "Lenovo",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe1005"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1006"
+  },
+  "image": "/assets/images/ProductImages/AppleProductImage.webp",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Apple MacBook Air (M2, 2022) 13.6\" Retina Display - Apple M2 Chip 8GB RAM 256GB SSD - Space Gray",
+  "rating": 4.95,
+  "reviews": 7,
+  "reviewText": [
+    "The M2 chip provides incredible performance and battery life.",
+    "The Retina display is stunning and the laptop is incredibly light.",
+    "Excellent build quality and performance. Worth every cent.",
+    "The MacBook Air M2 is a fantastic machine for everyday use and professional work.",
+    "Love the design and performance. It’s a great upgrade from my old MacBook.",
+    "The battery life is exceptional, and the performance is top-notch.",
+    "A premium laptop with a beautiful display and powerful performance."
+  ],
+  "price": 4199,
+  "originalPrice": 4799,
+  "description": "The Apple MacBook Air (M2, 2022) combines sleek design with powerful performance, thanks to the new Apple M2 chip. With an 8GB RAM and 256GB SSD, this laptop offers fast performance and responsive multitasking for a wide range of applications. The 13.6-inch Retina display delivers stunning visuals with vibrant colors and sharp details, making it perfect for both work and entertainment. The MacBook Air’s lightweight and compact design make it easy to carry, while its advanced features and long battery life provide a superior computing experience. Whether you’re a student, professional, or creative, the MacBook Air M2 is designed to meet your needs with style and efficiency.",
+  "countInStock": 2,
+  "brand": "Apple",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe1007"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1008"
+  },
+  "image": "/assets/images/ProductImages/SamsungProductImage.jpg",
+  "images": [
+    "/assets/images/Aspire/Aspire-3-3-1.png",
+    "/assets/images/Aspire/Aspire-3-5-1.png",
+    "/assets/images/Aspire/Aspire-3-7-1.png",
+    "/assets/images/Aspire/Aspire-3-8-1.png"
+  ],
+  "name": "Samsung Galaxy Book Pro 15.6\" AMOLED Laptop - Intel Core i7-1165G7 16GB RAM 512GB SSD - Mystic Silver",
+  "rating": 4.85,
+  "reviews": 5,
+  "reviewText": [
+    "The AMOLED display is beautiful and the performance is excellent.",
+    "Great laptop with a premium feel and solid performance.",
+    "The design is sleek, and the performance is very smooth.",
+    "Fantastic display and fast performance. Highly recommended.",
+    "The battery life is impressive, and the overall experience is great."
+  ],
+  "price": 2499,
+  "originalPrice": 2999,
+  "description": "The Samsung Galaxy Book Pro combines cutting-edge technology with a sleek design, featuring a 15.6-inch AMOLED display for stunning visuals. Powered by an Intel Core i7-1165G7 processor, 16GB of RAM, and a 512GB SSD, it delivers exceptional performance and speed for both productivity and entertainment. The laptop's slim and lightweight design makes it highly portable, while its advanced features and long battery life ensure a top-notch user experience. Whether you're working on professional tasks, enjoying multimedia content, or simply on the go, the Galaxy Book Pro is engineered to meet your needs with style and efficiency.",
+  "countInStock": 3,
+  "brand": "Samsung",
+  "category": "Laptop",
+  "colors": [
+    {
+      "name": "Silver",
+      "images": [
+        "/assets/images/ProductImages/Aspire-3-1.png",
+        "/assets/images/Aspire/Aspire-3-3-1.png"
+      ],
+      "_id": {
+        "$oid": "66b4898d0f9cff665abe1009"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe100a"
+  },
+  "image": "/assets/images/ProductImages/LaptopBag.webp",
+  "images": [
+    "/assets/images/ProductImages/LaptopBag.webp"
+  ],
+  "name": "Laptop Bag",
+  "rating": 4.5,
+  "reviews": 15,
+  "reviewText": [],
+  "price": 190,
+  "originalPrice": 220,
+  "description": "A stylish and durable laptop bag.",
+  "countInStock": 10,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe100b"
+  },
+  "image": "/assets/images/ProductImages/keyboard.webp",
+  "images": [
+    "/assets/images/ProductImages/keyboard.webp"
+  ],
+  "name": "Keyboard",
+  "rating": 4.3,
+  "reviews": 10,
+  "reviewText": [],
+  "price": 99,
+  "originalPrice": 149,
+  "description": "A high-quality keyboard for all your typing needs.",
+  "countInStock": 20,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe100c"
+  },
+  "image": "/assets/images/ProductImages/HpGamingHeadset.webp",
+  "images": [
+    "/assets/images/ProductImages/HpGamingHeadset.webp"
+  ],
+  "name": "HP Gaming Headset",
+  "rating": 4.7,
+  "reviews": 20,
+  "reviewText": [],
+  "price": 299,
+  "originalPrice": 349,
+  "description": "A comfortable gaming headset with excellent sound quality.",
+  "countInStock": 15,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe100d"
+  },
+  "image": "/assets/images/ProductImages/DDR5.webp",
+  "images": [
+    "/assets/images/ProductImages/DDR5.webp"
+  ],
+  "name": "DDR5 RAM",
+  "rating": 4.8,
+  "reviews": 25,
+  "reviewText": [],
+  "price": 399,
+  "originalPrice": 499,
+  "description": "High-speed DDR5 RAM for improved performance.",
+  "countInStock": 12,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe100e"
+  },
+  "image": "/assets/images/ProductImages/MicrosoftBluetoothMouse.webp",
+  "images": [
+    "/assets/images/ProductImages/MicrosoftBluetoothMouse.webp"
+  ],
+  "name": "Microsoft Bluetooth Mouse",
+  "rating": 4.6,
+  "reviews": 18,
+  "reviewText": [],
+  "price": 149,
+  "originalPrice": 199,
+  "description": "A wireless mouse with Bluetooth connectivity.",
+  "countInStock": 25,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe100f"
+  },
+  "image": "/assets/images/ProductImages/Mouse-1.webp",
+  "images": [
+    "/assets/images/ProductImages/Mouse-1.webp"
+  ],
+  "name": "Wireless Mouse",
+  "rating": 4.2,
+  "reviews": 12,
+  "reviewText": [],
+  "price": 79,
+  "originalPrice": 99,
+  "description": "A compact and reliable wireless mouse.",
+  "countInStock": 40,
+  "brand": "BrandName",
+  "category": "Accessories",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-07T14:07:48.614Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1010"
+  },
+  "image": "/assets/images/ProductImages/xpg 2.webp",
+  "images": [
+    "/assets/images/ProductImages/xpg 2.webp"
+  ],
+  "name": "XPG Network Card",
+  "rating": 4.6,
+  "reviews": 22,
+  "reviewText": [],
+  "price": 150,
+  "originalPrice": 199,
+  "description": "High-performance network card for gaming and streaming.",
+  "countInStock": 14,
+  "brand": "YPG",
+  "category": "Networking",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-09T12:04:31.102Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1011"
+  },
+  "image": "/assets/images/ProductImages/wdblue.webp",
+  "images": [
+    "/assets/images/ProductImages/wdblue.webp"
+  ],
+  "name": "WD Blue Network Card",
+  "rating": 4.5,
+  "reviews": 18,
+  "reviewText": [],
+  "price": 129,
+  "originalPrice": 179,
+  "description": "Reliable network card with great speed.",
+  "countInStock": 10,
+  "brand": "WD Blue",
+  "category": "Networking",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1012"
+  },
+  "image": "/assets/images/ProductImages/samsungT7.webp",
+  "images": [
+    "/assets/images/ProductImages/samsungT7.webp"
+  ],
+  "name": "Samsung T7 SSD",
+  "rating": 4.8,
+  "reviews": 30,
+  "reviewText": [],
+  "price": 499,
+  "originalPrice": 549,
+  "description": "Fast and compact SSD for storage and speed.",
+  "countInStock": 20,
+  "brand": "Samsung",
+  "category": "Networking",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b4898d0f9cff665abe1013"
+  },
+  "image": "/assets/images/ProductImages/xpg.webp",
+  "images": [
+    "/assets/images/ProductImages/xpg.webp"
+  ],
+  "name": "XPG Network Adapter",
+  "rating": 4.7,
+  "reviews": 20,
+  "reviewText": [],
+  "price": 199,
+  "originalPrice": 249,
+  "description": "Top-tier network adapter with excellent connectivity.",
+  "countInStock": 12,
+  "brand": "XPG",
+  "category": "Networking",
+  "colors": [],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:02:05.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b490c6a6ec2ebe7ac9f774"
+  },
+  "image": "/assets/images/ProductImages/HPProductImage.jpg",
+  "images": [],
+  "name": "HP Pavilion x360 Convertible 14-dw1053cl",
+  "rating": 4.5,
+  "reviews": 2,
+  "reviewText": [],
+  "price": 1299,
+  "originalPrice": 1699,
+  "description": "The HP Pavilion x360 Convertible 14-dw1053cl is a versatile 2-in-1 laptop with a 14-inch FHD touchscreen display.",
+  "countInStock": 3,
+  "brand": "HP",
+  "category": "Laptop",
+  "colors": [],
+  "createdAt": {
+    "$date": "2024-08-08T09:32:54.887Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-08T09:32:54.887Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66eac025f0ebc0fc127f66fa"
+  },
+  "images": [
+    "/uploads/1726660605791.png"
+  ],
+  "name": "product 2",
+  "rating": 3.9,
+  "reviews": 3,
+  "reviewText": [],
+  "price": 1198,
+  "originalPrice": 1999,
+  "description": "<p>lorem ipdum</p>",
+  "countInStock": 19,
+  "brand": "Hp",
+  "category": "All in One",
+  "colors": [],
+  "SKU": "R123",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 10,
+  "lowStockQuantityWarning": 1,
+  "weight": 1200,
+  "unit": "8.9",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-09-18T11:57:25.072Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T11:57:25.072Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ead6c9f8648fef7d3704fb"
+  },
+  "images": [
+    "/uploads/1726666417048.png"
+  ],
+  "name": "product 3",
+  "rating": 3.9,
+  "reviews": 3,
+  "reviewText": [],
+  "price": 1198,
+  "originalPrice": 1999,
+  "description": "<p>lorem ipsum</p>",
+  "countInStock": 19,
+  "brand": "Dell",
+  "category": "All in One",
+  "colors": [],
+  "SKU": "R123",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 10,
+  "lowStockQuantityWarning": 1,
+  "weight": 1200,
+  "unit": "8.9",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-09-18T13:34:01.504Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-18T13:34:01.504Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f13c7eb89b2360ce55a0aa"
+  },
+  "images": [
+    "/uploads/1727085626876.png"
+  ],
+  "name": "product 4",
+  "rating": 3.9,
+  "reviews": 3,
+  "reviewText": [],
+  "price": 1198,
+  "originalPrice": 1999,
+  "description": "<p>lorem ipsum</p>",
+  "countInStock": 19,
+  "brand": "Microsoft",
+  "category": "Laptops",
+  "colors": [],
+  "SKU": "R1233",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 10,
+  "lowStockQuantityWarning": 1,
+  "weight": 1200,
+  "unit": "8.9",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-09-23T10:01:34.442Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-23T10:01:34.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd5261360414ea9fc6f572"
+  },
+  "images": [
+    "/uploads/1727877665412.png"
+  ],
+  "name": "HP Kow 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+  "rating": 5,
+  "reviews": 5,
+  "reviewText": [],
+  "price": 1000,
+  "originalPrice": 1500,
+  "description": "<p>lorem ipsum</p>",
+  "countInStock": 100,
+  "brand": "Hp",
+  "category": "Laptop",
+  "colors": [],
+  "SKU": "8ab13",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 99,
+  "lowStockQuantityWarning": 1,
+  "weight": 7.8,
+  "unit": "1",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-10-02T14:02:09.690Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-02T14:02:09.690Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fd5dbc7163f4bf74bbc7c0"
+  },
+  "images": [
+    "/uploads/1727880607499.png"
+  ],
+  "name": "HP key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+  "rating": 5,
+  "reviews": 5,
+  "reviewText": [],
+  "price": 1000,
+  "originalPrice": 1500,
+  "description": "<p>lorem ipsum</p>",
+  "countInStock": 496,
+  "brand": "Msi",
+  "category": "All in One",
+  "colors": [],
+  "SKU": "8ab14",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 500,
+  "lowStockQuantityWarning": 1,
+  "weight": 7.8,
+  "unit": "1",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "store": "Crown Excel",
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-10-02T14:50:36.090Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-03T11:52:32.957Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ffe3627ed2bf8e43f799a3"
+  },
+  "images": [
+    "/uploads/1728045897332.png"
+  ],
+  "name": "asus key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+  "rating": 5,
+  "reviews": 5,
+  "reviewText": [],
+  "price": 4000,
+  "originalPrice": 4498,
+  "description": "<p>lorem</p>",
+  "countInStock": 480,
+  "brand": "Asus",
+  "category": "All in One",
+  "colors": [],
+  "SKU": "8ab12",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 500,
+  "lowStockQuantityWarning": 1,
+  "weight": 7.8,
+  "unit": "1",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "storeName": "Crown Excel",
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-10-04T12:45:22.752Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-05T13:38:28.715Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "images": [
+    "/uploads/1728119459636.png"
+  ],
+  "name": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "rating": 5,
+  "reviews": 5,
+  "reviewText": [],
+  "price": 2000,
+  "originalPrice": 2500,
+  "description": "<p>lorem ipsum</p>",
+  "countInStock": 300,
+  "brand": "Acer",
+  "category": "All in One",
+  "colors": [],
+  "SKU": "765d",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 500,
+  "lowStockQuantityWarning": 1,
+  "weight": 7.8,
+  "unit": "1",
+  "refundable": false,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "storeName": "Crown Excel",
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-10-05T09:12:15.955Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-21T10:10:41.460Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "images": [
+    "/uploads/1728140621072.png"
+  ],
+  "name": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "rating": 5,
+  "reviews": 5,
+  "reviewText": [],
+  "price": 2000,
+  "originalPrice": 2500,
+  "description": "<p>lorem</p>",
+  "countInStock": 995,
+  "brand": "Lenovo",
+  "category": "All in One",
+  "colors": [],
+  "SKU": "765d",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 1000,
+  "lowStockQuantityWarning": 2,
+  "weight": 7.8,
+  "unit": "1",
+  "refundable": true,
+  "showStockOut": true,
+  "canPurchasable": true,
+  "storeName": "Aljasara",
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-10-05T15:04:18.036Z"
+  },
+  "updatedAt": {
+    "$date": "2024-11-26T13:21:15.071Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6759d1ddc8d7b7b074a87af1"
+  },
+  "images": [],
+  "name": "HP PRO ONE 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+  "rating": 4,
+  "reviews": 3,
+  "reviewText": [],
+  "price": 2000,
+  "originalPrice": 2500,
+  "description": "<p>lorem ipsum</p>",
+  "countInStock": 99,
+  "brand": "Hp",
+  "category": "Laptop",
+  "colors": [],
+  "SKU": "884R5EA#ABV",
+  "tags": [
+    "#SuperSale#"
+  ],
+  "maxPurchaseQuantity": 99,
+  "lowStockQuantityWarning": 2,
+  "weight": 7.8,
+  "unit": "1",
+  "refundable": false,
+  "showStockOut": false,
+  "canPurchasable": true,
+  "storeName": "Crown Excel",
+  "specifications": {
+    "Brand": "N/A",
+    "Model Number": "N/A",
+    "Processor": "N/A",
+    "Memory RAM": "N/A",
+    "Storage": "N/A",
+    "Graphics": "N/A",
+    "Keyboard": "N/A",
+    "Wifi": "N/A",
+    "Battery": "N/A",
+    "Resolution": "N/A",
+    "Power Supply": "N/A",
+    "Bluetooth": "N/A",
+    "Webcam": "N/A",
+    "Speaker": "N/A",
+    "Ports": "N/A",
+    "Color": "N/A"
+  },
+  "metaTitle": "",
+  "metaDescription": "",
+  "seoTags": [],
+  "createdAt": {
+    "$date": "2024-12-11T17:54:37.256Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-11T17:57:37.864Z"
+  },
+  "__v": 0
+}]

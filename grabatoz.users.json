@@ -1,0 +1,154 @@
+[{
+  "_id": {
+    "$oid": "66ade1fc7097f0f6a6a82d19"
+  },
+  "username": "aljuna",
+  "email": "alju333666@gmail.com",
+  "password": "$2a$10$Mwoh.hf/YitPJmRAX5.l1OYLHNqhWI3jBxDvla9IE60EcYgnh7nr.",
+  "mobile": "0555201661",
+  "dob": {
+    "$date": "1999-09-01T00:00:00.000Z"
+  },
+  "gender": "Female",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66adf8e8704031b6315a5f7e"
+  },
+  "username": "alju",
+  "email": "alju222444@gmail.com",
+  "password": "$2a$10$071nxhdE.7wGpKQhzGwOX.L..NAzAhtfj8DW4V9RkKj.kmF8DZqYS",
+  "mobile": "0555201661",
+  "dob": {
+    "$date": "1997-10-21T00:00:00.000Z"
+  },
+  "gender": "Female",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66adf96b704031b6315a5f86"
+  },
+  "username": "ajna",
+  "email": "crownxl142@gmail.com",
+  "password": "$2a$10$eoneF7UhrDxvW/Bp9hglQuoYuCrQMz1bQS8Kq0ZPF7PfCEhouI4Ay",
+  "mobile": "0555201661",
+  "dob": {
+    "$date": "1999-01-01T00:00:00.000Z"
+  },
+  "gender": "Female",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c25f91c5b7366d872c54f8"
+  },
+  "username": "ibath",
+  "email": "iju2020@hmail.com",
+  "password": "$2a$10$w10SeuKQQIVCa6e6c0LytuNitkVWFWkinOk5JSDxLbNW7rhbDpPk6",
+  "mobile": "8220858547",
+  "dob": {
+    "$date": "1997-10-21T00:00:00.000Z"
+  },
+  "gender": "Male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c260e8c5b7366d872c5515"
+  },
+  "username": "ibaju",
+  "email": "ibaju142@gmail.com",
+  "password": "$2a$10$w55G5Djzx3gvUmktGQ6qC.TjUV2q4KldRXdCTIuA2OR3Y37dRbCui",
+  "mobile": "0555201661",
+  "dob": {
+    "$date": "1999-10-21T00:00:00.000Z"
+  },
+  "gender": "Female",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c26614c5b7366d872c554e"
+  },
+  "username": "zoya",
+  "email": "aljuna1010@gmail.com",
+  "password": "$2a$10$MfBLPkc22Bg9MeiItlWGtezFWKkgZ6rjyvjTM9RUE5zALFZKLiayy",
+  "mobile": "8508214360",
+  "dob": {
+    "$date": "1999-01-09T00:00:00.000Z"
+  },
+  "gender": "Female",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c26cd56b5cbe5fce8dea62"
+  },
+  "username": "sathik",
+  "email": "ibasathik@gmail.com",
+  "password": "$2a$10$bpfmNkfwCwjjigSJzAZd7eYgJaThyQjTLgeO3Es5NV1vHsblGy6vC",
+  "mobile": "8508214360",
+  "dob": {
+    "$date": "1999-01-09T00:00:00.000Z"
+  },
+  "gender": "Male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c27431fa10d4e2862807f2"
+  },
+  "username": "allah",
+  "email": "allah@gmail.com",
+  "password": "$2a$10$1mc4hIjUUYrhQh6SnEEw9uRB6eWg11nXjAx1RZJByW7OHaR0nSV7a",
+  "mobile": "8807746822",
+  "dob": {
+    "$date": "1999-01-01T00:00:00.000Z"
+  },
+  "gender": "Male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c277d102155bd62e888f2d"
+  },
+  "username": "hana",
+  "email": "hana123@gmail.com",
+  "password": "$2a$10$mETTbpFmfkheB7AnYQ3oYufcJdKLhNCw9tG30d/5NWqI27YB4be2O",
+  "mobile": "9876543210",
+  "dob": {
+    "$date": "1999-01-01T00:00:00.000Z"
+  },
+  "gender": "Male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c27a8fe80d2d3e69f1b382"
+  },
+  "username": "akbar",
+  "email": "akbar123@gmail.com",
+  "password": "akbar",
+  "mobile": "9812345670",
+  "dob": {
+    "$date": "1999-12-12T00:00:00.000Z"
+  },
+  "gender": "Male",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66c5e00c8ba375f157be5dcf"
+  },
+  "username": "adhi",
+  "email": "adhi100@gmail.com",
+  "password": "adhi",
+  "mobile": "8508214360",
+  "dob": {
+    "$date": "1999-01-09T00:00:00.000Z"
+  },
+  "gender": "Female",
+  "__v": 0
+}]

@@ -1,0 +1,500 @@
+[{
+  "_id": {
+    "$oid": "67062ef73e31cb8e0a05aa45"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo kIW 440G9 ALL IN ONE",
+  "storeName": "crown Excel",
+  "price": 2000,
+  "quantity": 2,
+  "salesperson": "John Doe",
+  "customerName": "Jane Smith",
+  "companyName": "Acme Corp",
+  "mobileNumber": "1234567890",
+  "address": "123 Elm Street",
+  "orderStatus": "Pending",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 4000,
+  "dateTime": {
+    "$date": "2024-10-09T07:21:27.820Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-10T15:14:19.606Z"
+  },
+  "returnStatus": true
+},
+{
+  "_id": {
+    "$oid": "67064131ea7d804e1b30e502"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo kIW 440G9 ALL IN ONE",
+  "storeName": "Aljasara",
+  "price": 2000,
+  "quantity": 2,
+  "salesperson": "John Doe",
+  "orderStatus": "Pending",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 4000,
+  "dateTime": {
+    "$date": "2024-10-09T08:39:13.385Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67067b2275a07b3fc3dd12fe"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 1,
+  "salesperson": "hesma",
+  "orderStatus": "Pending",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 1998,
+  "dateTime": {
+    "$date": "2024-10-09T12:46:26.781Z"
+  },
+  "__v": 0,
+  "refundAmount": 0,
+  "returnDate": {
+    "$date": "2024-10-11T15:48:01.988Z"
+  },
+  "returnStatus": true
+},
+{
+  "_id": {
+    "$oid": "67092bf4c0342d831191af69"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "crown excel",
+  "price": 2000,
+  "quantity": 1,
+  "salesperson": "Rishan",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Pending",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 1990,
+  "returnStatus": false,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T13:45:24.245Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67092c2dc0342d831191af79"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 1,
+  "salesperson": "Rishan",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 1994,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T13:46:21.705Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T16:07:56.411Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67092d4fc0342d831191af82"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 1,
+  "salesperson": "Rishan",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Pending",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 1982,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T13:51:11.797Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T14:14:35.990Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67092e14c21ffa3c6e305b36"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 2,
+  "salesperson": "John Doe",
+  "customerName": "hina",
+  "companyName": "kfg",
+  "mobileNumber": "0555201661",
+  "address": "Rolla street",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 3996,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T13:54:28.925Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T13:54:49.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670939939eb13fe252cd0630"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 4,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Returned",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 7992,
+  "returnStatus": false,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T14:43:31.633Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67094a519eb13fe252cd06df"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "crown excel",
+  "price": 2000,
+  "quantity": 4,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 7976,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T15:54:57.780Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T15:55:26.573Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67094d879eb13fe252cd0726"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 4,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 7976,
+  "returnStatus": false,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T16:08:39.113Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67094dc79eb13fe252cd0737"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 10,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 19980,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T16:09:43.772Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T16:09:55.582Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67094f419eb13fe252cd0772"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 12,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 23928,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T16:16:01.203Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T16:18:56.288Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67095296dbcaaf909e68eca2"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 11,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Returned",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 2000,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T16:30:14.011Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T16:31:42.909Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6709549151dc43d7e89ce952"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "670102ef23e7968ec5c2a961"
+  },
+  "productName": "acer key 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 1,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Refunded",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 1998,
+  "returnStatus": true,
+  "dateTime": {
+    "$date": "2024-10-11T16:38:41.800Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T16:40:16.604Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6709577151dc43d7e89ce976"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 8,
+  "salesperson": "John Doe",
+  "customerName": "Rehman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Returned",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 15984,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-11T16:50:57.754Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-11T16:51:10.361Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a33111ca032a519167fcb"
+  },
+  "sku": "765d",
+  "productId": {
+    "$oid": "6701557223e7968ec5c2ac82"
+  },
+  "productName": "Lenovo  kIW 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, Silver",
+  "storeName": "Al-Jasara",
+  "price": 2000,
+  "quantity": 10,
+  "salesperson": "David",
+  "customerName": "Salman",
+  "companyName": "KTQ",
+  "mobileNumber": "987654321",
+  "address": "al ahdam",
+  "orderStatus": "Returned",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 19960,
+  "returnStatus": true,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-10-12T08:28:01.265Z"
+  },
+  "__v": 0,
+  "returnDate": {
+    "$date": "2024-10-12T09:29:19.787Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6759d291c8d7b7b074a87b2e"
+  },
+  "sku": "884R5EA#ABV",
+  "productId": {
+    "$oid": "6759d1ddc8d7b7b074a87af1"
+  },
+  "productName": "HP PRO ONE 440G9 ALL IN ONE (884R5EA#ABV) i7-13700T-4.9GHz, , 8GB, 512GB SSD, CAMERA, BT, WIFI, 23.8″FHD IPS, DOS, INTEL UHD 770 GRAPHICS, BLACK",
+  "storeName": "Crown Excel",
+  "price": 2000,
+  "quantity": 1,
+  "salesperson": "hanan",
+  "customerName": "kissan",
+  "companyName": "kxs",
+  "mobileNumber": "09877554667",
+  "address": "Raffa street",
+  "orderStatus": "Completed",
+  "paymentStatus": "Cash",
+  "discount": 0,
+  "totalPrice": 1900,
+  "returnStatus": false,
+  "refundAmount": 0,
+  "dateTime": {
+    "$date": "2024-12-11T17:57:37.854Z"
+  },
+  "__v": 0
+}]
